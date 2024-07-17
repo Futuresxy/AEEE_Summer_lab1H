@@ -1,0 +1,135 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 42676, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,  2889, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  1785, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  1780, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  1612, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,  1550, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  1419, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,  1419, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  1419, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  1439, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,  1339, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  1318, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  1318, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  1318, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,  1315, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  1344, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="sobel_resize_accel" col1="xf_sobel_resize_accel.cpp:23" col2="42676" col3="1612" col4="1439" col5="1318" col6="1344">
+                    <row id="21" col0="Mat" col1="xf_structs.hpp:670" col2="148" col2_disp="  148 (4 calls)" col3="" col4="" col5="" col6="">
+                        <row id="6" col0="init" col1="xf_structs.hpp:605" col2="112" col2_disp="  112 (4 calls)" col3="" col4="" col5="" col6="">
+                            <row id="3" col0="alloc_data&lt;2, nullptr&gt;" col1="xf_structs.hpp:493" col2="4" col2_disp="    4 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                    </row>
+                    <row id="10" col0="Array2xfMat&lt;8, 0, 128, 128, 1, 2&gt;" col1="xf_utility.hpp:834" col2="1674" col3="125" col4="108" col5="107" col6="121">
+                        <row id="20" col0="Array2xfMat" col1="xf_structs.hpp:1232" col2="1672" col3="" col4="" col5="" col6="">
+                            <row id="25" col0="Axi2Mat" col1="xf_structs.hpp:1135" col2="1665" col3="" col4="" col5="" col6="">
+                                <row id="26" col0="Axi2AxiStream" col1="xf_structs.hpp:1006" col2="1167" col3="" col4="" col5="" col6="">
+                                    <row id="7" col0="addrbound" col1="xf_structs.hpp:942" col2="800" col2_disp="  800 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="4" col0="AxiStream2Mat" col1="xf_structs.hpp:1107" col2="472" col3="" col4="" col5="" col6="">
+                                    <row id="8" col0="cols_npc_aligned" col1="xf_structs.hpp:930" col2="3" col3="" col4="" col5="" col6=""/>
+                                    <row id="9" col0="last_blk_pxl_width" col1="xf_structs.hpp:932" col2="11" col3="" col4="" col5="" col6=""/>
+                                    <row id="11" col0="AxiStream2MatStream&lt;2&gt;" col1="xf_structs.hpp:1031" col2="448" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="25" col0="Axi2Mat" col1="xf_structs.hpp:1135" col2="" col3="121" col4="104" col5="103" col6="117">
+                            <row id="26" col0="Axi2AxiStream" col1="xf_structs.hpp:1006" col2="" col3="34" col4="35" col5="35" col6="38"/>
+                            <row id="4" col0="AxiStream2Mat" col1="xf_structs.hpp:1107" col2="" col3="72" col4="64" col5="63" col6="71">
+                                <row id="8" col0="cols_npc_aligned" col1="xf_structs.hpp:930" col2="" col3="1" col4="" col5="" col6=""/>
+                                <row id="9" col0="last_blk_pxl_width" col1="xf_structs.hpp:932" col2="" col3="3" col4="3" col5="3" col6="3"/>
+                                <row id="11" col0="AxiStream2MatStream&lt;2&gt;" col1="xf_structs.hpp:1031" col2="" col3="58" col4="58" col5="57" col6="63"/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="14" col0="resize&lt;1, 0, 128, 128, 64, 64, 1, false, 2, 2, 2&gt;" col1="xf_resize.hpp:39" col2="11420" col3="586" col4="471" col5="460" col6="448">
+                        <row id="29" col0="resizeNNBilinear&lt;0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2&gt;" col1="xf_resize_nn_bilinear.hpp:285" col2="11395" col3="570" col4="455" col5="444" col6="431">
+                            <row id="31" col0="xfUDivResize" col1="xf_resize_nn_bilinear.hpp:162" col2="6" col2_disp="    6 (2 calls)" col3="6" col3_disp="   6 (2 calls)" col4="6" col4_disp="   6 (2 calls)" col5="6" col5_disp="   6 (2 calls)" col6="8" col6_disp="   8 (2 calls)"/>
+                            <row id="30" col0="scaleMult&lt;1, 48, 16, 42, 20&gt;" col1="xf_resize_nn_bilinear.hpp:171" col2="402" col3="" col4="" col5="" col6=""/>
+                            <row id="15" col0="read&lt;2, nullptr&gt;" col1="xf_structs.hpp:541" col2="20" col2_disp="   20 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="33" col0="scaleCompute&lt;17, 42, 20, 48, 16, 1&gt;" col1="xf_resize_nn_bilinear.hpp:190" col2="2822" col2_disp="2,822 (2 calls)" col3="28" col3_disp="  28 (2 calls)" col4="28" col4_disp="  28 (2 calls)" col5="28" col5_disp="  28 (2 calls)" col6="28" col6_disp="  28 (2 calls)"/>
+                            <row id="22" col0="computeInterpolation&lt;1, 42, 20, 17, 48, 16, 48, 16, 1&gt;" col1="xf_resize_nn_bilinear.hpp:213" col2="2579" col3="" col4="" col5="" col6=""/>
+                            <row id="17" col0="computeOutputPixel&lt;0, 1, 1, 17, 3, 48, 16&gt;" col1="xf_resize_nn_bilinear.hpp:72" col2="3791" col3="" col4="" col5="" col6="">
+                                <row id="2" col0="interpolatePixel&lt;0, 1, 1&gt;" col1="xf_resize_nn_bilinear.hpp:30" col2="2401" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="23" col0="write&lt;2, nullptr&gt;" col1="xf_structs.hpp:552" col2="8" col3="" col4="" col5="" col6=""/>
+                        </row>
+                    </row>
+                    <row id="12" col0="Sobel&lt;0, 3, 0, 0, 64, 64, 1, false, 2, 2, 2&gt;" col1="xf_sobel.hpp:1873" col2="23508" col3="496" col4="510" col5="413" col6="403">
+                        <row id="18" col0="xFSobelFilter3x3&lt;0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false&gt;" col1="xf_sobel.hpp:306" col2="23499" col3="490" col4="504" col5="407" col6="396">
+                            <row id="15" col0="read&lt;2, nullptr&gt;" col1="xf_structs.hpp:541" col2="10" col3="" col4="" col5="" col6=""/>
+                            <row id="16" col0="ProcessSobel3x3&lt;0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64&gt;" col1="xf_sobel.hpp:194" col2="10529" col3="" col4="" col5="" col6="">
+                                <row id="15" col0="read&lt;2, nullptr&gt;" col1="xf_structs.hpp:541" col2="10" col3="" col4="" col5="" col6=""/>
+                                <row id="19" col0="xFSobel3x3&lt;1, 1, 0, 0&gt;" col1="xf_sobel.hpp:134" col2="7252" col3="" col4="" col5="" col6="">
+                                    <row id="35" col0="xFGradientX3x3&lt;0, 0&gt;" col1="xf_sobel.hpp:44" col2="325" col3="" col4="" col5="" col6=""/>
+                                    <row id="28" col0="xFGradientY3x3&lt;0, 0&gt;" col1="xf_sobel.hpp:92" col2="325" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="24" col0="xfPackPixels&lt;1, 1, 0&gt;" col1="xf_utility.hpp:318" col2="2130" col2_disp="2,130 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="23" col0="write&lt;2, nullptr&gt;" col1="xf_structs.hpp:552" col2="16" col2_disp="   16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="35" col0="xFGradientX3x3&lt;0, 0&gt;" col1="xf_sobel.hpp:44" col2="650" col2_disp="  650 (2 calls)" col3="60" col4="60" col5="54" col6="51"/>
+                            <row id="28" col0="xFGradientY3x3&lt;0, 0&gt;" col1="xf_sobel.hpp:92" col2="650" col2_disp="  650 (2 calls)" col3="60" col4="60" col5="54" col6="51"/>
+                            <row id="24" col0="xfPackPixels&lt;1, 1, 0&gt;" col1="xf_utility.hpp:318" col2="710" col2_disp="  710 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="23" col0="write&lt;2, nullptr&gt;" col1="xf_structs.hpp:552" col2="16" col2_disp="   16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="19" col0="xFSobel3x3&lt;1, 1, 0, 0&gt;" col1="xf_sobel.hpp:134" col2="" col3="178" col4="173" col5="129" col6="120">
+                                <row id="35" col0="xFGradientX3x3&lt;0, 0&gt;" col1="xf_sobel.hpp:44" col2="" col3="60" col4="60" col5="54" col6="51"/>
+                                <row id="28" col0="xFGradientY3x3&lt;0, 0&gt;" col1="xf_sobel.hpp:92" col2="" col3="60" col4="60" col5="54" col6="51"/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="13" col0="xfMat2Array&lt;8, 0, 64, 64, 1, 2, 1&gt;" col1="xf_utility.hpp:824" col2="5850" col2_disp="5,850 (2 calls)" col3="312" col3_disp=" 312 (2 calls)" col4="284" col4_disp=" 284 (2 calls)" col5="272" col5_disp=" 272 (2 calls)" col6="288" col6_disp=" 288 (2 calls)">
+                        <row id="36" col0="xfMat2Array" col1="xf_structs.hpp:1554" col2="5846" col2_disp="5,846 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="27" col0="Mat2Axi" col1="xf_structs.hpp:1405" col2="5832" col2_disp="5,832 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="7" col0="addrbound" col1="xf_structs.hpp:942" col2="2400" col2_disp="2,400 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="34" col0="Mat2AxiStream" col1="xf_structs.hpp:1345" col2="2698" col2_disp="2,698 (2 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="8" col0="cols_npc_aligned" col1="xf_structs.hpp:930" col2="6" col2_disp="    6 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="9" col0="last_blk_pxl_width" col1="xf_structs.hpp:932" col2="22" col2_disp="   22 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="1" col0="MatStream2AxiStream&lt;2&gt;" col1="xf_structs.hpp:1281" col2="2650" col2_disp="2,650 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="8" col0="cols_npc_aligned" col1="xf_structs.hpp:930" col2="6" col2_disp="    6 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="32" col0="AxiStream2Axi" col1="xf_structs.hpp:1373" col2="484" col2_disp="  484 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="27" col0="Mat2Axi" col1="xf_structs.hpp:1405" col2="" col3="304" col3_disp=" 304 (2 calls)" col4="276" col4_disp=" 276 (2 calls)" col5="264" col5_disp=" 264 (2 calls)" col6="280" col6_disp=" 280 (2 calls)">
+                            <row id="7" col0="addrbound" col1="xf_structs.hpp:942" col2="" col3="32" col3_disp="  32 (2 calls)" col4="32" col4_disp="  32 (2 calls)" col5="32" col5_disp="  32 (2 calls)" col6="32" col6_disp="  32 (2 calls)"/>
+                            <row id="34" col0="Mat2AxiStream" col1="xf_structs.hpp:1345" col2="" col3="192" col3_disp=" 192 (2 calls)" col4="184" col4_disp=" 184 (2 calls)" col5="172" col5_disp=" 172 (2 calls)" col6="180" col6_disp=" 180 (2 calls)">
+                                <row id="8" col0="cols_npc_aligned" col1="xf_structs.hpp:930" col2="" col3="2" col3_disp="   2 (2 calls)" col4="" col5="" col6=""/>
+                                <row id="9" col0="last_blk_pxl_width" col1="xf_structs.hpp:932" col2="" col3="6" col3_disp="   6 (2 calls)" col4="6" col4_disp="   6 (2 calls)" col5="6" col5_disp="   6 (2 calls)" col6="6" col6_disp="   6 (2 calls)"/>
+                                <row id="1" col0="MatStream2AxiStream&lt;2&gt;" col1="xf_structs.hpp:1281" col2="" col3="164" col3_disp=" 164 (2 calls)" col4="172" col4_disp=" 172 (2 calls)" col5="160" col5_disp=" 160 (2 calls)" col6="164" col6_disp=" 164 (2 calls)"/>
+                            </row>
+                            <row id="32" col0="AxiStream2Axi" col1="xf_structs.hpp:1373" col2="" col3="28" col3_disp="  28 (2 calls)" col4="32" col4_disp="  32 (2 calls)" col5="32" col5_disp="  32 (2 calls)" col6="44" col6_disp="  44 (2 calls)"/>
+                        </row>
+                    </row>
+                    <row id="5" col0="~Mat" col1="xf_structs.hpp:865" col2="4" col2_disp="    4 (4 calls)" col3="" col4="" col5="" col6=""/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

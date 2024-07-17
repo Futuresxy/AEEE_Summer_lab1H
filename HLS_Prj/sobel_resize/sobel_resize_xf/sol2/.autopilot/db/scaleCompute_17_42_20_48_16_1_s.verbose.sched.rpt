@@ -1,0 +1,164 @@
+
+
+================================================================
+== Vitis HLS Report for 'scaleCompute_17_42_20_48_16_1_s'
+================================================================
+* Date:           Mon Jul 15 19:04:56 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        sobel_resize_xf
+* Solution:       sol2 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.663 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  50.000 ns|  50.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 6
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 6, States = { 1 2 3 4 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.66>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%inscale_read = read i48 @_ssdm_op_Read.ap_auto.i48, i48 %inscale" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:190]   --->   Operation 7 'read' 'inscale_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%currindex_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %currindex" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:190]   --->   Operation 8 'read' 'currindex_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%trunc_ln198 = trunc i32 %currindex_read" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:198]   --->   Operation 9 'trunc' 'trunc_ln198' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i42 @_ssdm_op_BitConcatenate.i42.i20.i22, i20 %trunc_ln198, i22 0" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:198]   --->   Operation 10 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%or_ln198 = or i42 %shl_ln, i42 2097152" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:198]   --->   Operation 11 'or' 'or_ln198' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%sext_ln199 = sext i42 %or_ln198" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199]   --->   Operation 12 'sext' 'sext_ln199' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln199 = zext i48 %inscale_read" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199]   --->   Operation 13 'zext' 'zext_ln199' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [5/5] (5.66ns)   --->   "%mul_ln199 = mul i74 %zext_ln199, i74 %sext_ln199" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199]   --->   Operation 14 'mul' 'mul_ln199' <Predicate = true> <Delay = 5.66> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.66> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 5.66>
+ST_2 : Operation 15 [4/5] (5.66ns)   --->   "%mul_ln199 = mul i74 %zext_ln199, i74 %sext_ln199" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199]   --->   Operation 15 'mul' 'mul_ln199' <Predicate = true> <Delay = 5.66> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.66> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 5.66>
+ST_3 : Operation 16 [3/5] (5.66ns)   --->   "%mul_ln199 = mul i74 %zext_ln199, i74 %sext_ln199" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199]   --->   Operation 16 'mul' 'mul_ln199' <Predicate = true> <Delay = 5.66> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.66> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 5.66>
+ST_4 : Operation 17 [2/5] (5.66ns)   --->   "%mul_ln199 = mul i74 %zext_ln199, i74 %sext_ln199" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199]   --->   Operation 17 'mul' 'mul_ln199' <Predicate = true> <Delay = 5.66> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.66> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.66>
+ST_5 : Operation 18 [1/5] (5.66ns)   --->   "%mul_ln199 = mul i74 %zext_ln199, i74 %sext_ln199" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199]   --->   Operation 18 'mul' 'mul_ln199' <Predicate = true> <Delay = 5.66> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.66> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 3.80>
+ST_6 : Operation 19 [1/1] (3.80ns)   --->   "%add_ln200 = add i74 %mul_ln199, i74 18889456924279326113792" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:200]   --->   Operation 19 'add' 'add_ln200' <Predicate = true> <Delay = 3.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 20 [1/1] (0.00ns)   --->   "%ind_pre_write_assign = partselect i42 @_ssdm_op_PartSelect.i42.i74.i32.i32, i74 %add_ln200, i32 32, i32 73" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:198]   --->   Operation 20 'partselect' 'ind_pre_write_assign' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln203 = ret i42 %ind_pre_write_assign" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:203]   --->   Operation 21 'ret' 'ret_ln203' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.663ns
+The critical path consists of the following:
+	wire read operation ('inscale_read', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:190) on port 'inscale' (/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:190) [3]  (0.000 ns)
+	'mul' operation 74 bit ('mul_ln199', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199) [10]  (5.663 ns)
+
+ <State 2>: 5.663ns
+The critical path consists of the following:
+	'mul' operation 74 bit ('mul_ln199', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199) [10]  (5.663 ns)
+
+ <State 3>: 5.663ns
+The critical path consists of the following:
+	'mul' operation 74 bit ('mul_ln199', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199) [10]  (5.663 ns)
+
+ <State 4>: 5.663ns
+The critical path consists of the following:
+	'mul' operation 74 bit ('mul_ln199', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199) [10]  (5.663 ns)
+
+ <State 5>: 5.663ns
+The critical path consists of the following:
+	'mul' operation 74 bit ('mul_ln199', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:199) [10]  (5.663 ns)
+
+ <State 6>: 3.806ns
+The critical path consists of the following:
+	'add' operation 74 bit ('add_ln200', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:200) [11]  (3.806 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

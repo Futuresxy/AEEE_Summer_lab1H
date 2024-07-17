@@ -1,0 +1,368 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "31 29 2 6 6",
+    "file": "xf_sobel_resize_accel.cpp",
+    "fileloc": 23,
+    "instructions": 94,
+    "name": "sobel_resize_accel",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1785
+  },
+  "1": {
+    "basicblocks": 41,
+    "calls": "4 4 7 13 13 22 7 23",
+    "file": "xf_resize_nn_bilinear.hpp",
+    "fileloc": 285,
+    "instructions": 547,
+    "loads": {
+      "L": 55
+    },
+    "name": "resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>",
+    "stores": {
+      "L": 60
+    },
+    "total_instructions": 686
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 942,
+    "instructions": 16,
+    "name": "addrbound",
+    "total_instructions": 16
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "10 8 16",
+    "file": "xf_structs.hpp",
+    "fileloc": 1405,
+    "instructions": 26,
+    "name": "Mat2Axi",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 149
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 930,
+    "instructions": 1,
+    "name": "cols_npc_aligned",
+    "total_instructions": 1
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_resize_nn_bilinear.hpp",
+    "fileloc": 190,
+    "instructions": 14,
+    "loads": {
+      "L": 1
+    },
+    "name": "scaleCompute<17, 42, 20, 48, 16, 1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 14
+  },
+  "14": {
+    "basicblocks": 4,
+    "calls": "3 3",
+    "file": "xf_structs.hpp",
+    "fileloc": 1006,
+    "instructions": 16,
+    "loads": {
+      "L": 1
+    },
+    "name": "Axi2AxiStream",
+    "total_instructions": 48
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 932,
+    "instructions": 3,
+    "name": "last_blk_pxl_width",
+    "total_instructions": 3
+  },
+  "16": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 1373,
+    "instructions": 13,
+    "loads": {
+      "L": 1
+    },
+    "name": "AxiStream2Axi",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 13
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 932,
+    "instructions": 3,
+    "name": "last_blk_pxl_width",
+    "total_instructions": 3
+  },
+  "18": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 1031,
+    "instructions": 57,
+    "name": "AxiStream2MatStream<2>",
+    "total_instructions": 57
+  },
+  "19": {
+    "basicblocks": 17,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 1281,
+    "instructions": 80,
+    "name": "MatStream2AxiStream<2>",
+    "total_instructions": 80
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "27",
+    "file": "xf_sobel.hpp",
+    "fileloc": 1873,
+    "instructions": 6,
+    "loads": {
+      "L": 2
+    },
+    "name": "Sobel<0, 3, 0, 0, 64, 64, 1, false, 2, 2, 2>",
+    "total_instructions": 539
+  },
+  "20": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "xf_sobel.hpp",
+    "fileloc": 92,
+    "instructions": 60,
+    "loads": {
+      "L": 6
+    },
+    "name": "xFGradientY3x3<0, 0>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 60
+  },
+  "21": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 930,
+    "instructions": 1,
+    "name": "cols_npc_aligned",
+    "total_instructions": 1
+  },
+  "22": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "xf_resize_nn_bilinear.hpp",
+    "fileloc": 213,
+    "instructions": 96,
+    "loads": {
+      "L": 4
+    },
+    "name": "computeInterpolation<1, 42, 20, 17, 48, 16, 48, 16, 1>",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 96
+  },
+  "23": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 552,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "write<2, nullptr>",
+    "total_instructions": 3
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "14 28",
+    "file": "xf_structs.hpp",
+    "fileloc": 1135,
+    "instructions": 15,
+    "name": "Axi2Mat",
+    "total_instructions": 134
+  },
+  "25": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 541,
+    "instructions": 3,
+    "name": "read<2, nullptr>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "26": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "xf_sobel.hpp",
+    "fileloc": 44,
+    "instructions": 60,
+    "loads": {
+      "L": 6
+    },
+    "name": "xFGradientX3x3<0, 0>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 60
+  },
+  "27": {
+    "basicblocks": 22,
+    "calls": "25 25 30 23 23 26 20 23 23",
+    "file": "xf_sobel.hpp",
+    "fileloc": 306,
+    "instructions": 213,
+    "loads": {
+      "L": 21
+    },
+    "name": "xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>",
+    "stores": {
+      "L": 32
+    },
+    "total_instructions": 533
+  },
+  "28": {
+    "basicblocks": 1,
+    "calls": "21 15 18",
+    "file": "xf_structs.hpp",
+    "fileloc": 1107,
+    "instructions": 10,
+    "name": "AxiStream2Mat",
+    "total_instructions": 71
+  },
+  "29": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "xf_resize.hpp",
+    "fileloc": 39,
+    "instructions": 16,
+    "loads": {
+      "L": 4
+    },
+    "name": "resize<1, 0, 128, 128, 64, 64, 1, false, 2, 2, 2>",
+    "total_instructions": 702
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 942,
+    "instructions": 16,
+    "name": "addrbound",
+    "total_instructions": 16
+  },
+  "30": {
+    "basicblocks": 1,
+    "calls": "26 20",
+    "file": "xf_sobel.hpp",
+    "fileloc": 134,
+    "instructions": 62,
+    "loads": {
+      "L": 12
+    },
+    "name": "xFSobel3x3<1, 1, 0, 0>",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 182
+  },
+  "31": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "xf_utility.hpp",
+    "fileloc": 834,
+    "instructions": 2,
+    "name": "Array2xfMat<8, 0, 128, 128, 1, 2>",
+    "total_instructions": 140
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_resize_nn_bilinear.hpp",
+    "fileloc": 162,
+    "instructions": 3,
+    "name": "xfUDivResize",
+    "total_instructions": 3
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "24",
+    "file": "xf_structs.hpp",
+    "fileloc": 1232,
+    "instructions": 4,
+    "loads": {
+      "L": 2
+    },
+    "name": "Array2xfMat",
+    "total_instructions": 138
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "9",
+    "file": "xf_utility.hpp",
+    "fileloc": 824,
+    "instructions": 2,
+    "name": "xfMat2Array<8, 0, 64, 64, 1, 2, 1>",
+    "total_instructions": 155
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 541,
+    "instructions": 3,
+    "name": "read<2, nullptr>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "12 17 19",
+    "file": "xf_structs.hpp",
+    "fileloc": 1345,
+    "instructions": 10,
+    "name": "Mat2AxiStream",
+    "total_instructions": 94
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "11",
+    "file": "xf_structs.hpp",
+    "fileloc": 1554,
+    "instructions": 4,
+    "loads": {
+      "L": 2
+    },
+    "name": "xfMat2Array",
+    "total_instructions": 153
+  }
+}

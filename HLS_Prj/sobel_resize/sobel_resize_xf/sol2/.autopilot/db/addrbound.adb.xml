@@ -1,0 +1,247 @@
+<stg><name>addrbound</name>
+
+
+<trans_list>
+
+<trans id="14" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="15" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="13" op_0_bw="13" op_1_bw="13">
+<![CDATA[
+fpga_resource_hint.entry.0:0 %cols_read = read i13 @_ssdm_op_Read.ap_auto.i13, i13 %cols
+
+]]></Node>
+<StgValue><ssdm name="cols_read"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="13" op_0_bw="13" op_1_bw="13">
+<![CDATA[
+fpga_resource_hint.entry.0:1 %rows_read = read i13 @_ssdm_op_Read.ap_auto.i13, i13 %rows
+
+]]></Node>
+<StgValue><ssdm name="rows_read"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="3" lat="3">
+<core>Mul_DSP</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="13" op_0_bw="13" op_1_bw="13">
+<![CDATA[
+fpga_resource_hint.entry.0:3 %mul_rows_cols = mul i13 %cols_read, i13 %rows_read
+
+]]></Node>
+<StgValue><ssdm name="mul_rows_cols"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="7" st_id="2" stage="2" lat="3">
+<core>Mul_DSP</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="13" op_0_bw="13" op_1_bw="13">
+<![CDATA[
+fpga_resource_hint.entry.0:3 %mul_rows_cols = mul i13 %cols_read, i13 %rows_read
+
+]]></Node>
+<StgValue><ssdm name="mul_rows_cols"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="8" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="32" op_0_bw="32" op_1_bw="0">
+<![CDATA[
+fpga_resource_hint.entry.0:2 %rbegin_i_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_4
+
+]]></Node>
+<StgValue><ssdm name="rbegin_i_i"/></StgValue>
+</operation>
+
+<operation id="9" st_id="3" stage="1" lat="3">
+<core>Mul_DSP</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="13" op_0_bw="13" op_1_bw="13">
+<![CDATA[
+fpga_resource_hint.entry.0:3 %mul_rows_cols = mul i13 %cols_read, i13 %rows_read
+
+]]></Node>
+<StgValue><ssdm name="mul_rows_cols"/></StgValue>
+</operation>
+
+<operation id="10" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0" op_0_bw="0" op_1_bw="13" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<![CDATA[
+fpga_resource_hint.entry.0:4 %specfucore_ln949 = specfucore void @_ssdm_op_SpecFUCore, i13 %mul_rows_cols, i64 12, i64 3, i64 2
+
+]]></Node>
+<StgValue><ssdm name="specfucore_ln949"/></StgValue>
+</operation>
+
+<operation id="11" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
+<![CDATA[
+fpga_resource_hint.entry.0:5 %rend_i_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_4, i32 %rbegin_i_i
+
+]]></Node>
+<StgValue><ssdm name="rend_i_i"/></StgValue>
+</operation>
+
+<operation id="12" st_id="3" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="0" op_0_bw="0" op_1_bw="13" op_2_bw="13">
+<![CDATA[
+fpga_resource_hint.entry.0:6 %write_ln949 = write void @_ssdm_op_Write.ap_auto.volatile.i13P0A, i13 %p_channel, i13 %mul_rows_cols
+
+]]></Node>
+<StgValue><ssdm name="write_ln949"/></StgValue>
+</operation>
+
+<operation id="13" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="0">
+<![CDATA[
+fpga_resource_hint.entry.0:7 %ret_ln1421 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln1421"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="16" name="p_channel" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="p_channel"/></StgValue>
+</port>
+<port id="17" name="rows" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="rows"/></StgValue>
+</port>
+<port id="18" name="cols" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="cols"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="20" from="_ssdm_op_Read.ap_auto.i13" to="cols_read" fromId="19" toId="4">
+</dataflow>
+<dataflow id="21" from="cols" to="cols_read" fromId="18" toId="4">
+</dataflow>
+<dataflow id="22" from="_ssdm_op_Read.ap_auto.i13" to="rows_read" fromId="19" toId="5">
+</dataflow>
+<dataflow id="23" from="rows" to="rows_read" fromId="17" toId="5">
+</dataflow>
+<dataflow id="24" from="cols_read" to="mul_rows_cols" fromId="4" toId="6">
+</dataflow>
+<dataflow id="25" from="rows_read" to="mul_rows_cols" fromId="5" toId="6">
+</dataflow>
+<dataflow id="26" from="cols_read" to="mul_rows_cols" fromId="4" toId="7">
+</dataflow>
+<dataflow id="27" from="rows_read" to="mul_rows_cols" fromId="5" toId="7">
+</dataflow>
+<dataflow id="29" from="_ssdm_op_SpecRegionBegin" to="rbegin_i_i" fromId="28" toId="8">
+</dataflow>
+<dataflow id="31" from="empty_4" to="rbegin_i_i" fromId="30" toId="8">
+</dataflow>
+<dataflow id="32" from="cols_read" to="mul_rows_cols" fromId="4" toId="9">
+</dataflow>
+<dataflow id="33" from="rows_read" to="mul_rows_cols" fromId="5" toId="9">
+</dataflow>
+<dataflow id="35" from="_ssdm_op_SpecFUCore" to="specfucore_ln949" fromId="34" toId="10">
+</dataflow>
+<dataflow id="36" from="mul_rows_cols" to="specfucore_ln949" fromId="9" toId="10">
+</dataflow>
+<dataflow id="38" from="StgValue_37" to="specfucore_ln949" fromId="37" toId="10">
+</dataflow>
+<dataflow id="40" from="StgValue_39" to="specfucore_ln949" fromId="39" toId="10">
+</dataflow>
+<dataflow id="42" from="StgValue_41" to="specfucore_ln949" fromId="41" toId="10">
+</dataflow>
+<dataflow id="44" from="_ssdm_op_SpecRegionEnd" to="rend_i_i" fromId="43" toId="11">
+</dataflow>
+<dataflow id="45" from="empty_4" to="rend_i_i" fromId="30" toId="11">
+</dataflow>
+<dataflow id="46" from="rbegin_i_i" to="rend_i_i" fromId="8" toId="11">
+</dataflow>
+<dataflow id="48" from="_ssdm_op_Write.ap_auto.volatile.i13P0A" to="write_ln949" fromId="47" toId="12">
+</dataflow>
+<dataflow id="49" from="p_channel" to="write_ln949" fromId="16" toId="12">
+</dataflow>
+<dataflow id="50" from="mul_rows_cols" to="write_ln949" fromId="9" toId="12">
+</dataflow>
+</dataflows>
+
+
+</stg>

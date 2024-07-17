@@ -1,0 +1,1829 @@
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 670, Column: 0 }
+Function:        _ZN2xf2cv3MatILi0ELi128ELi128ELi1ELi2EEC2Eii
+Args:            
+  - String:          'In function '''
+  - Function:        'xf::cv::Mat<0, 128, 128, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 670, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 670, Column: 0 }
+Function:        _ZN2xf2cv3MatILi0ELi64ELi64ELi1ELi2EEC2Eii
+Args:            
+  - String:          'In function '''
+  - Function:        'xf::cv::Mat<0, 64, 64, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 670, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 605, Column: 0 }
+Function:        _ZN2xf2cv3MatILi0ELi64ELi64ELi1ELi2EE4initEiib
+Args:            
+  - String:          'In function '''
+  - Function:        'xf::cv::Mat<0, 64, 64, 1, 2>::init(int, int, bool)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 605, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 605, Column: 0 }
+Function:        _ZN2xf2cv3MatILi0ELi128ELi128ELi1ELi2EE4initEiib
+Args:            
+  - String:          'In function '''
+  - Function:        'xf::cv::Mat<0, 128, 128, 1, 2>::init(int, int, bool)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 605, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 675, Column: 2 }
+Function:        _ZN2xf2cv3MatILi0ELi128ELi128ELi1ELi2EEC2Eii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Mat<0, 128, 128, 1, 2>::init(int, int, bool)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 605, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'xf::cv::Mat<0, 128, 128, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 670, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 675, Column: 2 }
+Function:        _ZN2xf2cv3MatILi0ELi64ELi64ELi1ELi2EEC2Eii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Mat<0, 64, 64, 1, 2>::init(int, int, bool)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 605, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'xf::cv::Mat<0, 64, 64, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 670, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 146, Column: 13 }
+Function:        _Z18computeOutputPixelILi0ELi1ELi1ELi17ELi3ELi48ELi16EEvPN8DataTypeIXT_EXT1_EE4nameES3_7ap_uintIXT2_EEPS5_P9ap_ufixedIXT4_EXT5_EL9ap_q_mode5EL9ap_o_mode3ELi0EESA_RS2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void interpolatePixel<0, 1, 1>(PixelType<DataType<0, 1>::pixeldepth>::name, PixelType<DataType<0, 1>::pixeldepth>::name, PixelType<DataType<0, 1>::pixeldepth>::name, PixelType<DataType<0, 1>::pixeldepth>::name, ap_ufixed<12, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<12, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, PixelType<DataType<0, 1>::pixeldepth>::name&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                       Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void computeOutputPixel<0, 1, 1, 17, 3, 48, 16>(DataType<0, 1>::name*, DataType<0, 1>::name*, ap_uint<17>, ap_uint<17>*, ap_ufixed<48, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<48, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, DataType<0, 1>::name&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                       Line: 78, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 521, Column: 21 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void computeOutputPixel<0, 1, 1, 17, 3, 48, 16>(DataType<0, 1>::name*, DataType<0, 1>::name*, ap_uint<17>, ap_uint<17>*, ap_ufixed<48, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<48, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, DataType<0, 1>::name&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                       Line: 78, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>(xf::cv::Mat<0, 128, 128, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                       Line: 286, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 332, Column: 2 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void scaleMult<1, 48, 16, 42, 20>(ap_ufixed<48, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<42, 20, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                       Line: 172, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>(xf::cv::Mat<0, 128, 128, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                       Line: 286, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 272, Column: 13 }
+Function:        _ZN2xf2cv15ProcessSobel3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEPArsT2_sr17xfNPixelsPerCycleIXT6_EEE9datashift_N10StreamTypeIXT10_EE4nameEPN9PixelTypeIXT4_EE4nameESH_SH_PNSE_IXT5_EE4nameESK_RNS9_IXT11_EE4nameESN_tt7ap_uintILi13EERtSQ_SO_ILi2EESR_SR_SP_RiSS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::xfPackPixels<1, 1, 0>(PixelType<0>::name*, StreamType<1>::name&, unsigned short, short, unsigned short&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                       Line: 319, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::ProcessSobel3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, StreamType<1>::name (*) [(64) >> (xfNPixelsPerCycle<1>::datashift)], PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, StreamType<1>::name&, StreamType<1>::name&, unsigned short, unsigned short, ap_uint<13>, unsigned short&, unsigned short&, ap_uint<2>, ap_uint<2>, ap_uint<2>, ap_uint<13>, int&, int&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 215, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 271, Column: 13 }
+Function:        _ZN2xf2cv15ProcessSobel3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEPArsT2_sr17xfNPixelsPerCycleIXT6_EEE9datashift_N10StreamTypeIXT10_EE4nameEPN9PixelTypeIXT4_EE4nameESH_SH_PNSE_IXT5_EE4nameESK_RNS9_IXT11_EE4nameESN_tt7ap_uintILi13EERtSQ_SO_ILi2EESR_SR_SP_RiSS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::xfPackPixels<1, 1, 0>(PixelType<0>::name*, StreamType<1>::name&, unsigned short, short, unsigned short&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                       Line: 319, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::ProcessSobel3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, StreamType<1>::name (*) [(64) >> (xfNPixelsPerCycle<1>::datashift)], PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, StreamType<1>::name&, StreamType<1>::name&, unsigned short, unsigned short, ap_uint<13>, unsigned short&, unsigned short&, ap_uint<2>, ap_uint<2>, ap_uint<2>, ap_uint<13>, int&, int&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 215, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 261, Column: 13 }
+Function:        _ZN2xf2cv15ProcessSobel3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEPArsT2_sr17xfNPixelsPerCycleIXT6_EEE9datashift_N10StreamTypeIXT10_EE4nameEPN9PixelTypeIXT4_EE4nameESH_SH_PNSE_IXT5_EE4nameESK_RNS9_IXT11_EE4nameESN_tt7ap_uintILi13EERtSQ_SO_ILi2EESR_SR_SP_RiSS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::xfPackPixels<1, 1, 0>(PixelType<0>::name*, StreamType<1>::name&, unsigned short, short, unsigned short&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                       Line: 319, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::ProcessSobel3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, StreamType<1>::name (*) [(64) >> (xfNPixelsPerCycle<1>::datashift)], PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, StreamType<1>::name&, StreamType<1>::name&, unsigned short, unsigned short, ap_uint<13>, unsigned short&, unsigned short&, ap_uint<2>, ap_uint<2>, ap_uint<2>, ap_uint<13>, int&, int&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 215, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 260, Column: 13 }
+Function:        _ZN2xf2cv15ProcessSobel3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEPArsT2_sr17xfNPixelsPerCycleIXT6_EEE9datashift_N10StreamTypeIXT10_EE4nameEPN9PixelTypeIXT4_EE4nameESH_SH_PNSE_IXT5_EE4nameESK_RNS9_IXT11_EE4nameESN_tt7ap_uintILi13EERtSQ_SO_ILi2EESR_SR_SP_RiSS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::xfPackPixels<1, 1, 0>(PixelType<0>::name*, StreamType<1>::name&, unsigned short, short, unsigned short&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                       Line: 319, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::ProcessSobel3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, StreamType<1>::name (*) [(64) >> (xfNPixelsPerCycle<1>::datashift)], PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, StreamType<1>::name&, StreamType<1>::name&, unsigned short, unsigned short, ap_uint<13>, unsigned short&, unsigned short&, ap_uint<2>, ap_uint<2>, ap_uint<2>, ap_uint<13>, int&, int&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 215, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 257, Column: 13 }
+Function:        _ZN2xf2cv15ProcessSobel3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEPArsT2_sr17xfNPixelsPerCycleIXT6_EEE9datashift_N10StreamTypeIXT10_EE4nameEPN9PixelTypeIXT4_EE4nameESH_SH_PNSE_IXT5_EE4nameESK_RNS9_IXT11_EE4nameESN_tt7ap_uintILi13EERtSQ_SO_ILi2EESR_SR_SP_RiSS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::xfPackPixels<1, 1, 0>(PixelType<0>::name*, StreamType<1>::name&, unsigned short, short, unsigned short&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                       Line: 319, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::ProcessSobel3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, StreamType<1>::name (*) [(64) >> (xfNPixelsPerCycle<1>::datashift)], PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, StreamType<1>::name&, StreamType<1>::name&, unsigned short, unsigned short, ap_uint<13>, unsigned short&, unsigned short&, ap_uint<2>, ap_uint<2>, ap_uint<2>, ap_uint<13>, int&, int&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 215, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 256, Column: 13 }
+Function:        _ZN2xf2cv15ProcessSobel3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEPArsT2_sr17xfNPixelsPerCycleIXT6_EEE9datashift_N10StreamTypeIXT10_EE4nameEPN9PixelTypeIXT4_EE4nameESH_SH_PNSE_IXT5_EE4nameESK_RNS9_IXT11_EE4nameESN_tt7ap_uintILi13EERtSQ_SO_ILi2EESR_SR_SP_RiSS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::xfPackPixels<1, 1, 0>(PixelType<0>::name*, StreamType<1>::name&, unsigned short, short, unsigned short&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                       Line: 319, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::ProcessSobel3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, StreamType<1>::name (*) [(64) >> (xfNPixelsPerCycle<1>::datashift)], PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, StreamType<1>::name&, StreamType<1>::name&, unsigned short, unsigned short, ap_uint<13>, unsigned short&, unsigned short&, ap_uint<2>, ap_uint<2>, ap_uint<2>, ap_uint<13>, int&, int&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 215, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 447, Column: 9 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::xfPackPixels<1, 1, 0>(PixelType<0>::name*, StreamType<1>::name&, unsigned short, short, unsigned short&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                       Line: 319, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, unsigned short, unsigned short)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 310, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 446, Column: 9 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::xfPackPixels<1, 1, 0>(PixelType<0>::name*, StreamType<1>::name&, unsigned short, short, unsigned short&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                       Line: 319, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, unsigned short, unsigned short)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 310, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 392, Column: 9 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::ProcessSobel3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, StreamType<1>::name (*) [(64) >> (xfNPixelsPerCycle<1>::datashift)], PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, PixelType<0>::name*, StreamType<1>::name&, StreamType<1>::name&, unsigned short, unsigned short, ap_uint<13>, unsigned short&, unsigned short&, ap_uint<2>, ap_uint<2>, ap_uint<2>, ap_uint<13>, int&, int&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 215, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, unsigned short, unsigned short)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 310, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                   Line: 46, Column: 46 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Mat<0, 128, 128, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 670, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'sobel_resize_accel(ap_uint<8>*, ap_uint<8>*, ap_uint<8>*, int, int, int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                       Line: 29, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                   Line: 48, Column: 47 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Mat<0, 64, 64, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 670, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'sobel_resize_accel(ap_uint<8>*, ap_uint<8>*, ap_uint<8>*, int, int, int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                       Line: 29, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                   Line: 60, Column: 47 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Mat<0, 64, 64, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 670, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'sobel_resize_accel(ap_uint<8>*, ap_uint<8>*, ap_uint<8>*, int, int, int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                       Line: 29, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                   Line: 64, Column: 47 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Mat<0, 64, 64, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 670, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'sobel_resize_accel(ap_uint<8>*, ap_uint<8>*, ap_uint<8>*, int, int, int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                       Line: 29, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 468, Column: 5 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Adding '''
+  - Name:            _dstgy
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 468, Column: 5 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Adding '''
+  - Name:            _dstgx
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 468, Column: 5 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Adding '''
+  - Name:            out_resize_mat
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 468, Column: 5 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Adding '''
+  - Name:            in_mat
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 468, Column: 5 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Adding '''
+  - Name:            _dstgy
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 468, Column: 5 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Adding '''
+  - Name:            _dstgx
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 468, Column: 5 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Adding '''
+  - Name:            out_resize_mat
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 468, Column: 5 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Adding '''
+  - Name:            in_mat
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                   Line: 64, Column: 47 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            _dstgy
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                   Line: 60, Column: 47 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            _dstgx
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                   Line: 48, Column: 47 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            out_resize_mat
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp, 
+                   Line: 46, Column: 46 }
+Function:        _Z18sobel_resize_accelP7ap_uintILi8EES1_S1_iiii
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            in_mat
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                   Line: 325, Column: 23 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                   Line: 325, Column: 23 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                   Line: 325, Column: 23 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                   Line: 325, Column: 23 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                   Line: 325, Column: 23 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                   Line: 325, Column: 23 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 153, Column: 5 }
+Function:        _ZN2xf2cv10xFSobel3x3ILi1ELi1ELi0ELi0EEEvPN9PixelTypeIXT2_EE4nameES5_PNS2_IXT1_EE4nameES8_S8_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Compute_Grad_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 158, Column: 20 }
+Function:        _ZN2xf2cv10xFSobel3x3ILi1ELi1ELi0ELi0EEEvPN9PixelTypeIXT2_EE4nameES5_PNS2_IXT1_EE4nameES8_S8_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 487, Column: 36 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_487_10
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 500, Column: 40 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_500_11
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 466, Column: 35 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_466_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 479, Column: 39 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_479_9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 445, Column: 35 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_445_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 458, Column: 39 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_458_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 513, Column: 44 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_513_12
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 103, Column: 20 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_103_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 107, Column: 20 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 119, Column: 23 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_119_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 124, Column: 20 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_124_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 136, Column: 20 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 154, Column: 23 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_154_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 365, Column: 31 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_365_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 254, Column: 23 }
+Function:        _Z20computeInterpolationILi1ELi42ELi20ELi17ELi48ELi16ELi48ELi16ELi1EEviiii9ap_ufixedIXT3_EXT4_EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedIXT0_EXT1_ELS1_5ELS2_3ELi0EES3_P7ap_uintIXT2_EERS8_SA_PS0_IXT5_EXT6_ELS1_5ELS2_3ELi0EERSB_S5_S5_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_254_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '2'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_354_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354:23'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 1011, Column: 0 }
+Function:        _ZN2xf2cv8MMIterInILi8ELi0ELi128ELi128ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi8EERN3hls6streamIS4_Li0EEEiiii
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '128'
+  - String:          ' to '
+  - NewBound:        '1'
+  - String:          ' for loop '''
+  - LoopName:        MMIterInLoop1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1017:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'xf::cv::MMIterIn<8, 0, 128, 128, 1, 2>::Axi2AxiStream'
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 310, Column: 0 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:325:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 310, Column: 0 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:325:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 310, Column: 0 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:325:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 310, Column: 0 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:325:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 310, Column: 0 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:325:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 310, Column: 0 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:325:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 310, Column: 0 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:325:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 310, Column: 0 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_325_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:325:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 138, Column: 0 }
+Function:        _ZN2xf2cv10xFSobel3x3ILi1ELi1ELi0ELi0EEEvPN9PixelTypeIXT2_EE4nameES5_PNS2_IXT1_EE4nameES8_S8_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Compute_Grad_Loop
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:153:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::cv::xFSobel3x3<1, 1, 0, 0>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 138, Column: 0 }
+Function:        _ZN2xf2cv10xFSobel3x3ILi1ELi1ELi0ELi0EEEvPN9PixelTypeIXT2_EE4nameES5_PNS2_IXT1_EE4nameES8_S8_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:158:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::cv::xFSobel3x3<1, 1, 0, 0>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_487_10
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:487:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_500_11
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:500:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_466_8
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:466:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_479_9
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:479:39'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_445_6
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:445:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_458_7
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:458:39'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_513_12
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:513:44'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_103_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:103:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_2
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:107:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_119_3
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:119:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_124_4
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:124:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_136_5
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:136:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_154_6
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:154:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_365_3
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:365:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 226, Column: 0 }
+Function:        _Z20computeInterpolationILi1ELi42ELi20ELi17ELi48ELi16ELi48ELi16ELi1EEviiii9ap_ufixedIXT3_EXT4_EL9ap_q_mode5EL9ap_o_mode3ELi0EEP8ap_fixedIXT0_EXT1_ELS1_5ELS2_3ELi0EES3_P7ap_uintIXT2_EERS8_SA_PS0_IXT5_EXT6_ELS1_5ELS2_3ELi0EERSB_S5_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_254_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:254:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'computeInterpolation<1, 42, 20, 17, 48, 16, 48, 16, 1>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 1011, Column: 0 }
+Function:        _ZN2xf2cv8MMIterInILi8ELi0ELi128ELi128ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi8EERN3hls6streamIS4_Li0EEEiiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::MMIter<8, 0, 128, 128, 1, 2>::addrbound(int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 942, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'xf::cv::MMIterIn<8, 0, 128, 128, 1, 2>::Axi2AxiStream(ap_uint<8>*, hls::stream<ap_uint<8>, 0>&, int, int, int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1011, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                   Line: 834, Column: 0 }
+Function:        _ZN2xf2cv11Array2xfMatILi8ELi0ELi128ELi128ELi1ELi2EEEvP7ap_uintIXT_EERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::MMIterIn<8, 0, 128, 128, 1, 2>::Array2xfMat(ap_uint<8>*, xf::cv::Mat<0, 128, 128, 1, 2>&, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1234, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::Array2xfMat<8, 0, 128, 128, 1, 2>(ap_uint<8>*, xf::cv::Mat<0, 128, 128, 1, 2>&, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                       Line: 834, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<8> xf::cv::Mat<0, 128, 128, 1, 2>::read<2, (void*)0>(int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 541, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>(xf::cv::Mat<0, 128, 128, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                       Line: 286, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void computeInterpolation<1, 42, 20, 17, 48, 16, 48, 16, 1>(int, int, int, int, ap_ufixed<48, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<42, 20, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<48, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_uint<17>*, ap_uint<17>&, ap_uint<17>&, ap_ufixed<48, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<48, 16, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<42, 20, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<42, 20, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                       Line: 226, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>(xf::cv::Mat<0, 128, 128, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                       Line: 286, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 286, Column: 0 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::Mat<0, 64, 64, 1, 2>::write<2, (void*)0>(int, ap_uint<8>)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>(xf::cv::Mat<0, 128, 128, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                       Line: 286, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 310, Column: 0 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<8> xf::cv::Mat<0, 64, 64, 1, 2>::read<2, (void*)0>(int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 541, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, unsigned short, unsigned short)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 310, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 310, Column: 0 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::Mat<0, 64, 64, 1, 2>::write<2, (void*)0>(int, ap_uint<8>)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>(xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, xf::cv::Mat<0, 64, 64, 1, 2>&, unsigned short, unsigned short)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                       Line: 310, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                   Line: 824, Column: 0 }
+Function:        _ZN2xf2cv11xfMat2ArrayILi8ELi0ELi64ELi64ELi1ELi2ELi1EEEvRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEEP7ap_uintIXT_EEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::MMIterOut<8, 0, 64, 64, 1, 1, 2>::xfMat2Array(xf::cv::Mat<0, 64, 64, 1, 2>&, ap_uint<8>*, int) (.135.171.243)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1556, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::xfMat2Array<8, 0, 64, 64, 1, 2, 1>(xf::cv::Mat<0, 64, 64, 1, 2>&, ap_uint<8>*, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp, 
+                       Line: 824, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp, 
+                   Line: 334, Column: 45 }
+Function:        _Z16resizeNNBilinearILi0ELi128ELi128ELi1ELb0ELi2ELi2ELi64ELi64ELi1ELi2EEvRN2xf2cv3MatIXT_EXT0_EXT1_EXT2_EXT4_EEERNS2_IXT_EXT6_EXT7_EXT2_EXT5_EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          line_buffer
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 319, Column: 5 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          GradientValuesX
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 321, Column: 5 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          GradientValuesY
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 328, Column: 5 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          src_buf1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 329, Column: 9 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          src_buf2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 330, Column: 9 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          src_buf3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 339, Column: 46 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          buf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 225, Column: 5 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp, 
+                   Line: 225, Column: 5 }
+Function:        _ZN2xf2cv16xFSobelFilter3x3ILi0ELi0ELi64ELi64ELi1ELi0ELi0ELi1ELi2ELi2ELi2ELi1ELi1ELi64ELb0EEEvRNS0_3MatIXT_EXT1_EXT2_EXT6_EXT7_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT8_EEERNS2_IXT0_EXT1_EXT2_EXT6_EXT9_EEEtt
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 1379, Column: 9 }
+Function:        _ZN2xf2cv9MMIterOutILi8ELi0ELi64ELi64ELi1ELi1ELi2EE13AxiStream2AxiERN3hls6streamI7ap_uintILi8EELi0EEEPS6_RS5_ILi13EE.249
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        dout1seq
+  - ArrayName:       dout
+  - String:          ' '
+  - BundleName:      gmem2,gmem3
+  - String:          ' '
+  - LoopName:        MMIterOutLoop2
+  - String:          ' '
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1379:9'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterOut<8, 0, 64, 64, 1, 1, 2>::AxiStream2Axi(hls::stream<ap_uint<8>, 0>&, ap_uint<8>*, ap_uint<13>&) (.249)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1375, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1384, Column: 10 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.5
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 1021, Column: 21 }
+Function:        _ZN2xf2cv8MMIterInILi8ELi0ELi128ELi128ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi8EERN3hls6streamIS4_Li0EEEiiii
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        din2seq
+  - ArrayName:       din
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1021_1
+  - String:          ' '
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1021:21'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterIn<8, 0, 128, 128, 1, 2>::Axi2AxiStream(ap_uint<8>*, hls::stream<ap_uint<8>, 0>&, int, int, int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1011, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1026, Column: 7 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.7
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 1379, Column: 9 }
+Function:        _ZN2xf2cv9MMIterOutILi8ELi0ELi64ELi64ELi1ELi1ELi2EE13AxiStream2AxiERN3hls6streamI7ap_uintILi8EELi0EEEPS6_RS5_ILi13EE.249
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1379, Column: 9 }
+  - OrigDirection:   write
+  - OrigID:          dout1seq
+  - ArrayName:       dout
+  - String:          ' '
+  - BundleName:      gmem2,gmem3
+  - String:          ' '
+  - LoopName:        MMIterOutLoop2
+  - String:          ' '
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1379:9'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterOut<8, 0, 64, 64, 1, 1, 2>::AxiStream2Axi(hls::stream<ap_uint<8>, 0>&, ap_uint<8>*, ap_uint<13>&) (.249)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1375, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 1021, Column: 21 }
+Function:        _ZN2xf2cv8MMIterInILi8ELi0ELi128ELi128ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi8EERN3hls6streamIS4_Li0EEEiiii
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1021, Column: 21 }
+  - OrigDirection:   read
+  - OrigID:          din2seq
+  - ArrayName:       din
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1021_1
+  - String:          ' '
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1021:21'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterIn<8, 0, 128, 128, 1, 2>::Axi2AxiStream(ap_uint<8>*, hls::stream<ap_uint<8>, 0>&, int, int, int, int)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1011, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_432_2
+  - String:          '> at '
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:432:31'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 1021, Column: 21 }
+Function:        _ZN2xf2cv8MMIterInILi8ELi0ELi128ELi128ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi8EERN3hls6streamIS4_Li0EEEiiii.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1021_1
+  - String:          ' '
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1021:21'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterIn<8, 0, 128, 128, 1, 2>::Axi2AxiStream(ap_uint<8>*, hls::stream<ap_uint<8>, 0>&, int, int, int, int) (.1)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1011, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 1021, Column: 21 }
+Function:        _ZN2xf2cv8MMIterInILi8ELi0ELi128ELi128ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi8EERN3hls6streamIS4_Li0EEEiiii.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_1021_1
+  - String:          '''('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1021:21'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 1379, Column: 9 }
+Function:        _ZN2xf2cv9MMIterOutILi8ELi0ELi64ELi64ELi1ELi1ELi2EE13AxiStream2AxiERN3hls6streamI7ap_uintILi8EELi0EEEPS6_RS5_ILi13EE.249.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        MMIterOutLoop2
+  - String:          ' '
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1379:9'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterOut<8, 0, 64, 64, 1, 1, 2>::AxiStream2Axi(hls::stream<ap_uint<8>, 0>&, ap_uint<8>*, ap_uint<13>&) (.249.1)'
+    DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                       Line: 1375, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp, 
+                   Line: 1379, Column: 9 }
+Function:        _ZN2xf2cv9MMIterOutILi8ELi0ELi64ELi64ELi1ELi1ELi2EE13AxiStream2AxiERN3hls6streamI7ap_uintILi8EELi0EEEPS6_RS5_ILi13EE.249.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        MMIterOutLoop2
+  - String:          '''('
+  - LoopLoc:         '/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1379:9'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem2
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

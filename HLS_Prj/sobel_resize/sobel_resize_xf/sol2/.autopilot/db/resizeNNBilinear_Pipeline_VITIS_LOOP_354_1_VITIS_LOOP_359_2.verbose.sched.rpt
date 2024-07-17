@@ -1,0 +1,175 @@
+
+
+================================================================
+== Vitis HLS Report for 'resizeNNBilinear_Pipeline_VITIS_LOOP_354_1_VITIS_LOOP_359_2'
+================================================================
+* Date:           Mon Jul 15 19:04:56 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        sobel_resize_xf
+* Solution:       sol2 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.888 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        4|      258|  40.000 ns|  2.580 us|    4|  258|       no|
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |                                     |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        |              Loop Name              |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- VITIS_LOOP_354_1_VITIS_LOOP_359_2  |        2|      256|         2|          1|          1|  2 ~ 256|       yes|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:359]   --->   Operation 5 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 7 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %line_buffer, i64 666, i64 30, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %line_buffer_1, i64 666, i64 30, i64 18446744073709551615"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %in_mat_data, void @empty_7, i32 0, i32 0, void @empty_19, i32 0, i32 0, void @empty_19, void @empty_19, void @empty_19, i32 0, i32 0, i32 0, i32 0, void @empty_19, void @empty_19, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%bound_read = read i33 @_ssdm_op_Read.ap_auto.i33, i33 %bound"   --->   Operation 11 'read' 'bound_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%imgInput_cols_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %imgInput_cols_val"   --->   Operation 12 'read' 'imgInput_cols_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.58ns)   --->   "%store_ln0 = store i33 0, i33 %indvar_flatten"   --->   Operation 13 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 14 [1/1] (1.58ns)   --->   "%store_ln354 = store i2 0, i2 %i" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 14 'store' 'store_ln354' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 15 [1/1] (1.58ns)   --->   "%store_ln359 = store i8 0, i8 %j" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:359]   --->   Operation 15 'store' 'store_ln359' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_365_3"   --->   Operation 16 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 4.18>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%j_2 = load i8 %j" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:359]   --->   Operation 17 'load' 'j_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i33 %indvar_flatten" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 18 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln359_1 = zext i8 %j_2" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:359]   --->   Operation 19 'zext' 'zext_ln359_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (2.55ns)   --->   "%icmp_ln359 = icmp_slt  i32 %zext_ln359_1, i32 %imgInput_cols_val_read" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:359]   --->   Operation 20 'icmp' 'icmp_ln359' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (2.59ns)   --->   "%icmp_ln354 = icmp_eq  i33 %indvar_flatten_load, i33 %bound_read" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 21 'icmp' 'icmp_ln354' <Predicate = true> <Delay = 2.59> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.59> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (2.59ns)   --->   "%add_ln354 = add i33 %indvar_flatten_load, i33 1" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 22 'add' 'add_ln354' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.59> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln354 = br i1 %icmp_ln354, void %for.inc33.loopexit, void %for.end35.exitStub" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 23 'br' 'br_ln354' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (1.58ns)   --->   "%store_ln354 = store i33 %add_ln354, i33 %indvar_flatten" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 24 'store' 'store_ln354' <Predicate = (!icmp_ln354)> <Delay = 1.58>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 46 'ret' 'ret_ln0' <Predicate = (icmp_ln354)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 6.88>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%i_load = load i2 %i" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 25 'load' 'i_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_354_1_VITIS_LOOP_359_2_str"   --->   Operation 26 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 2, i64 256, i64 128"   --->   Operation 27 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (1.24ns)   --->   "%select_ln354 = select i1 %icmp_ln359, i8 %j_2, i8 0" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 28 'select' 'select_ln354' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 29 [1/1] (1.56ns)   --->   "%add_ln354_1 = add i2 %i_load, i2 1" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 29 'add' 'add_ln354_1' <Predicate = (!icmp_ln359)> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (0.99ns)   --->   "%select_ln354_1 = select i1 %icmp_ln359, i2 %i_load, i2 %add_ln354_1" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 30 'select' 'select_ln354_1' <Predicate = true> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%trunc_ln354 = trunc i2 %select_ln354_1" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 31 'trunc' 'trunc_ln354' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln359 = zext i8 %select_ln354" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:359]   --->   Operation 32 'zext' 'zext_ln359' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%specpipeline_ln361 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_19" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:361]   --->   Operation 33 'specpipeline' 'specpipeline_ln361' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (3.63ns)   --->   "%read_word = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %in_mat_data" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:542->/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:363]   --->   Operation 34 'read' 'read_word' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%line_buffer_addr = getelementptr i8 %line_buffer, i64 0, i64 %zext_ln359" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:366]   --->   Operation 35 'getelementptr' 'line_buffer_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%line_buffer_1_addr = getelementptr i8 %line_buffer_1, i64 0, i64 %zext_ln359" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:366]   --->   Operation 36 'getelementptr' 'line_buffer_1_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln366 = br i1 %trunc_ln354, void %arrayidx2732.1.case.0, void %arrayidx2732.1.case.1" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:366]   --->   Operation 37 'br' 'br_ln366' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (3.25ns)   --->   "%store_ln366 = store i8 %read_word, i7 %line_buffer_addr" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:366]   --->   Operation 38 'store' 'store_ln366' <Predicate = (!trunc_ln354)> <Delay = 3.25> <CoreInst = "RAM_T2P_BRAM">   --->   Core 94 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 128> <RAM>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln366 = br void %arrayidx2732.1.exit" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:366]   --->   Operation 39 'br' 'br_ln366' <Predicate = (!trunc_ln354)> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (3.25ns)   --->   "%store_ln366 = store i8 %read_word, i7 %line_buffer_1_addr" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:366]   --->   Operation 40 'store' 'store_ln366' <Predicate = (trunc_ln354)> <Delay = 3.25> <CoreInst = "RAM_T2P_BRAM">   --->   Core 94 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 128> <RAM>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln366 = br void %arrayidx2732.1.exit" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:366]   --->   Operation 41 'br' 'br_ln366' <Predicate = (trunc_ln354)> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (1.91ns)   --->   "%add_ln359 = add i8 %select_ln354, i8 1" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:359]   --->   Operation 42 'add' 'add_ln359' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 43 [1/1] (1.58ns)   --->   "%store_ln354 = store i2 %select_ln354_1, i2 %i" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354]   --->   Operation 43 'store' 'store_ln354' <Predicate = true> <Delay = 1.58>
+ST_3 : Operation 44 [1/1] (1.58ns)   --->   "%store_ln359 = store i8 %add_ln359, i8 %j" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:359]   --->   Operation 44 'store' 'store_ln359' <Predicate = true> <Delay = 1.58>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln359 = br void %VITIS_LOOP_365_3" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:359]   --->   Operation 45 'br' 'br_ln359' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.588ns
+The critical path consists of the following:
+	'alloca' operation 33 bit ('indvar_flatten') [8]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'indvar_flatten' [14]  (1.588 ns)
+
+ <State 2>: 4.181ns
+The critical path consists of the following:
+	'load' operation 33 bit ('indvar_flatten_load', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354) on local variable 'indvar_flatten' [20]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln354', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354) [23]  (2.593 ns)
+	'store' operation 0 bit ('store_ln354', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354) of variable 'add_ln354', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:354 on local variable 'indvar_flatten' [48]  (1.588 ns)
+
+ <State 3>: 6.888ns
+The critical path consists of the following:
+	fifo read operation ('read_word', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:542->/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:363) on port 'in_mat_data' (/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:542->/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:363) [36]  (3.634 ns)
+	'store' operation 0 bit ('store_ln366', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:366) of variable 'read_word', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:542->/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:363 on array 'line_buffer' [41]  (3.254 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

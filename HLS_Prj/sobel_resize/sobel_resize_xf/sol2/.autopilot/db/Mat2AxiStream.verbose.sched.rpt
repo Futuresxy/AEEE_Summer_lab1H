@@ -1,0 +1,138 @@
+
+
+================================================================
+== Vitis HLS Report for 'Mat2AxiStream'
+================================================================
+* Date:           Mon Jul 15 19:04:58 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        sobel_resize_xf
+* Solution:       sol2 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.022 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval  | Pipeline |
+    |   min   |   max   |    min    |    max    | min |  max |   Type   |
+    +---------+---------+-----------+-----------+-----+------+----------+
+    |        9|     4104|  90.000 ns|  41.040 us|    9|  4104|  dataflow|
+    +---------+---------+-----------+-----------+-----+------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 3, States = { 1 2 3 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.63>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%cols_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %cols"   --->   Operation 4 'read' 'cols_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%rows_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %rows"   --->   Operation 5 'read' 'rows_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%last_blk_width_channel = alloca i64 1"   --->   Operation 6 'alloca' 'last_blk_width_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 4> <Depth = 2> <FIFO>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%cols_c = alloca i64 1" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1353]   --->   Operation 7 'alloca' 'cols_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 3> <FIFO>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%rows_c = alloca i64 1" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1353]   --->   Operation 8 'alloca' 'rows_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 3> <FIFO>
+ST_1 : Operation 9 [1/1] (3.63ns)   --->   "%call_ln1353 = call void @entry_proc, i16 %rows_read, i16 %rows_c, i32 %cols_read, i32 %cols_c" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1353]   --->   Operation 9 'call' 'call_ln1353' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%call_ln1354 = call void @last_blk_pxl_width, i4 %last_blk_width_channel" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1354]   --->   Operation 10 'call' 'call_ln1354' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 3.63>
+ST_2 : Operation 11 [2/2] (3.63ns)   --->   "%call_ln1355 = call void @MatStream2AxiStream<2>, i8 %p_dstgx_data, i8 %ldata, i16 %rows_c, i32 %cols_c, i4 %last_blk_width_channel" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1355]   --->   Operation 11 'call' 'call_ln1355' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @cols_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i32 %cols_c, i32 %cols_c" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1353]   --->   Operation 12 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln1353 = specinterface void @_ssdm_op_SpecInterface, i32 %cols_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1353]   --->   Operation 13 'specinterface' 'specinterface_ln1353' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "%empty_125 = specchannel i32 @_ssdm_op_SpecChannel, void @rows_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i16 %rows_c, i16 %rows_c" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1353]   --->   Operation 14 'specchannel' 'empty_125' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln1353 = specinterface void @_ssdm_op_SpecInterface, i16 %rows_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1353]   --->   Operation 15 'specinterface' 'specinterface_ln1353' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln1353 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_19" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1353]   --->   Operation 16 'specdataflowpipeline' 'specdataflowpipeline_ln1353' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %ldata, void @empty_7, i32 0, i32 0, void @empty_19, i32 0, i32 0, void @empty_19, void @empty_19, void @empty_19, i32 0, i32 0, i32 0, i32 0, void @empty_19, void @empty_19, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_dstgx_data, void @empty_7, i32 0, i32 0, void @empty_19, i32 0, i32 0, void @empty_19, void @empty_19, void @empty_19, i32 0, i32 0, i32 0, i32 0, void @empty_19, void @empty_19, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/2] (0.00ns)   --->   "%call_ln1355 = call void @MatStream2AxiStream<2>, i8 %p_dstgx_data, i8 %ldata, i16 %rows_c, i32 %cols_c, i4 %last_blk_width_channel" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1355]   --->   Operation 19 'call' 'call_ln1355' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%ret_ln1356 = ret" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1356]   --->   Operation 20 'ret' 'ret_ln1356' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.634ns
+The critical path consists of the following:
+	wire read operation ('cols_read') on port 'cols' [5]  (0.000 ns)
+	'call' operation 0 bit ('call_ln1353', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1353) to 'entry_proc' [17]  (3.634 ns)
+
+ <State 2>: 3.634ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln1355', /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1355) to 'MatStream2AxiStream<2>' [19]  (3.634 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

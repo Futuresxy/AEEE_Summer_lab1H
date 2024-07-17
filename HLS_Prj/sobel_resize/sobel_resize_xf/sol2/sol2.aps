@@ -1,0 +1,28 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="sol2"/>
+    </name>
+    <project>
+        <value string="sobel_resize_xf"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <targetInfo>
+        <TargetInfo value="xc7z020:-clg484:-1"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="default" period="10" default="false"/>
+    </clockList>
+    <Simulation argv="/home/sxy/Desktop/Vitis_Libraries/vision/data/128x128.png 64 64">
+        <SimFlow name="cosim" setup="false" dumpTrace="none" optimizeCompile="false" ldflags="-L /home/sxy/Desktop/opencv440/install/lib -lopencv_imgcodecs -lopencv_imgproc -lopencv_core -lopencv_highgui -lopencv_flann -lopencv_features2d" mflags="" compiledLibrary="" toolName="xsim">
+            <Rtl name="verilog" active="true"/>
+            <Rtl name="vhdl" active="false"/>
+        </SimFlow>
+    </Simulation>
+    <config>
+        <config_export flow="syn" rtl="verilog"/>
+    </config>
+</AutoPilot:solution>
+

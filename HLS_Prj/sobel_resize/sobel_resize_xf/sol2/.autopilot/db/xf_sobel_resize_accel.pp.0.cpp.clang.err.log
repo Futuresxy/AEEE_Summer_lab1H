@@ -1,0 +1,1434 @@
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel_config.h:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/config/xf_config_params.h:22:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_common.hpp:20:
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:245:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Scalar<N, T>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:246:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Scalar<N, T>_XLX_SEP_ PragmaOptions=variable=val dim=1 complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:252:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Scalar<N, T>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:253:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Scalar<N, T>_XLX_SEP_ PragmaOptions=variable=val dim=1 complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:260:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Scalar<N, T>_XLX_SEP_ PragmaOptions=variable=val dim=1 complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:261:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Scalar<N, T>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:269:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Scalar<N, T>_XLX_SEP_ PragmaOptions=variable=val dim=1 complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:270:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Scalar<N, T>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:279:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Scalar<N, T>_XLX_SEP_ PragmaOptions=variable=val dim=1 complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:280:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Scalar<N, T>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:305:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator=_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:309:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator=_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:318:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator+_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:323:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator+_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:333:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator+_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:338:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator+_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:348:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator-_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:353:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator-_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:363:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator-_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:368:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator-_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:378:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator*_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:383:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator*_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:393:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator*_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:398:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator*_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:408:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator/_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:413:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator/_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:423:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator/_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:428:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator/_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:517:30: warning: unused parameter 'src' [-Wunused-parameter]
+    void copyData(const Mat& src) {
+                             ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:528:30: warning: unused parameter '_data' [-Wunused-parameter]
+    void assignDataPtr(void* _data) {
+                             ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:541:14: warning: unused parameter 'index' [-Wunused-parameter]
+    read(int index) {
+             ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:552:20: warning: unused parameter 'index' [-Wunused-parameter]
+    void write(int index, typename DataType<T, NPC>::name val) {
+                   ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:584:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=type_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:592:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=depth_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:599:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=channels_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:607:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=init_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:654:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat<T, ROWS, COLS, NPC, XFCVDEPTH>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:663:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat<T, ROWS, COLS, NPC, XFCVDEPTH>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:672:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat<T, ROWS, COLS, NPC, XFCVDEPTH>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:681:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat<T, ROWS, COLS, NPC, XFCVDEPTH>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:708:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=copyTo_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:742:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=copyFrom_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:949:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=addrbound_XLX_SEP_ PragmaOptions=variable=mul_rows_cols op=mul impl=dsp latency=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_OP variable=mul_rows_cols op=mul impl=dsp latency=2
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:984:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Axi2AxiStream_XLX_SEP_ PragmaOptions=min=1 max=ADDRBOUND_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:985:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Axi2AxiStream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:998:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Axi2AxiStream_XLX_SEP_ PragmaOptions=min=1 max=ADDRBOUND_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:999:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Axi2AxiStream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1019:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Axi2AxiStream_XLX_SEP_ PragmaOptions=min=1 max=ROWS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=ROWS
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1023:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Axi2AxiStream_XLX_SEP_ PragmaOptions=min=1 max=COLS_ADDRBOUND_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=COLS_ADDRBOUND
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1024:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Axi2AxiStream_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1056:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AxiStream2MatStream_XLX_SEP_ PragmaOptions=min=1 max=LOOPBOUND_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1057:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AxiStream2MatStream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1036:41: warning: unused parameter 'stride' [-Wunused-parameter]
+                                    int stride = -1) {
+                                        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1100:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MatStream2Mat_XLX_SEP_ PragmaOptions=min=1 max=LOOPBOUND_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1101:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MatStream2Mat_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1113:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AxiStream2Mat_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1126:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AxiStream2Mat_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1141:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Axi2Mat_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1164:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Axi2Mat_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1176:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Axi2Mat_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1199:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Axi2Mat_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1224:102: warning: unused parameter 'index' [-Wunused-parameter]
+    inline static ap_uint<XF_BITS_PER_CLOCK> read(hls::stream<ap_uint<XF_BITS_PER_CLOCK> >& din, int index) {
+                                                                                                     ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1273:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat2MatStream_XLX_SEP_ PragmaOptions=min=1 max=LOOPBOUND_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1274:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat2MatStream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1303:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MatStream2AxiStream_XLX_SEP_ PragmaOptions=min=1 max=ROWS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=ROWS
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1308:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MatStream2AxiStream_XLX_SEP_ PragmaOptions=min=1 max=COLS_BOUND_PER_NPC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=COLS_BOUND_PER_NPC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1309:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MatStream2AxiStream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1351:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat2AxiStream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1364:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat2AxiStream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1381:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AxiStream2Axi_XLX_SEP_ PragmaOptions=min=1 max=ADDRBOUND_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1382:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AxiStream2Axi_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1396:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AxiStream2Axi_XLX_SEP_ PragmaOptions=min=1 max=ADDRBOUND_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1397:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AxiStream2Axi_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1411:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat2Axi_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1438:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat2Axi_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1469:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat2Axi_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1499:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Mat2Axi_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1530:34: warning: unused parameter 'index' [-Wunused-parameter]
+                             int index) {
+                                 ^
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel_config.h:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/config/xf_config_params.h:23:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:23:
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:46:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Window<ROWS, COLS, T>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:47:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Window<ROWS, COLS, T>_XLX_SEP_ PragmaOptions=variable=val dim=1 complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:48:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Window<ROWS, COLS, T>_XLX_SEP_ PragmaOptions=variable=val dim=2 complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=val dim=2 complete
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:112:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_left_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:124:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_left_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:128:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_left_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:156:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_right_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:168:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_right_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:172:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_right_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:200:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_up_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:212:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_up_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:216:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_up_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:244:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_down_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:256:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_down_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:260:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_down_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:287:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_pixel_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:320:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:332:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:359:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_top_row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:392:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_bottom_row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:425:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_col_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:437:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_col_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:464:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_left_col_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:497:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_right_col_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:530:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=getval_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:542:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:579:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_left_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:592:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_right_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:605:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_up_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:618:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_down_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:631:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:644:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:657:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_bottom_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:670:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_left_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:683:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_right_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:700:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:701:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS dependence variable=val inter false
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:702:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val intra false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS dependence variable=val intra false
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:711:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val type=RAM_1P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:716:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val type=RAM_1P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:721:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val type=RAM_2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:726:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val type=RAM_2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:731:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val type=RAM_S2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:736:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val type=RAM_S2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:741:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val type=RAM_T2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:746:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val type=RAM_T2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:755:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=val complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:759:47: warning: 'factor' in '#pragma HLS array_reshape' is ignored [-Wextra-tokens]
+#pragma HLS ARRAY_RESHAPE variable=val factor=RESHAPE_FACTOR dim=1
+                                              ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:759:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LineBuffer<ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR>_XLX_SEP_ PragmaOptions=variable=val factor=RESHAPE_FACTOR dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_RESHAPE variable=val factor=RESHAPE_FACTOR dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:813:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_down_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:826:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_down_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:856:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_up_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:869:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_pixels_up_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:898:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_bottom_row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:931:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_top_row_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:964:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_col_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:970:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_col_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:981:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=getval_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:992:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator()_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:1004:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_down_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:1016:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_up_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:1028:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_bottom_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:1040:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=insert_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel_config.h:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/config/xf_config_params.h:23:
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:35:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Ptr2xfMat_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:40:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Ptr2xfMat_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II = 1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:41:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Ptr2xfMat_XLX_SEP_ PragmaOptions=min = c_TRIP_COUNT max = c_TRIP_COUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = c_TRIP_COUNT max = c_TRIP_COUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:53:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfMat2Ptr_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:59:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfMat2Ptr_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II = 1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:60:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfMat2Ptr_XLX_SEP_ PragmaOptions=min = c_TRIP_COUNT max = c_TRIP_COUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = c_TRIP_COUNT max = c_TRIP_COUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:81:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTRMAT_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:87:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTRMAT_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II = 1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:88:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTRMAT_XLX_SEP_ PragmaOptions=min = c_TRIP_COUNT max = c_TRIP_COUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = c_TRIP_COUNT max = c_TRIP_COUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:114:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTRMAT2_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:120:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTRMAT2_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II = 1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:121:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTRMAT2_XLX_SEP_ PragmaOptions=min = c_TRIP_COUNT max = c_TRIP_COUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = c_TRIP_COUNT max = c_TRIP_COUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:148:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTR_MAT_AXI_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:154:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTR_MAT_AXI_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II = 1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:155:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTR_MAT_AXI_XLX_SEP_ PragmaOptions=min = c_TRIP_COUNT max = c_TRIP_COUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = c_TRIP_COUNT max = c_TRIP_COUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:176:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFMat2AXI_Strm_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:182:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFMat2AXI_Strm_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II = 1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:183:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFMat2AXI_Strm_XLX_SEP_ PragmaOptions=min = c_TRIP_COUNT max = c_TRIP_COUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = c_TRIP_COUNT max = c_TRIP_COUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:200:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AXI_Strm2xFMat_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:206:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AXI_Strm2xFMat_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II = 1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:207:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=AXI_Strm2xFMat_XLX_SEP_ PragmaOptions=min = c_TRIP_COUNT max = c_TRIP_COUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = c_TRIP_COUNT max = c_TRIP_COUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:223:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTR_AXI_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:229:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTR_AXI_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II = 1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:230:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateMat_PTR_AXI_XLX_SEP_ PragmaOptions=min = c_TRIP_COUNT max = c_TRIP_COUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = c_TRIP_COUNT max = c_TRIP_COUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:252:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSetBorder_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:264:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSetBorder_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:266:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSetBorder_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:321:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfPackPixels_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:327:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfPackPixels_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:339:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfExtractPixels_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:348:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfExtractPixels_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:371:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfExtractData_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:391:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfCopyData_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:399:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfCopyData_XLX_SEP_ PragmaOptions=min=6 max=6_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=6 max=6
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:400:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfCopyData_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:470:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateStream_XLX_SEP_ PragmaOptions=min=IN_BH max=IN_BH_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=IN_BH max=IN_BH
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:471:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateStream_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN off
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:475:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateStream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:476:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFDuplicateStream_XLX_SEP_ PragmaOptions=min=IN_BW max=IN_BW_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=IN_BW max=IN_BW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:501:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Array2hlsStrm_XLX_SEP_ PragmaOptions=min=1 max=TRIPCOUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:502:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Array2hlsStrm_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:543:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hlsStrm2xfMat_XLX_SEP_ PragmaOptions=min=1 max=TRIPCOUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:544:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hlsStrm2xfMat_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:625:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=axiStrm2hlsStrm_XLX_SEP_ PragmaOptions=min=1 max=TRIPCOUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:626:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=axiStrm2hlsStrm_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:637:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=axiStrm2xfMat_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:693:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfMat2hlsStrm_XLX_SEP_ PragmaOptions=min=1 max=TRIPCOUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:694:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfMat2hlsStrm_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:739:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hlsStrm2Array_XLX_SEP_ PragmaOptions=min=1 max=TRIPCOUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:740:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hlsStrm2Array_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:790:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hlsStrm2axiStrm_XLX_SEP_ PragmaOptions=min=1 max=TRIPCOUNT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:791:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hlsStrm2axiStrm_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:803:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfMat2axiStrm_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel_config.h:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/config/xf_config_params.h:24:
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:54:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFGradientX3x3_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:45:52: warning: unused parameter 't1' [-Wunused-parameter]
+               typename PixelType<DEPTH_SRC>::name t1,
+                                                   ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:48:52: warning: unused parameter 'm1' [-Wunused-parameter]
+               typename PixelType<DEPTH_SRC>::name m1,
+                                                   ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:51:52: warning: unused parameter 'b1' [-Wunused-parameter]
+               typename PixelType<DEPTH_SRC>::name b1,
+                                                   ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:102:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFGradientY3x3_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:95:52: warning: unused parameter 'm0' [-Wunused-parameter]
+               typename PixelType<DEPTH_SRC>::name m0,
+                                                   ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:96:52: warning: unused parameter 'm1' [-Wunused-parameter]
+               typename PixelType<DEPTH_SRC>::name m1,
+                                                   ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:97:52: warning: unused parameter 'm2' [-Wunused-parameter]
+               typename PixelType<DEPTH_SRC>::name m2,
+                                                   ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:140:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobel3x3_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:156:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobel3x3_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:217:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessSobel3x3_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:227:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessSobel3x3_XLX_SEP_ PragmaOptions=min=TC max=TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:228:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessSobel3x3_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:323:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=variable=GradientValuesX complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=GradientValuesX complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:324:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=variable=GradientValuesY complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=GradientValuesY complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:332:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=variable=src_buf1 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf1 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:333:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=variable=src_buf2 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf2 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:334:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=variable=src_buf3 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf3 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:342:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=variable=buf dim=1 factor=3 cyclic_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_reshape variable=buf dim=1 factor=3 cyclic
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:343:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=variable=buf type=RAM_S2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:347:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=variable=buf type=RAM_S2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:348:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=variable=buf complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=buf complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:357:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=min=TC max=TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:358:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:368:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter3x3_XLX_SEP_ PragmaOptions=min=ROWS max=ROWS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:492:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFGradientX5x5_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:577:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFGradientY5x5_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:573:54: warning: unused parameter 'src_buf3' [-Wunused-parameter]
+               typename PixelType<DEPTH_SRC>::name * src_buf3,
+                                                     ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:650:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobel5x5_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:656:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobel5x5_XLX_SEP_ PragmaOptions=min=8 max=8_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=8 max=8
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:657:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobel5x5_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:711:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessSobel5x5_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:722:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessSobel5x5_XLX_SEP_ PragmaOptions=min=TC max=TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:723:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessSobel5x5_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:754:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessSobel5x5_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:837:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=variable=GradientValuesX complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=GradientValuesX complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:838:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=variable=GradientValuesY complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=GradientValuesY complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:847:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=variable=src_buf1 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf1 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:848:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=variable=src_buf2 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf2 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:849:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=variable=src_buf3 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf3 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:850:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=variable=src_buf4 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf4 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:851:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=variable=src_buf5 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf5 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:860:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=variable=buf type=RAM_S2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:861:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=variable=buf dim=1 factor=5 cyclic_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_reshape variable=buf dim=1 factor=5 cyclic
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:865:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=variable=buf type=RAM_S2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:866:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=variable=buf complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=buf complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:875:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=min=TC max=TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:876:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:888:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=min=TC max=TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:889:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:899:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=min=ROWS max=ROWS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:974:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=function instances=xFGradientX5x5<PLANES, DEPTH_SRC, DEPTH_DST> limit=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION function instances=xFGradientX5x5<PLANES, DEPTH_SRC, DEPTH_DST> limit=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:975:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=function instances=xFGradientY5x5<PLANES, DEPTH_SRC, DEPTH_DST> limit=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION function instances=xFGradientY5x5<PLANES, DEPTH_SRC, DEPTH_DST> limit=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:995:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter5x5_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1060:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFGradientX7x7_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1061:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFGradientX7x7_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1272:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFGradientY7x7_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1273:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFGradientY7x7_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1267:54: warning: unused parameter 'src_buf4' [-Wunused-parameter]
+               typename PixelType<DEPTH_SRC>::name * src_buf4,
+                                                     ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1407:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobel7x7_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1411:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobel7x7_XLX_SEP_ PragmaOptions=min=8 max=8_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=8 max=8
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1412:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobel7x7_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1471:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessSobel7x7_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1480:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessSobel7x7_XLX_SEP_ PragmaOptions=min=TC max=TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1481:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessSobel7x7_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1590:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=RightBorder7x7_XLX_SEP_ PragmaOptions=min=8 max=8_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=8 max=8
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1591:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=RightBorder7x7_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1603:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=RightBorder7x7_XLX_SEP_ PragmaOptions=min=3 max=3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=3 max=3
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1604:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=RightBorder7x7_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1633:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=RightBorder7x7_XLX_SEP_ PragmaOptions=min=3 max=3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=3 max=3
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1634:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=RightBorder7x7_XLX_SEP_ PragmaOptions=function instances=xFGradientX7x7<PLANES, DEPTH_SRC, DEPTH_DST> limit=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION function instances=xFGradientX7x7<PLANES, DEPTH_SRC, DEPTH_DST> limit=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1635:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=RightBorder7x7_XLX_SEP_ PragmaOptions=function instances=xFGradientY7x7<PLANES, DEPTH_SRC, DEPTH_DST> limit=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION function instances=xFGradientY7x7<PLANES, DEPTH_SRC, DEPTH_DST> limit=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1564:72: warning: unused parameter '_src_mat' [-Wunused-parameter]
+void RightBorder7x7(xf::cv::Mat<SRC_T, ROWS, COLS, NPC, XFCVDEPTH_IN>& _src_mat,
+                                                                       ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1580:26: warning: unused parameter 'read_index' [-Wunused-parameter]
+                    int& read_index,
+                         ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1692:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=GradientValuesX complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=GradientValuesX complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1693:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=GradientValuesY complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=GradientValuesY complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1704:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=src_buf1 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf1 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1705:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=src_buf2 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf2 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1706:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=src_buf3 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf3 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1707:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=src_buf4 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf4 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1708:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=src_buf5 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf5 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1709:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=src_buf6 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf6 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1710:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=src_buf7 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=src_buf7 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1719:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=buf type=RAM_S2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1720:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=buf dim=1 factor=7 cyclic_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_reshape variable=buf dim=1 factor=7 cyclic
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1724:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=buf type=RAM_S2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1725:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=variable=buf complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=buf complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1732:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=min=TC max=TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1733:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1745:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=min=TC max=TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1746:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1756:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=min=TC max=TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1757:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1767:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=min=ROWS max=ROWS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1830:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFSobelFilter7x7_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp:1877:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Sobel_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel_config.h:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/config/xf_config_params.h:25:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize.hpp:20:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_headers.h:27:
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=interpolatePixel_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:80:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:93:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=variable=unpackX1 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=unpackX1 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:97:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=variable=unpackX2 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=unpackX2 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:101:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=variable=outputPixel complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=outputPixel complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:105:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:109:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:121:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:126:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:130:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=variable=unpackX1temp complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=unpackX1temp complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:134:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=variable=unpackX2temp complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=unpackX2temp complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:138:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:156:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computeOutputPixel_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:164:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xfUDivResize_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:174:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=scaleMult_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:178:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=scaleMult_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:215:31: warning: unused parameter 'j' [-Wunused-parameter]
+                          int j,
+                              ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:216:31: warning: unused parameter 'output_rows_count' [-Wunused-parameter]
+                          int output_rows_count,
+                              ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:217:65: warning: unused parameter 'scalex' [-Wunused-parameter]
+                          ap_ufixed<T_SCALE_WIDTH, T_SCALE_INT> scalex,
+                                                                ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:315:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=function instances=scaleCompute<INDEX_INT, COMP_INDEX_WIDTH, COMP_INDEX_INT, SCALE_WIDTH, SCALE_INT, INTERPOLATION_TYPE> limit=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION function instances=scaleCompute<INDEX_INT, COMP_INDEX_WIDTH, COMP_INDEX_INT, SCALE_WIDTH, SCALE_INT, INTERPOLATION_TYPE> limit=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:316:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=function instances=xfUDivResize limit=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION function instances=xfUDivResize limit=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:330:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=variable=scaleXParallel complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=scaleXParallel complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:339:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=variable=line_buffer type=RAM_T2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=line_buffer type=RAM_T2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:343:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=variable=line_buffer type=RAM_T2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=line_buffer type=RAM_T2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:347:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=variable = line_buffer complete dim = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = line_buffer complete dim = 1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:348:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=variable = line_buffer complete dim = 2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = line_buffer complete dim = 2
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:357:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=min=1 max=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=2
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:361:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:362:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=min=1 max=INWIDTH/NPPC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=INWIDTH/NPPC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:383:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=variable=indexx complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=indexx complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:389:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=variable=WeightX complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=WeightX complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:394:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=variable=P0Buf complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=P0Buf complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:398:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=variable=P1Buf complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=P1Buf complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:406:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=min=1 max=LOOPCOUNTROW_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPCOUNTROW
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:413:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:414:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=min=1 max=LOOPCOUNTCOL/NPPC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPCOUNTCOL/NPPC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:447:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:460:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:468:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:481:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:489:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:502:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp:515:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resizeNNBilinear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel_config.h:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/config/xf_config_params.h:25:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize.hpp:20:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_headers.h:28:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:23:
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:2884:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Inverse32_XLX_SEP_ PragmaOptions=min=4 max=4 avg=4_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:2885:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Inverse32_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:2898:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Inverse32_XLX_SEP_ PragmaOptions=min=4 max=4 avg=4_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:2899:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Inverse32_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:2912:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Inverse32_XLX_SEP_ PragmaOptions=min=4 max=4 avg=4_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:2913:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Inverse32_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:2926:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Inverse32_XLX_SEP_ PragmaOptions=min=4 max=4 avg=4_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:2927:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Inverse32_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:2952:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Inverse_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:3017:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=IdentifySignBits_XLX_SEP_ PragmaOptions=min=24 max=24_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=24 max=24
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:3018:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=IdentifySignBits_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h:3349:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=Sqrt_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel_config.h:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/config/xf_config_params.h:25:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize.hpp:20:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_headers.h:28:
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:58:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=flag_index_generator_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:110:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=flag_index_generator_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:114:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=flag_index_generator_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:227:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=flag_index_generator_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:231:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=flag_index_generator_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:43:47: warning: unused parameter 'skip_count' [-Wunused-parameter]
+                                 ap_uint<16>* skip_count,
+                                              ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:54:49: warning: unused parameter 'in_width' [-Wunused-parameter]
+                                 unsigned short in_width,
+                                                ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:252:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=treeAdder_XLX_SEP_ PragmaOptions=variable=in1 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=in1 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:253:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=treeAdder_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:264:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=treeAdder_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:273:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=treeAdder_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:282:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=treeAdder_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:291:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=treeAdder_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:321:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processBlock_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:364:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=CoreProcessDownArea_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:368:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=CoreProcessDownArea_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:380:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=CoreProcessDownArea_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:384:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=CoreProcessDownArea_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:430:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=update_output_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:442:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=update_output_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:447:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=update_output_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:455:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=update_output_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:509:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=update_output_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:513:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=update_output_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:417:46: warning: unused parameter 'write_index' [-Wunused-parameter]
+                                 ap_uint<32> write_index,
+                                             ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:419:49: warning: unused parameter 'out_width' [-Wunused-parameter]
+                                 unsigned short out_width,
+                                                ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:586:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=Xindex_output complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=Xindex_output complete dim=0
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:590:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=Xindex_output_initial complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=Xindex_output_initial complete dim=0
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:598:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=inflag_TA_prev complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=inflag_TA_prev complete dim=0
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:602:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:637:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=ouput_buffer type=RAM_T2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=ouput_buffer type=RAM_T2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:641:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=ouput_buffer type=RAM_T2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=ouput_buffer type=RAM_T2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:646:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=ouput_buffer complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=ouput_buffer complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:647:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=ouput_buffer complete dim=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=ouput_buffer complete dim=2
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:652:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=accum_reg complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=accum_reg complete dim=0
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:656:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=accum_reg_overlap complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=accum_reg_overlap complete dim=0
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:660:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:661:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:665:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:674:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:678:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:682:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:702:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=min=1 max=SRC_ROWS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=SRC_ROWS
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:708:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=min=1 max=SRC_TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=SRC_TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:709:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:710:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dependence_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=ouput_buffer inter false_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DEPENDENCE variable=ouput_buffer inter false
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:715:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:740:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=output_buffer_index complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=output_buffer_index complete dim=0
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:745:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=inflag_TA complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=inflag_TA complete dim=0
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:751:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=Wx complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=Wx complete dim=0
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:783:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=PB_out complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=PB_out complete dim=0
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:787:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=PB_out_overlap complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=PB_out_overlap complete dim=0
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:801:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=variable=DDR_write_data complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=DDR_write_data complete dim=0
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:813:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp:817:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaDownScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel_config.h:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/config/xf_config_params.h:25:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize.hpp:20:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_headers.h:29:
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:36:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=CoreProcessUpArea_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:68:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessBlockAreaUp_XLX_SEP_ PragmaOptions=variable=D0 dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=D0 dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:69:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessBlockAreaUp_XLX_SEP_ PragmaOptions=variable=D1 dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=D1 dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:70:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessBlockAreaUp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:75:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessBlockAreaUp_XLX_SEP_ PragmaOptions=variable=line0 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=line0 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:76:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessBlockAreaUp_XLX_SEP_ PragmaOptions=variable=line1 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=line1 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:90:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessBlockAreaUp_XLX_SEP_ PragmaOptions=variable=line0_0 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=line0_0 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:91:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessBlockAreaUp_XLX_SEP_ PragmaOptions=variable=line0_1 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=line0_1 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:96:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessBlockAreaUp_XLX_SEP_ PragmaOptions=variable=line1_0 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=line1_0 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:97:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessBlockAreaUp_XLX_SEP_ PragmaOptions=variable=line1_1 complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=line1_1 complete dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:107:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessBlockAreaUp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:123:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ProcessBlockAreaUp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:152:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFUDivAreaUp_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:187:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Hoffset type=RAM_T2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=Hoffset type=RAM_T2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:188:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Voffset type=RAM_T2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=Voffset type=RAM_T2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:189:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Hweight type=RAM_T2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=Hweight type=RAM_T2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:190:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=lbuf_in0 type=RAM_T2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=lbuf_in0 type=RAM_T2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:191:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=lbuf_in1 type=RAM_T2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=lbuf_in1 type=RAM_T2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:192:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=lbuf_in2 type=RAM_T2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=lbuf_in2 type=RAM_T2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:196:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Hoffset type=RAM_T2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=Hoffset type=RAM_T2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:197:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Voffset type=RAM_T2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=Voffset type=RAM_T2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:198:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Hweight type=RAM_T2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=Hweight type=RAM_T2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:199:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=lbuf_in0 type=RAM_T2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=lbuf_in0 type=RAM_T2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:200:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=lbuf_in1 type=RAM_T2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=lbuf_in1 type=RAM_T2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:201:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=lbuf_in2 type=RAM_T2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=lbuf_in2 type=RAM_T2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:207:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Hoffset cyclic factor=8 dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=Hoffset cyclic factor=8 dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:208:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Hweight cyclic factor=8 dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=Hweight cyclic factor=8 dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:212:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Hoffset cyclic factor=4 dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=Hoffset cyclic factor=4 dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:213:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Hweight cyclic factor=4 dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=Hweight cyclic factor=4 dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:217:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Hoffset cyclic factor=2 dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=Hoffset cyclic factor=2 dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:218:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=Hweight cyclic factor=2 dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=Hweight cyclic factor=2 dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:242:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=D0 dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=D0 dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:243:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=D1 dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=D1 dim=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:248:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=D0 type=RAM_T2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=D0 type=RAM_T2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:249:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=D1 type=RAM_T2P impl=URAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=D1 type=RAM_T2P impl=URAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:253:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=D0 type=RAM_T2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=D0 type=RAM_T2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:254:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=variable=D1 type=RAM_T2P impl=BRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=D1 type=RAM_T2P impl=BRAM
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:264:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=function instances=xFUDivAreaUp limit=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION function instances=xFUDivAreaUp limit=1
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:279:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:280:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=min=1 max=DST_COLS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=DST_COLS
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:304:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:305:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=min=1 max=DST_ROWS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=DST_ROWS
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:331:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:332:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=min=1 max = SRC_TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max = SRC_TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:341:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:342:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=min=1 max = SRC_TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max = SRC_TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:353:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=min=1 max = DST_ROWS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max = DST_ROWS
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:397:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:398:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN OFF
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:399:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=min=1 max=DST_TC avg=DST_TC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=1 max=DST_TC avg=DST_TC
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:413:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:427:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:441:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp:455:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xFResizeAreaUpScale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel_config.h:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/config/xf_config_params.h:25:
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize.hpp:42:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=resize_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/run_hls.tcl:57:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=sobel_resize_accel_XLX_SEP_ PragmaOptions=name=sobel_resize_accel_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=sobel_resize_accel
+        ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:31:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_resize_accel_XLX_SEP_ PragmaOptions=m_axi port=img_inp offset=slave bundle=gmem1 depth=__XF_DEPTH_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=img_inp offset=slave bundle=gmem1 depth=__XF_DEPTH
+        ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:32:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_resize_accel_XLX_SEP_ PragmaOptions=m_axi port=img_out1 offset=slave bundle=gmem2 depth=__XF_DEPTH_OUT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=img_out1 offset=slave bundle=gmem2 depth=__XF_DEPTH_OUT
+        ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_resize_accel_XLX_SEP_ PragmaOptions=m_axi port=img_out2 offset=slave bundle=gmem3 depth=__XF_DEPTH_OUT_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=img_out2 offset=slave bundle=gmem3 depth=__XF_DEPTH_OUT
+        ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_resize_accel_XLX_SEP_ PragmaOptions=s_axilite port=rows_in_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=rows_in
+        ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:39:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_resize_accel_XLX_SEP_ PragmaOptions=s_axilite port=cols_in_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=cols_in
+        ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:40:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_resize_accel_XLX_SEP_ PragmaOptions=s_axilite port=rows_out_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=rows_out
+        ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:41:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_resize_accel_XLX_SEP_ PragmaOptions=s_axilite port=cols_out_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=cols_out
+        ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:42:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_resize_accel_XLX_SEP_ PragmaOptions=s_axilite port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return
+        ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:51:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_resize_accel_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+465 warnings generated.

@@ -1,0 +1,1430 @@
+---
+MainSourceFile:  /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        /home/sxy/new-vol/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          60333
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /home/sxy/new-vol/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          288273
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home/sxy/new-vol/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          288741
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /home/sxy/new-vol/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          289210
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /home/sxy/new-vol/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          573305
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_1:  '
+    FileOffset:      307
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1295894
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_321_1:  '
+    FileOffset:      321
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1296092
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_321_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_336_1:  '
+    FileOffset:      336
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1296326
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_336_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_351_1:  '
+    FileOffset:      351
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1296556
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_351_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_366_1:  '
+    FileOffset:      366
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1296790
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_366_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_381_1:  '
+    FileOffset:      381
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1297020
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_381_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_396_1:  '
+    FileOffset:      396
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1297254
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_396_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_411_1:  '
+    FileOffset:      411
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1297484
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_411_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_426_1:  '
+    FileOffset:      426
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1297718
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_426_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_1:  '
+    FileOffset:      511
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1299319
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_719_1:  '
+    FileOffset:      719
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1304939
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_719_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_720_2:  '
+    FileOffset:      720
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1304980
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_720_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_721_3:  '
+    FileOffset:      721
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1305029
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_721_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_723_4:  '
+    FileOffset:      723
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1305112
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_723_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_761_1:  '
+    FileOffset:      761
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1306334
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_761_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_762_2:  '
+    FileOffset:      762
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1306375
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_762_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_764_3:  '
+    FileOffset:      764
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1306464
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_764_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_765_4:  '
+    FileOffset:      765
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1306538
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_765_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_819_1:  '
+    FileOffset:      819
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1308300
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_819_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_820_2:  '
+    FileOffset:      820
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1308341
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_820_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_828_3:  '
+    FileOffset:      828
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1308768
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_828_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, mul + dsp is invalid combination for bind_op'
+    FileOffset:      949
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1021_1:  '
+    FileOffset:      1021
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1316390
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1021_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1429_1:  '
+    FileOffset:      1429
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1331958
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1429_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1457_1:  '
+    FileOffset:      1457
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1333036
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1457_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1487_1:  '
+    FileOffset:      1487
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1334247
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1487_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1517_1:  '
+    FileOffset:      1517
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1335434
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1517_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_122_1:  '
+    FileOffset:      122
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1351797
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_122_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_126_2:  '
+    FileOffset:      126
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1351848
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_126_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_166_1:  '
+    FileOffset:      166
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1352179
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_166_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_2:  '
+    FileOffset:      170
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1352230
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_210_1:  '
+    FileOffset:      210
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1352558
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_210_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_214_2:  '
+    FileOffset:      214
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1352613
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_214_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_254_1:  '
+    FileOffset:      254
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1352939
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_254_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_258_2:  '
+    FileOffset:      258
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1352994
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_258_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_330_1:  '
+    FileOffset:      330
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1353696
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_330_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_435_1:  '
+    FileOffset:      435
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1354516
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_435_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_1P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      711
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_1P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      716
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      721
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      726
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      731
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      736
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      741
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      746
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_824_1:  '
+    FileOffset:      824
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1359377
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_824_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_867_1:  '
+    FileOffset:      867
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1359861
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_867_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_968_1:  '
+    FileOffset:      968
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1361160
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_968_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1363393
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_58_1:  '
+    FileOffset:      58
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1363969
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_58_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_1:  '
+    FileOffset:      86
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1364736
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_1:  '
+    FileOffset:      119
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1365762
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_1:  '
+    FileOffset:      153
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1366769
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_181_1:  '
+    FileOffset:      181
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1367532
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_181_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_205_1:  '
+    FileOffset:      205
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1368186
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_205_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_228_1:  '
+    FileOffset:      228
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1368899
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_228_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_263_1:  '
+    FileOffset:      263
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1369769
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_263_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_265_2:  '
+    FileOffset:      265
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1369829
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_265_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_325_1:  '
+    FileOffset:      325
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1371889
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_325_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_397_1:  '
+    FileOffset:      397
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1375046
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_397_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_468_1:  '
+    FileOffset:      468
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1376884
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_468_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_473_2:  '
+    FileOffset:      473
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1377000
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_473_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_499_1:  '
+    FileOffset:      499
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1377657
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_499_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_623_1:  '
+    FileOffset:      623
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1381817
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_623_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_737_1:  '
+    FileOffset:      737
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1386505
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_737_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_788_1:  '
+    FileOffset:      788
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1387692
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_788_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_1:  '
+    FileOffset:      158
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1394126
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      343
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      347
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_409_1:  '
+    FileOffset:      409
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1403169
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_409_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_432_2:  '
+    FileOffset:      432
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1404480
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_432_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_505_1:  '
+    FileOffset:      505
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1406715
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_505_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_589_1:  '
+    FileOffset:      589
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1409731
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_589_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_752_1:  '
+    FileOffset:      752
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1416961
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_752_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      860
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      865
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_950_1:  '
+    FileOffset:      950
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1423730
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_950_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_993_2:  '
+    FileOffset:      993
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1426347
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_993_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1078_1:  '
+    FileOffset:      1078
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1428770
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1078_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1288_1:  '
+    FileOffset:      1288
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1439505
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1288_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1409_1:  '
+    FileOffset:      1409
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1447181
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1409_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1588_1:  '
+    FileOffset:      1588
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1455286
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1588_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1601_2:  '
+    FileOffset:      1601
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1455890
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1601_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1631_3:  '
+    FileOffset:      1631
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1456955
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1631_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      1719
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      1724
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1828_1:  '
+    FileOffset:      1828
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_sobel.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1462924
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1828_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_103_1:  '
+    FileOffset:      103
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1470628
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_103_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_107_2:  '
+    FileOffset:      107
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1470697
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_107_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_3:  '
+    FileOffset:      119
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1471347
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_124_4:  '
+    FileOffset:      124
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1471428
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_124_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_5:  '
+    FileOffset:      136
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1471906
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_154_6:  '
+    FileOffset:      154
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1472863
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_154_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_176_1:  '
+    FileOffset:      176
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1473607
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_176_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_254_1:  '
+    FileOffset:      254
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1477014
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_254_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      339
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      343
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_354_1:  '
+    FileOffset:      354
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1480595
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_354_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_359_2:  '
+    FileOffset:      359
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1480671
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_359_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_365_3:  '
+    FileOffset:      365
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1480938
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_365_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_404_4:  '
+    FileOffset:      404
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1482415
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_404_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_411_5:  '
+    FileOffset:      411
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1482680
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_411_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_445_6:  '
+    FileOffset:      445
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1484275
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_445_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_458_7:  '
+    FileOffset:      458
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1484836
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_458_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_466_8:  '
+    FileOffset:      466
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1485038
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_466_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_479_9:  '
+    FileOffset:      479
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1485599
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_479_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_487_10:  '
+    FileOffset:      487
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1485779
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_487_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_500_11:  '
+    FileOffset:      500
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1486340
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_500_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_513_12:  '
+    FileOffset:      513
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_nn_bilinear.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1486878
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_513_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2882_1:  '
+    FileOffset:      2882
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1786871
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2882_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2896_2:  '
+    FileOffset:      2896
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1787205
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2896_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2910_3:  '
+    FileOffset:      2910
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1787539
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2910_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2924_4:  '
+    FileOffset:      2924
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1787862
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2924_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3347_1:  '
+    FileOffset:      3347
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/core/xf_math.h
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1797876
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3347_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_1:  '
+    FileOffset:      78
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1801006
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_108_2:  '
+    FileOffset:      108
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1802227
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_108_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_112_3:  '
+    FileOffset:      112
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1802299
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_112_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_225_4:  '
+    FileOffset:      225
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1807193
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_225_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_229_5:  '
+    FileOffset:      229
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1807265
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_229_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_262_1:  '
+    FileOffset:      262
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1808273
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_262_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_271_2:  '
+    FileOffset:      271
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1808449
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_271_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_280_3:  '
+    FileOffset:      280
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1808635
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_280_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_289_4:  '
+    FileOffset:      289
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1808822
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_289_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_319_1:  '
+    FileOffset:      319
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1809640
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_319_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_362_1:  '
+    FileOffset:      362
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1810847
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_362_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_366_2:  '
+    FileOffset:      366
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1810948
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_366_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_378_3:  '
+    FileOffset:      378
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1811256
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_378_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_382_4:  '
+    FileOffset:      382
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1811359
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_382_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_388_5:  '
+    FileOffset:      388
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1811513
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_388_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_440_1:  '
+    FileOffset:      440
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1813672
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_440_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_445_2:  '
+    FileOffset:      445
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1813751
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_445_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_453_3:  '
+    FileOffset:      453
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1814022
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_453_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_507_4:  '
+    FileOffset:      507
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1816165
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_507_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_5:  '
+    FileOffset:      511
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1816243
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_600_1:  '
+    FileOffset:      600
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1819565
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_600_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      637
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      641
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_658_2:  '
+    FileOffset:      658
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1820846
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_658_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_663_3:  '
+    FileOffset:      663
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1820932
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_663_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_672_4:  '
+    FileOffset:      672
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1821093
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_672_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_5:  '
+    FileOffset:      676
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1821178
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_680_6:  '
+    FileOffset:      680
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1821244
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_680_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_713_7:  '
+    FileOffset:      713
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1822063
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_713_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_811_8:  '
+    FileOffset:      811
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1825751
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_811_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_815_9:  '
+    FileOffset:      815
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_down_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1825849
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_815_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_105_1:  '
+    FileOffset:      105
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1830928
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_105_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_132_2:  '
+    FileOffset:      132
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1831680
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_132_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      187
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      188
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      189
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      190
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      191
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      192
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      196
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      197
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      198
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      199
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      200
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      201
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      248
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      249
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      253
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      254
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_329_1:  '
+    FileOffset:      329
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1838062
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_329_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_339_2:  '
+    FileOffset:      339
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1838299
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_339_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_411_3:  '
+    FileOffset:      411
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1840397
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_411_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_425_4:  '
+    FileOffset:      425
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1840937
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_425_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_439_5:  '
+    FileOffset:      439
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1841457
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_439_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_453_6:  '
+    FileOffset:      453
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/imgproc/xf_resize_up_area.hpp
+    Replacements:    
+      - FilePath:        /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+        Offset:          1841886
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_453_6: '
+...

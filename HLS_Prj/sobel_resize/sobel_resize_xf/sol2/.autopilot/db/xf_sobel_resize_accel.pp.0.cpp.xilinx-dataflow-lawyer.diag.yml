@@ -1,0 +1,16 @@
+---
+MainSourceFile:  /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '1141:9'
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '1411:9'
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '1411:9'
+    FilePath:        /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp
+...

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="sxy" Host="sxy-Lenovo-Legion-Y7000-2020" Pid="48645" HostCore="8" HostMemory="16226484">
+    </Process>
+</ProcessHandle>

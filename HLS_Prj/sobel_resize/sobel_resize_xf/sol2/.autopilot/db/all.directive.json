@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "sobel_resize_accel",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "sobel_resize_accel"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/run_hls.tcl",
+    "sourceLine": 57,
+    "success": true
+  }
+]

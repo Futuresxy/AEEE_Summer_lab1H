@@ -1,0 +1,558 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>7.105</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>7.105</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>7.105</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>2.895</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>2.895</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>2.895</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>2.895</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>9</BRAM>
+    <CLB>0</CLB>
+    <DSP>18</DSP>
+    <FF>7908</FF>
+    <LATCH>0</LATCH>
+    <LUT>6728</LUT>
+    <SRL>1134</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="sobel_resize_accel" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="30">Array2xfMat_8_0_128_128_1_2_U0 Block_entry14_proc_U0 Block_entry1_proc_U0 Sobel_0_3_0_0_64_64_1_false_2_2_2_U0 control_s_axi_U gmem1_m_axi_U gmem2_m_axi_U gmem3_m_axi_U img_out1_c_U img_out2_c_U in_mat_cols_c16_channel_U in_mat_cols_c_U in_mat_data_U in_mat_rows_c15_channel_U in_mat_rows_c_U out_resize_mat_cols_c18_channel_U out_resize_mat_cols_c_U out_resize_mat_data_U out_resize_mat_rows_c17_channel_U out_resize_mat_rows_c_U p_dstgx_cols_channel_U p_dstgx_data_U p_dstgx_rows_channel_U p_dstgy_cols_channel_U p_dstgy_data_U p_dstgy_rows_channel_U resize_1_0_128_128_64_64_1_false_2_2_2_U0 start_for_Sobel_0_3_0_0_64_64_1_false_2_2_2_U0_U xfMat2Array_8_0_64_64_1_2_1_1_U0 xfMat2Array_8_0_64_64_1_2_1_U0</SubModules>
+    <Resources BRAM="9" DSP="18" FF="7908" LUT="6728" LogicLUT="5594" RAMB18="9" SRL="1134"/>
+    <LocalResources FF="12" LUT="1" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_Array2xfMat_8_0_128_128_1_2_s">
+    <SubModules count="1">grp_Axi2Mat_fu_84</SubModules>
+    <Resources DSP="4" FF="508" LUT="518" LogicLUT="452" SRL="66"/>
+    <LocalResources FF="6" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84" DEPTH="2" FILE_NAME="sobel_resize_accel_Array2xfMat_8_0_128_128_1_2_s.v" ORIG_REF_NAME="sobel_resize_accel_Axi2Mat">
+    <SubModules count="6">Axi2AxiStream_U0 AxiStream2Mat_U0 cols_c_U ldata_U rows_c_U start_for_AxiStream2Mat_U0_U</SubModules>
+    <Resources DSP="4" FF="502" LUT="516" LogicLUT="450" SRL="66"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/Axi2AxiStream_U0" DEPTH="3" FILE_NAME="sobel_resize_accel_Axi2Mat.v" ORIG_REF_NAME="sobel_resize_accel_Axi2AxiStream">
+    <SubModules count="1">grp_Axi2AxiStream_Pipeline_VITIS_LOOP_1021_1_fu_108</SubModules>
+    <Resources DSP="1" FF="43" LUT="56" LogicLUT="56"/>
+    <LocalResources DSP="1" FF="15" LUT="15" LogicLUT="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/Axi2AxiStream_U0/grp_Axi2AxiStream_Pipeline_VITIS_LOOP_1021_1_fu_108" DEPTH="4" FILE_NAME="sobel_resize_accel_Axi2AxiStream.v" ORIG_REF_NAME="sobel_resize_accel_Axi2AxiStream_Pipeline_VITIS_LOOP_1021_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="28" LUT="41" LogicLUT="41"/>
+    <LocalResources FF="26" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/Axi2AxiStream_U0/grp_Axi2AxiStream_Pipeline_VITIS_LOOP_1021_1_fu_108/flow_control_loop_pipe_sequential_init_U" BINDMODULE="sobel_resize_accel_flow_control_loop_pipe_sequential_init" DEPTH="5" FILE_NAME="sobel_resize_accel_Axi2AxiStream_Pipeline_VITIS_LOOP_1021_1.v" ORIG_REF_NAME="sobel_resize_accel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="38" LogicLUT="38"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0" DEPTH="3" FILE_NAME="sobel_resize_accel_Axi2Mat.v" ORIG_REF_NAME="sobel_resize_accel_AxiStream2Mat">
+    <SubModules count="5">AxiStream2MatStream_2_U0 cols_c_U last_blk_pxl_width_1_U0 last_blk_width_channel_U rows_c_U</SubModules>
+    <Resources DSP="3" FF="296" LUT="371" LogicLUT="305" SRL="66"/>
+    <LocalResources FF="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0" DEPTH="4" FILE_NAME="sobel_resize_accel_AxiStream2Mat.v" ORIG_REF_NAME="sobel_resize_accel_AxiStream2MatStream_2_s">
+    <SubModules count="2">grp_AxiStream2MatStream_2_Pipeline_MMIterInLoopRow_fu_58 mul_32s_32s_32_2_1_U36</SubModules>
+    <Resources DSP="3" FF="275" LUT="279" LogicLUT="277" SRL="2"/>
+    <LocalResources FF="104" LUT="35" LogicLUT="35"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0/grp_AxiStream2MatStream_2_Pipeline_MMIterInLoopRow_fu_58" DEPTH="5" FILE_NAME="sobel_resize_accel_AxiStream2MatStream_2_s.v" ORIG_REF_NAME="sobel_resize_accel_AxiStream2MatStream_2_Pipeline_MMIterInLoopRow">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="154" LUT="228" LogicLUT="226" SRL="2"/>
+    <LocalResources FF="152" LUT="217" LogicLUT="215" SRL="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0/grp_AxiStream2MatStream_2_Pipeline_MMIterInLoopRow_fu_58/flow_control_loop_pipe_sequential_init_U" BINDMODULE="sobel_resize_accel_flow_control_loop_pipe_sequential_init" DEPTH="6" FILE_NAME="sobel_resize_accel_AxiStream2MatStream_2_Pipeline_MMIterInLoopRow.v" ORIG_REF_NAME="sobel_resize_accel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0/mul_32s_32s_32_2_1_U36" BINDMODULE="sobel_resize_accel_mul_32s_32s_32_2_1" DEPTH="5" FILE_NAME="sobel_resize_accel_AxiStream2MatStream_2_s.v" ORIG_REF_NAME="sobel_resize_accel_mul_32s_32s_32_2_1">
+    <Resources DSP="3" FF="17" LUT="16" LogicLUT="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/cols_c_U" BINDMODULE="sobel_resize_accel_fifo_w32_d3_S" DEPTH="4" FILE_NAME="sobel_resize_accel_AxiStream2Mat.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d3_S">
+    <Resources FF="5" LUT="38" LogicLUT="6" SRL="32"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/last_blk_pxl_width_1_U0" DEPTH="4" FILE_NAME="sobel_resize_accel_AxiStream2Mat.v" ORIG_REF_NAME="sobel_resize_accel_last_blk_pxl_width_1">
+    <Resources FF="2" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/last_blk_width_channel_U" BINDMODULE="sobel_resize_accel_fifo_w4_d2_S" DEPTH="4" FILE_NAME="sobel_resize_accel_AxiStream2Mat.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w4_d2_S">
+    <Resources FF="7" LUT="7" LogicLUT="7"/>
+    <LocalResources FF="5" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/rows_c_U" BINDMODULE="sobel_resize_accel_fifo_w32_d3_S" DEPTH="4" FILE_NAME="sobel_resize_accel_AxiStream2Mat.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d3_S">
+    <Resources FF="5" LUT="44" LogicLUT="12" SRL="32"/>
+    <LocalResources FF="5" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/cols_c_U" BINDMODULE="sobel_resize_accel_fifo_w32_d2_S" DEPTH="3" FILE_NAME="sobel_resize_accel_Axi2Mat.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d2_S">
+    <Resources FF="69" LUT="36" LogicLUT="36"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/ldata_U" BINDMODULE="sobel_resize_accel_fifo_w8_d2_S" DEPTH="3" FILE_NAME="sobel_resize_accel_Axi2Mat.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w8_d2_S">
+    <Resources FF="21" LUT="13" LogicLUT="13"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/rows_c_U" BINDMODULE="sobel_resize_accel_fifo_w32_d2_S" DEPTH="3" FILE_NAME="sobel_resize_accel_Axi2Mat.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d2_S">
+    <Resources FF="69" LUT="36" LogicLUT="36"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/start_for_AxiStream2Mat_U0_U" BINDMODULE="sobel_resize_accel_start_for_AxiStream2Mat_U0" DEPTH="3" FILE_NAME="sobel_resize_accel_Axi2Mat.v" ORIG_REF_NAME="sobel_resize_accel_start_for_AxiStream2Mat_U0">
+    <Resources FF="4" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry14_proc_U0" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_Block_entry14_proc">
+    <Resources FF="97" LUT="99" LogicLUT="99"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Block_entry1_proc_U0" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_Block_entry1_proc">
+    <Resources FF="129" LUT="67" LogicLUT="67"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_Sobel_0_3_0_0_64_64_1_false_2_2_2_s">
+    <SubModules count="1">grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46</SubModules>
+    <Resources BRAM="3" FF="380" LUT="345" LogicLUT="342" RAMB18="3" SRL="3"/>
+    <LocalResources FF="35"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46" DEPTH="2" FILE_NAME="sobel_resize_accel_Sobel_0_3_0_0_64_64_1_false_2_2_2_s.v" ORIG_REF_NAME="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s">
+    <SubModules count="7">buf_1_U buf_2_U buf_U grp_xFGradientX3x3_0_0_s_fu_183 grp_xFGradientY3x3_0_0_s_fu_196 grp_xFSobelFilter3x3_Pipeline_Clear_Row_Loop_fu_150 grp_xFSobelFilter3x3_Pipeline_Col_Loop_fu_159</SubModules>
+    <Resources BRAM="3" FF="345" LUT="345" LogicLUT="342" RAMB18="3" SRL="3"/>
+    <LocalResources FF="68" LUT="38" LogicLUT="38"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/buf_1_U" BINDMODULE="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_buf_RAM_S2P_BRAM_1R1W" DEPTH="3" FILE_NAME="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s.v" ORIG_REF_NAME="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_buf_RAM_S2P_BRAM_1R1W">
+    <Resources BRAM="1" LUT="25" LogicLUT="25" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/buf_2_U" BINDMODULE="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_buf_RAM_S2P_BRAM_1R1W" DEPTH="3" FILE_NAME="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s.v" ORIG_REF_NAME="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_buf_RAM_S2P_BRAM_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/buf_U" BINDMODULE="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_buf_RAM_S2P_BRAM_1R1W" DEPTH="3" FILE_NAME="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s.v" ORIG_REF_NAME="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_buf_RAM_S2P_BRAM_1R1W">
+    <Resources BRAM="1" LUT="10" LogicLUT="10" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/grp_xFGradientX3x3_0_0_s_fu_183" DEPTH="3" FILE_NAME="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s.v" ORIG_REF_NAME="sobel_resize_accel_xFGradientX3x3_0_0_s">
+    <Resources FF="18" LUT="21" LogicLUT="21"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/grp_xFGradientY3x3_0_0_s_fu_196" DEPTH="3" FILE_NAME="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s.v" ORIG_REF_NAME="sobel_resize_accel_xFGradientY3x3_0_0_s">
+    <Resources FF="34" LUT="29" LogicLUT="29"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/grp_xFSobelFilter3x3_Pipeline_Clear_Row_Loop_fu_150" DEPTH="3" FILE_NAME="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s.v" ORIG_REF_NAME="sobel_resize_accel_xFSobelFilter3x3_Pipeline_Clear_Row_Loop">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="22" LUT="45" LogicLUT="45"/>
+    <LocalResources FF="20" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/grp_xFSobelFilter3x3_Pipeline_Clear_Row_Loop_fu_150/flow_control_loop_pipe_sequential_init_U" BINDMODULE="sobel_resize_accel_flow_control_loop_pipe_sequential_init" DEPTH="4" FILE_NAME="sobel_resize_accel_xFSobelFilter3x3_Pipeline_Clear_Row_Loop.v" ORIG_REF_NAME="sobel_resize_accel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="43" LogicLUT="43"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/grp_xFSobelFilter3x3_Pipeline_Col_Loop_fu_159" DEPTH="3" FILE_NAME="sobel_resize_accel_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s.v" ORIG_REF_NAME="sobel_resize_accel_xFSobelFilter3x3_Pipeline_Col_Loop">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U grp_xFSobel3x3_1_1_0_0_s_fu_320</SubModules>
+    <Resources FF="203" LUT="183" LogicLUT="180" SRL="3"/>
+    <LocalResources FF="130" LUT="49" LogicLUT="46" SRL="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/grp_xFSobelFilter3x3_Pipeline_Col_Loop_fu_159/flow_control_loop_pipe_sequential_init_U" BINDMODULE="sobel_resize_accel_flow_control_loop_pipe_sequential_init" DEPTH="4" FILE_NAME="sobel_resize_accel_xFSobelFilter3x3_Pipeline_Col_Loop.v" ORIG_REF_NAME="sobel_resize_accel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/grp_xFSobelFilter3x3_Pipeline_Col_Loop_fu_159/grp_xFSobel3x3_1_1_0_0_s_fu_320" DEPTH="4" FILE_NAME="sobel_resize_accel_xFSobelFilter3x3_Pipeline_Col_Loop.v" ORIG_REF_NAME="sobel_resize_accel_xFSobel3x3_1_1_0_0_s">
+    <SubModules count="2">grp_xFGradientX3x3_0_0_s_fu_72 grp_xFGradientY3x3_0_0_s_fu_88</SubModules>
+    <Resources FF="71" LUT="94" LogicLUT="94"/>
+    <LocalResources FF="17" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/grp_xFSobelFilter3x3_Pipeline_Col_Loop_fu_159/grp_xFSobel3x3_1_1_0_0_s_fu_320/grp_xFGradientX3x3_0_0_s_fu_72" DEPTH="5" FILE_NAME="sobel_resize_accel_xFSobel3x3_1_1_0_0_s.v" ORIG_REF_NAME="sobel_resize_accel_xFGradientX3x3_0_0_s">
+    <Resources FF="27" LUT="54" LogicLUT="54"/>
+  </RtlModule>
+  <RtlModule CELL="inst/Sobel_0_3_0_0_64_64_1_false_2_2_2_U0/grp_xFSobelFilter3x3_0_0_64_64_1_0_0_1_2_2_2_1_1_64_false_s_fu_46/grp_xFSobelFilter3x3_Pipeline_Col_Loop_fu_159/grp_xFSobel3x3_1_1_0_0_s_fu_320/grp_xFGradientY3x3_0_0_s_fu_88" DEPTH="5" FILE_NAME="sobel_resize_accel_xFSobel3x3_1_1_0_0_s.v" ORIG_REF_NAME="sobel_resize_accel_xFGradientY3x3_0_0_s">
+    <Resources FF="27" LUT="39" LogicLUT="39"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_s_axi_U" BINDMODULE="sobel_resize_accel_control_s_axi" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_control_s_axi">
+    <Resources FF="379" LUT="469" LogicLUT="469"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem1_m_axi_U" BINDMODULE="sobel_resize_accel_gmem1_m_axi" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_gmem1_m_axi">
+    <Resources BRAM="1" FF="854" LUT="617" LogicLUT="534" RAMB18="1" SRL="83"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem2_m_axi_U" BINDMODULE="sobel_resize_accel_gmem2_m_axi" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_gmem2_m_axi">
+    <Resources BRAM="1" FF="1194" LUT="871" LogicLUT="651" RAMB18="1" SRL="220"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem3_m_axi_U" BINDMODULE="sobel_resize_accel_gmem3_m_axi" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_gmem3_m_axi">
+    <Resources BRAM="1" FF="1194" LUT="872" LogicLUT="652" RAMB18="1" SRL="220"/>
+  </RtlModule>
+  <RtlModule CELL="inst/img_out1_c_U" BINDMODULE="sobel_resize_accel_fifo_w64_d6_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w64_d6_S">
+    <Resources FF="6" LUT="75" LogicLUT="11" SRL="64"/>
+    <LocalResources FF="6" LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/img_out2_c_U" BINDMODULE="sobel_resize_accel_fifo_w64_d6_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w64_d6_S">
+    <Resources FF="6" LUT="76" LogicLUT="12" SRL="64"/>
+    <LocalResources FF="6" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/in_mat_cols_c16_channel_U" BINDMODULE="sobel_resize_accel_fifo_w32_d2_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d2_S_x">
+    <Resources FF="69" LUT="41" LogicLUT="41"/>
+    <LocalResources FF="5" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/in_mat_cols_c_U" BINDMODULE="sobel_resize_accel_fifo_w32_d2_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d2_S_x">
+    <Resources FF="69" LUT="36" LogicLUT="36"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/in_mat_data_U" BINDMODULE="sobel_resize_accel_fifo_w8_d2_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w8_d2_S_x0">
+    <Resources FF="21" LUT="21" LogicLUT="21"/>
+    <LocalResources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/in_mat_rows_c15_channel_U" BINDMODULE="sobel_resize_accel_fifo_w32_d2_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d2_S_x">
+    <Resources FF="69" LUT="40" LogicLUT="40"/>
+    <LocalResources FF="5" LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/in_mat_rows_c_U" BINDMODULE="sobel_resize_accel_fifo_w32_d2_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d2_S_x">
+    <Resources FF="69" LUT="38" LogicLUT="38"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/out_resize_mat_cols_c18_channel_U" BINDMODULE="sobel_resize_accel_fifo_w32_d3_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d3_S_x0">
+    <Resources FF="5" LUT="70" LogicLUT="38" SRL="32"/>
+    <LocalResources FF="5" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/out_resize_mat_cols_c_U" BINDMODULE="sobel_resize_accel_fifo_w32_d2_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d2_S_x">
+    <Resources FF="37" LUT="20" LogicLUT="20"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/out_resize_mat_data_U" BINDMODULE="sobel_resize_accel_fifo_w8_d2_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w8_d2_S_x0">
+    <Resources FF="21" LUT="28" LogicLUT="28"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/out_resize_mat_rows_c17_channel_U" BINDMODULE="sobel_resize_accel_fifo_w32_d3_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d3_S_x0">
+    <Resources FF="5" LUT="103" LogicLUT="71" SRL="32"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/out_resize_mat_rows_c_U" BINDMODULE="sobel_resize_accel_fifo_w32_d2_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d2_S_x">
+    <Resources FF="37" LUT="20" LogicLUT="20"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/p_dstgx_cols_channel_U" BINDMODULE="sobel_resize_accel_fifo_w32_d5_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d5_S">
+    <Resources FF="6" LUT="46" LogicLUT="14" SRL="32"/>
+    <LocalResources FF="6" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/p_dstgx_data_U" BINDMODULE="sobel_resize_accel_fifo_w8_d2_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w8_d2_S_x0">
+    <Resources FF="21" LUT="13" LogicLUT="13"/>
+    <LocalResources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/p_dstgx_rows_channel_U" BINDMODULE="sobel_resize_accel_fifo_w32_d5_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d5_S">
+    <Resources FF="6" LUT="29" LogicLUT="13" SRL="16"/>
+    <LocalResources FF="6" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/p_dstgy_cols_channel_U" BINDMODULE="sobel_resize_accel_fifo_w32_d5_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d5_S">
+    <Resources FF="6" LUT="47" LogicLUT="15" SRL="32"/>
+    <LocalResources FF="6" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/p_dstgy_data_U" BINDMODULE="sobel_resize_accel_fifo_w8_d2_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w8_d2_S_x0">
+    <Resources FF="21" LUT="13" LogicLUT="13"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/p_dstgy_rows_channel_U" BINDMODULE="sobel_resize_accel_fifo_w32_d5_S" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d5_S">
+    <Resources FF="6" LUT="28" LogicLUT="12" SRL="16"/>
+    <LocalResources FF="6" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_resize_1_0_128_128_64_64_1_false_2_2_2_s">
+    <SubModules count="1">grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84</SubModules>
+    <Resources BRAM="3" DSP="10" FF="1701" LUT="1265" LogicLUT="1236" RAMB18="3" SRL="29"/>
+    <LocalResources FF="68" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84" DEPTH="2" FILE_NAME="sobel_resize_accel_resize_1_0_128_128_64_64_1_false_2_2_2_s.v" ORIG_REF_NAME="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s">
+    <SubModules count="7">grp_resizeNNBilinear_Pipeline_VITIS_LOOP_354_1_VITIS_LOOP_359_2_fu_218 grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228 grp_scaleCompute_17_42_20_48_16_1_s_fu_203 grp_xfUDivResize_fu_186 line_buffer_1_U line_buffer_2_U line_buffer_U</SubModules>
+    <Resources BRAM="3" DSP="10" FF="1633" LUT="1254" LogicLUT="1225" RAMB18="3" SRL="29"/>
+    <LocalResources FF="764" LUT="338" LogicLUT="338"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_354_1_VITIS_LOOP_359_2_fu_218" DEPTH="3" FILE_NAME="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s.v" ORIG_REF_NAME="sobel_resize_accel_resizeNNBilinear_Pipeline_VITIS_LOOP_354_1_VITIS_LOOP_359_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="55" LUT="52" LogicLUT="52"/>
+    <LocalResources FF="53" LUT="42" LogicLUT="42"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_354_1_VITIS_LOOP_359_2_fu_218/flow_control_loop_pipe_sequential_init_U" BINDMODULE="sobel_resize_accel_flow_control_loop_pipe_sequential_init" DEPTH="4" FILE_NAME="sobel_resize_accel_resizeNNBilinear_Pipeline_VITIS_LOOP_354_1_VITIS_LOOP_359_2.v" ORIG_REF_NAME="sobel_resize_accel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228" DEPTH="3" FILE_NAME="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s.v" ORIG_REF_NAME="sobel_resize_accel_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5">
+    <SubModules count="4">flow_control_loop_pipe_sequential_init_U mac_muladd_12ns_10s_22s_23_4_1_U82 mac_muladd_12ns_9s_21s_22_4_1_U81 mul_12ns_12ns_24_1_1_U79</SubModules>
+    <Resources DSP="4" FF="211" LUT="449" LogicLUT="420" SRL="29"/>
+    <LocalResources DSP="1" FF="209" LUT="372" LogicLUT="343" SRL="29"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/flow_control_loop_pipe_sequential_init_U" BINDMODULE="sobel_resize_accel_flow_control_loop_pipe_sequential_init" DEPTH="4" FILE_NAME="sobel_resize_accel_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5.v" ORIG_REF_NAME="sobel_resize_accel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="61" LogicLUT="61"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/mac_muladd_12ns_10s_22s_23_4_1_U82" BINDMODULE="sobel_resize_accel_mac_muladd_12ns_10s_22s_23_4_1" DEPTH="4" FILE_NAME="sobel_resize_accel_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5.v" ORIG_REF_NAME="sobel_resize_accel_mac_muladd_12ns_10s_22s_23_4_1">
+    <Resources DSP="1" LUT="14" LogicLUT="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/mac_muladd_12ns_9s_21s_22_4_1_U81" BINDMODULE="sobel_resize_accel_mac_muladd_12ns_9s_21s_22_4_1" DEPTH="4" FILE_NAME="sobel_resize_accel_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5.v" ORIG_REF_NAME="sobel_resize_accel_mac_muladd_12ns_9s_21s_22_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/mul_12ns_12ns_24_1_1_U79" BINDMODULE="sobel_resize_accel_mul_12ns_12ns_24_1_1" DEPTH="4" FILE_NAME="sobel_resize_accel_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5.v" ORIG_REF_NAME="sobel_resize_accel_mul_12ns_12ns_24_1_1">
+    <Resources DSP="1" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_scaleCompute_17_42_20_48_16_1_s_fu_203" DEPTH="3" FILE_NAME="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s.v" ORIG_REF_NAME="sobel_resize_accel_scaleCompute_17_42_20_48_16_1_s">
+    <SubModules count="1">mul_48ns_42s_74_5_0_U75</SubModules>
+    <Resources DSP="6" FF="149" LUT="187" LogicLUT="187"/>
+    <LocalResources DSP="1" FF="113" LUT="168" LogicLUT="168"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_scaleCompute_17_42_20_48_16_1_s_fu_203/mul_48ns_42s_74_5_0_U75" BINDMODULE="sobel_resize_accel_mul_48ns_42s_74_5_0" DEPTH="4" FILE_NAME="sobel_resize_accel_scaleCompute_17_42_20_48_16_1_s.v" ORIG_REF_NAME="sobel_resize_accel_mul_48ns_42s_74_5_0">
+    <Resources DSP="5" FF="36" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_xfUDivResize_fu_186" DEPTH="3" FILE_NAME="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s.v" ORIG_REF_NAME="sobel_resize_accel_xfUDivResize">
+    <SubModules count="1">udiv_64ns_16ns_64_68_seq_1_U71</SubModules>
+    <Resources FF="454" LUT="228" LogicLUT="228"/>
+    <LocalResources FF="116" LUT="20" LogicLUT="20"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_xfUDivResize_fu_186/udiv_64ns_16ns_64_68_seq_1_U71" BINDMODULE="sobel_resize_accel_udiv_64ns_16ns_64_68_seq_1" DEPTH="4" FILE_NAME="sobel_resize_accel_xfUDivResize.v" ORIG_REF_NAME="sobel_resize_accel_udiv_64ns_16ns_64_68_seq_1">
+    <Resources FF="338" LUT="208" LogicLUT="208"/>
+    <LocalResources FF="97" LUT="49" LogicLUT="49"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/line_buffer_1_U" BINDMODULE="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_line_buffer_RAM_T2P_BRAM_1bkb" DEPTH="3" FILE_NAME="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s.v" ORIG_REF_NAME="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_line_buffer_RAM_T2P_BRAM_1bkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/line_buffer_2_U" BINDMODULE="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_line_buffer_RAM_T2P_BRAM_1bkb" DEPTH="3" FILE_NAME="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s.v" ORIG_REF_NAME="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_line_buffer_RAM_T2P_BRAM_1bkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/line_buffer_U" BINDMODULE="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_line_buffer_RAM_T2P_BRAM_1bkb" DEPTH="3" FILE_NAME="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s.v" ORIG_REF_NAME="sobel_resize_accel_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_line_buffer_RAM_T2P_BRAM_1bkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_Sobel_0_3_0_0_64_64_1_false_2_2_2_U0_U" BINDMODULE="sobel_resize_accel_start_for_Sobel_0_3_0_0_64_64_1_false_2_2_2_U0" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_start_for_Sobel_0_3_0_0_64_64_1_false_2_2_2_U0">
+    <Resources FF="4" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_xfMat2Array_8_0_64_64_1_2_1_1">
+    <SubModules count="1">grp_Mat2Axi_fu_62</SubModules>
+    <Resources DSP="2" FF="488" LUT="442" LogicLUT="330" SRL="112"/>
+    <LocalResources FF="87" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62" DEPTH="2" FILE_NAME="sobel_resize_accel_xfMat2Array_8_0_64_64_1_2_1_1.v" ORIG_REF_NAME="sobel_resize_accel_Mat2Axi">
+    <SubModules count="8">AxiStream2Axi_U0 Mat2AxiStream_U0 Mat2Axi_Block_entry24_proc_U0 addrbound_U0 axibound_U dout_c_U ldata_U p_channel_U</SubModules>
+    <Resources DSP="2" FF="401" LUT="441" LogicLUT="329" SRL="112"/>
+    <LocalResources FF="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/AxiStream2Axi_U0" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_AxiStream2Axi">
+    <SubModules count="1">grp_AxiStream2Axi_Pipeline_MMIterOutLoop2_fu_67</SubModules>
+    <Resources FF="101" LUT="75" LogicLUT="75"/>
+    <LocalResources FF="75" LUT="44" LogicLUT="44"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/AxiStream2Axi_U0/grp_AxiStream2Axi_Pipeline_MMIterOutLoop2_fu_67" DEPTH="4" FILE_NAME="sobel_resize_accel_AxiStream2Axi.v" ORIG_REF_NAME="sobel_resize_accel_AxiStream2Axi_Pipeline_MMIterOutLoop2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="26" LUT="31" LogicLUT="31"/>
+    <LocalResources FF="24" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/AxiStream2Axi_U0/grp_AxiStream2Axi_Pipeline_MMIterOutLoop2_fu_67/flow_control_loop_pipe_sequential_init_U" BINDMODULE="sobel_resize_accel_flow_control_loop_pipe_sequential_init" DEPTH="5" FILE_NAME="sobel_resize_accel_AxiStream2Axi_Pipeline_MMIterOutLoop2.v" ORIG_REF_NAME="sobel_resize_accel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="22" LogicLUT="22"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_Mat2AxiStream">
+    <SubModules count="5">MatStream2AxiStream_2_U0 cols_c_U last_blk_pxl_width_U0 last_blk_width_channel_U rows_c_U</SubModules>
+    <Resources DSP="1" FF="178" LUT="201" LogicLUT="153" SRL="48"/>
+    <LocalResources FF="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0" DEPTH="4" FILE_NAME="sobel_resize_accel_Mat2AxiStream.v" ORIG_REF_NAME="sobel_resize_accel_MatStream2AxiStream_2_s">
+    <SubModules count="1">grp_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol_fu_79</SubModules>
+    <Resources DSP="1" FF="157" LUT="124" LogicLUT="124"/>
+    <LocalResources DSP="1" FF="70" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0/grp_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol_fu_79" DEPTH="5" FILE_NAME="sobel_resize_accel_MatStream2AxiStream_2_s.v" ORIG_REF_NAME="sobel_resize_accel_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="87" LUT="90" LogicLUT="90"/>
+    <LocalResources FF="85" LUT="85" LogicLUT="85"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0/grp_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol_fu_79/flow_control_loop_pipe_sequential_init_U" BINDMODULE="sobel_resize_accel_flow_control_loop_pipe_sequential_init" DEPTH="6" FILE_NAME="sobel_resize_accel_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol.v" ORIG_REF_NAME="sobel_resize_accel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/cols_c_U" BINDMODULE="sobel_resize_accel_fifo_w32_d3_S" DEPTH="4" FILE_NAME="sobel_resize_accel_Mat2AxiStream.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d3_S_x">
+    <Resources FF="5" LUT="38" LogicLUT="6" SRL="32"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/last_blk_pxl_width_U0" DEPTH="4" FILE_NAME="sobel_resize_accel_Mat2AxiStream.v" ORIG_REF_NAME="sobel_resize_accel_last_blk_pxl_width">
+    <Resources FF="2" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/last_blk_width_channel_U" BINDMODULE="sobel_resize_accel_fifo_w4_d2_S" DEPTH="4" FILE_NAME="sobel_resize_accel_Mat2AxiStream.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w4_d2_S_x">
+    <Resources FF="7" LUT="7" LogicLUT="7"/>
+    <LocalResources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/rows_c_U" BINDMODULE="sobel_resize_accel_fifo_w16_d3_S" DEPTH="4" FILE_NAME="sobel_resize_accel_Mat2AxiStream.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w16_d3_S">
+    <Resources FF="5" LUT="23" LogicLUT="7" SRL="16"/>
+    <LocalResources FF="5" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/Mat2Axi_Block_entry24_proc_U0" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_Mat2Axi_Block_entry24_proc">
+    <Resources FF="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/addrbound_U0" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_addrbound">
+    <SubModules count="1">mul_13s_13s_13_3_1_U200</SubModules>
+    <Resources DSP="1" FF="17" LUT="13" LogicLUT="13"/>
+    <LocalResources FF="17" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/addrbound_U0/mul_13s_13s_13_3_1_U200" BINDMODULE="sobel_resize_accel_mul_13s_13s_13_3_1" DEPTH="4" FILE_NAME="sobel_resize_accel_addrbound.v" ORIG_REF_NAME="sobel_resize_accel_mul_13s_13s_13_3_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/axibound_U" BINDMODULE="sobel_resize_accel_fifo_w13_d2_S" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w13_d2_S">
+    <Resources FF="31" LUT="34" LogicLUT="34"/>
+    <LocalResources FF="5" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/dout_c_U" BINDMODULE="sobel_resize_accel_fifo_w64_d4_S" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w64_d4_S">
+    <Resources FF="5" LUT="73" LogicLUT="9" SRL="64"/>
+    <LocalResources FF="5" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/ldata_U" BINDMODULE="sobel_resize_accel_fifo_w8_d2_S" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w8_d2_S_x">
+    <Resources FF="21" LUT="13" LogicLUT="13"/>
+    <LocalResources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/p_channel_U" BINDMODULE="sobel_resize_accel_fifo_w13_d2_S" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w13_d2_S">
+    <Resources FF="31" LUT="32" LogicLUT="32"/>
+    <LocalResources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0" DEPTH="1" FILE_NAME="sobel_resize_accel.v" ORIG_REF_NAME="sobel_resize_accel_xfMat2Array_8_0_64_64_1_2_1_s">
+    <SubModules count="1">grp_Mat2Axi_fu_62</SubModules>
+    <Resources DSP="2" FF="488" LUT="444" LogicLUT="332" SRL="112"/>
+    <LocalResources FF="87" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62" DEPTH="2" FILE_NAME="sobel_resize_accel_xfMat2Array_8_0_64_64_1_2_1_s.v" ORIG_REF_NAME="sobel_resize_accel_Mat2Axi">
+    <SubModules count="8">AxiStream2Axi_U0 Mat2AxiStream_U0 Mat2Axi_Block_entry24_proc_U0 addrbound_U0 axibound_U dout_c_U ldata_U p_channel_U</SubModules>
+    <Resources DSP="2" FF="401" LUT="443" LogicLUT="331" SRL="112"/>
+    <LocalResources FF="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/AxiStream2Axi_U0" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_AxiStream2Axi">
+    <SubModules count="1">grp_AxiStream2Axi_Pipeline_MMIterOutLoop2_fu_67</SubModules>
+    <Resources FF="101" LUT="77" LogicLUT="77"/>
+    <LocalResources FF="75" LUT="46" LogicLUT="46"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/AxiStream2Axi_U0/grp_AxiStream2Axi_Pipeline_MMIterOutLoop2_fu_67" DEPTH="4" FILE_NAME="sobel_resize_accel_AxiStream2Axi.v" ORIG_REF_NAME="sobel_resize_accel_AxiStream2Axi_Pipeline_MMIterOutLoop2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="26" LUT="31" LogicLUT="31"/>
+    <LocalResources FF="24" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/AxiStream2Axi_U0/grp_AxiStream2Axi_Pipeline_MMIterOutLoop2_fu_67/flow_control_loop_pipe_sequential_init_U" BINDMODULE="sobel_resize_accel_flow_control_loop_pipe_sequential_init" DEPTH="5" FILE_NAME="sobel_resize_accel_AxiStream2Axi_Pipeline_MMIterOutLoop2.v" ORIG_REF_NAME="sobel_resize_accel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="22" LogicLUT="22"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_Mat2AxiStream">
+    <SubModules count="5">MatStream2AxiStream_2_U0 cols_c_U last_blk_pxl_width_U0 last_blk_width_channel_U rows_c_U</SubModules>
+    <Resources DSP="1" FF="178" LUT="201" LogicLUT="153" SRL="48"/>
+    <LocalResources FF="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0" DEPTH="4" FILE_NAME="sobel_resize_accel_Mat2AxiStream.v" ORIG_REF_NAME="sobel_resize_accel_MatStream2AxiStream_2_s">
+    <SubModules count="1">grp_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol_fu_79</SubModules>
+    <Resources DSP="1" FF="157" LUT="124" LogicLUT="124"/>
+    <LocalResources DSP="1" FF="70" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0/grp_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol_fu_79" DEPTH="5" FILE_NAME="sobel_resize_accel_MatStream2AxiStream_2_s.v" ORIG_REF_NAME="sobel_resize_accel_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="87" LUT="90" LogicLUT="90"/>
+    <LocalResources FF="85" LUT="85" LogicLUT="85"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0/grp_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol_fu_79/flow_control_loop_pipe_sequential_init_U" BINDMODULE="sobel_resize_accel_flow_control_loop_pipe_sequential_init" DEPTH="6" FILE_NAME="sobel_resize_accel_MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol.v" ORIG_REF_NAME="sobel_resize_accel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/cols_c_U" BINDMODULE="sobel_resize_accel_fifo_w32_d3_S" DEPTH="4" FILE_NAME="sobel_resize_accel_Mat2AxiStream.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w32_d3_S_x">
+    <Resources FF="5" LUT="38" LogicLUT="6" SRL="32"/>
+    <LocalResources FF="5" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/last_blk_pxl_width_U0" DEPTH="4" FILE_NAME="sobel_resize_accel_Mat2AxiStream.v" ORIG_REF_NAME="sobel_resize_accel_last_blk_pxl_width">
+    <Resources FF="2" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/last_blk_width_channel_U" BINDMODULE="sobel_resize_accel_fifo_w4_d2_S" DEPTH="4" FILE_NAME="sobel_resize_accel_Mat2AxiStream.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w4_d2_S_x">
+    <Resources FF="7" LUT="7" LogicLUT="7"/>
+    <LocalResources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/rows_c_U" BINDMODULE="sobel_resize_accel_fifo_w16_d3_S" DEPTH="4" FILE_NAME="sobel_resize_accel_Mat2AxiStream.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w16_d3_S">
+    <Resources FF="5" LUT="23" LogicLUT="7" SRL="16"/>
+    <LocalResources FF="5" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2Axi_Block_entry24_proc_U0" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_Mat2Axi_Block_entry24_proc">
+    <Resources FF="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/addrbound_U0" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_addrbound">
+    <SubModules count="1">mul_13s_13s_13_3_1_U200</SubModules>
+    <Resources DSP="1" FF="17" LUT="13" LogicLUT="13"/>
+    <LocalResources FF="17" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/addrbound_U0/mul_13s_13s_13_3_1_U200" BINDMODULE="sobel_resize_accel_mul_13s_13s_13_3_1" DEPTH="4" FILE_NAME="sobel_resize_accel_addrbound.v" ORIG_REF_NAME="sobel_resize_accel_mul_13s_13s_13_3_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/axibound_U" BINDMODULE="sobel_resize_accel_fifo_w13_d2_S" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w13_d2_S">
+    <Resources FF="31" LUT="34" LogicLUT="34"/>
+    <LocalResources FF="5" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/dout_c_U" BINDMODULE="sobel_resize_accel_fifo_w64_d4_S" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w64_d4_S">
+    <Resources FF="5" LUT="73" LogicLUT="9" SRL="64"/>
+    <LocalResources FF="5" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/ldata_U" BINDMODULE="sobel_resize_accel_fifo_w8_d2_S" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w8_d2_S_x">
+    <Resources FF="21" LUT="13" LogicLUT="13"/>
+    <LocalResources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/p_channel_U" BINDMODULE="sobel_resize_accel_fifo_w13_d2_S" DEPTH="3" FILE_NAME="sobel_resize_accel_Mat2Axi.v" ORIG_REF_NAME="sobel_resize_accel_fifo_w13_d2_S">
+    <Resources FF="31" LUT="32" LogicLUT="32"/>
+    <LocalResources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="6.497" DATAPATH_LOGIC_DELAY="1.433" DATAPATH_NET_DELAY="5.064" ENDPOINT_PIN="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[0]/R" LOGIC_LEVELS="6" MAX_FANOUT="30" SLACK="2.895" STARTPOINT_PIN="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[5]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1088"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_3" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="71"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1088"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.497" DATAPATH_LOGIC_DELAY="1.433" DATAPATH_NET_DELAY="5.064" ENDPOINT_PIN="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[10]/R" LOGIC_LEVELS="6" MAX_FANOUT="30" SLACK="2.895" STARTPOINT_PIN="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[5]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1088"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_3" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="71"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[10]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1088"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.497" DATAPATH_LOGIC_DELAY="1.433" DATAPATH_NET_DELAY="5.064" ENDPOINT_PIN="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[11]/R" LOGIC_LEVELS="6" MAX_FANOUT="30" SLACK="2.895" STARTPOINT_PIN="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[5]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1088"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_3" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="71"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[11]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1088"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.497" DATAPATH_LOGIC_DELAY="1.433" DATAPATH_NET_DELAY="5.064" ENDPOINT_PIN="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[12]/R" LOGIC_LEVELS="6" MAX_FANOUT="30" SLACK="2.895" STARTPOINT_PIN="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[5]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1088"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_3" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="71"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[12]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1088"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.497" DATAPATH_LOGIC_DELAY="1.433" DATAPATH_NET_DELAY="5.064" ENDPOINT_PIN="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[13]/R" LOGIC_LEVELS="6" MAX_FANOUT="30" SLACK="2.895" STARTPOINT_PIN="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[5]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1088"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_5" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.pad_oh_reg[3]_i_3" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="606"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/bus_wide_gen.len_cnt[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="71"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/gmem2_m_axi_U/store_unit/bus_wide_gen.len_cnt_reg[13]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1088"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/sobel_resize_accel_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/sobel_resize_accel_failfast_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/sobel_resize_accel_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/sobel_resize_accel_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/sobel_resize_accel_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/sobel_resize_accel_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

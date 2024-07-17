@@ -1,0 +1,211 @@
+
+
+================================================================
+== Vitis HLS Report for 'MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol'
+================================================================
+* Date:           Mon Jul 15 19:05:00 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        sobel_resize_xf
+* Solution:       sol2 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.022 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    | min |  max |   Type  |
+    +---------+---------+-----------+-----------+-----+------+---------+
+    |        5|     4100|  50.000 ns|  41.000 us|    5|  4100|       no|
+    +---------+---------+-----------+-----------+-----+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |                             |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |          Loop Name          |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +-----------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- MMIterOutRow_MMIterOutCol  |        3|     4098|         4|          1|          1|  1 ~ 4096|       yes|
+        +-----------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    376|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    118|    -|
+|Register         |        -|    -|     194|     32|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     194|    526|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln1301_fu_198_p2              |         +|   0|  0|  39|          32|           1|
+    |add_ln1306_fu_234_p2              |         +|   0|  0|  23|          16|           1|
+    |filled_next_fu_287_p2             |         +|   0|  0|  13|           4|           4|
+    |sub_ln1324_fu_268_p2              |         -|   0|  0|  13|           4|           5|
+    |sub_ln1332_1_fu_324_p2            |         -|   0|  0|  11|           1|           3|
+    |sub_ln1332_fu_307_p2              |         -|   0|  0|  13|           4|           5|
+    |ap_block_state3_pp0_stage0_iter2  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state5_pp0_stage0_iter4  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_195                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_393                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_396                  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op43_read_state3     |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op65_write_state5    |       and|   0|  0|   2|           1|           1|
+    |bLast_fu_224_p2                   |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln1301_fu_193_p2             |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln1306_fu_207_p2             |      icmp|   0|  0|  23|          16|          16|
+    |icmp_ln1315_fu_229_p2             |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln1324_fu_274_p2             |      icmp|   0|  0|  13|           5|           5|
+    |lshr_ln1332_fu_355_p2             |      lshr|   0|  0|  17|           8|           8|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |ldata_din                         |        or|   0|  0|   8|           8|           8|
+    |localbuffer_2_fu_361_p3           |    select|   0|  0|   8|           1|           8|
+    |select_ln1294_fu_212_p3           |    select|   0|  0|  16|           1|           1|
+    |xf_bits_per_clock_fu_253_p3       |    select|   0|  0|   5|           1|           4|
+    |shl_ln1320_fu_301_p2              |       shl|   0|  0|  17|           8|           8|
+    |shl_ln1332_fu_345_p2              |       shl|   0|  0|  17|           8|           8|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln1333_fu_280_p2              |       xor|   0|  0|   5|           4|           5|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 376|         226|         196|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                     | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                                   |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                       |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter3                       |   9|          2|    1|          2|
+    |ap_phi_mux_conv3_i12_i_i933_pn_phi_fu_152_p4  |  14|          3|    4|         12|
+    |ap_phi_reg_pp0_iter2_val_1_reg_158            |   9|          2|    8|         16|
+    |ap_phi_reg_pp0_iter3_val_1_reg_158            |   9|          2|    8|         16|
+    |filled_fu_76                                  |   9|          2|    4|          8|
+    |indvar_flatten_fu_88                          |   9|          2|   32|         64|
+    |j_fu_84                                       |   9|          2|   16|         32|
+    |ldata_blk_n                                   |   9|          2|    1|          2|
+    |localbuffer_fu_80                             |  14|          3|    8|         24|
+    |p_dstgx_data_blk_n                            |   9|          2|    1|          2|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |Total                                         | 118|         26|   85|        182|
+    +----------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------+----+----+-----+-----------+
+    |                Name                | FF | LUT| Bits| Const Bits|
+    +------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                           |   1|   0|    1|          0|
+    |ap_done_reg                         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1             |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2             |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3             |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4             |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg    |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg    |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_val_1_reg_158  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter2_val_1_reg_158  |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter3_val_1_reg_158  |   8|   0|    8|          0|
+    |bLast_reg_441                       |   1|   0|    1|          0|
+    |filled_1_reg_450                    |   4|   0|    4|          0|
+    |filled_fu_76                        |   4|   0|    4|          0|
+    |icmp_ln1301_reg_437                 |   1|   0|    1|          0|
+    |icmp_ln1315_reg_446                 |   1|   0|    1|          0|
+    |icmp_ln1324_reg_466                 |   1|   0|    1|          0|
+    |icmp_ln1324_reg_466_pp0_iter3_reg   |   1|   0|    1|          0|
+    |indvar_flatten_fu_88                |  32|   0|   32|          0|
+    |j_fu_84                             |  16|   0|   16|          0|
+    |localbuffer_fu_80                   |   8|   0|    8|          0|
+    |shl_ln1320_reg_470                  |   8|   0|    8|          0|
+    |sub_ln1332_1_reg_485                |   3|   0|    3|          0|
+    |sub_ln1332_reg_475                  |   5|   0|    5|          0|
+    |tmp_13_reg_480                      |   1|   0|    1|          0|
+    |val_1_reg_158                       |   8|   0|    8|          0|
+    |zext_ln1320_2_reg_461               |   4|   0|    5|          1|
+    |icmp_ln1301_reg_437                 |  64|  32|    1|          0|
+    +------------------------------------+----+----+-----+-----------+
+    |Total                               | 194|  32|  132|          1|
+    +------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+-----------------------------------------------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |                       Source Object                       |    C Type    |
++-----------------------------+-----+-----+------------+-----------------------------------------------------------+--------------+
+|ap_clk                       |   in|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|ap_rst                       |   in|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|ap_start                     |   in|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|ap_done                      |  out|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|ap_idle                      |  out|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|ap_ready                     |  out|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|p_dstgx_data_dout            |   in|    8|     ap_fifo|                                               p_dstgx_data|       pointer|
+|p_dstgx_data_num_data_valid  |   in|    3|     ap_fifo|                                               p_dstgx_data|       pointer|
+|p_dstgx_data_fifo_cap        |   in|    3|     ap_fifo|                                               p_dstgx_data|       pointer|
+|p_dstgx_data_empty_n         |   in|    1|     ap_fifo|                                               p_dstgx_data|       pointer|
+|p_dstgx_data_read            |  out|    1|     ap_fifo|                                               p_dstgx_data|       pointer|
+|ldata_din                    |  out|    8|     ap_fifo|                                                      ldata|       pointer|
+|ldata_num_data_valid         |   in|    3|     ap_fifo|                                                      ldata|       pointer|
+|ldata_fifo_cap               |   in|    3|     ap_fifo|                                                      ldata|       pointer|
+|ldata_full_n                 |   in|    1|     ap_fifo|                                                      ldata|       pointer|
+|ldata_write                  |  out|    1|     ap_fifo|                                                      ldata|       pointer|
+|bound                        |   in|   32|     ap_none|                                                      bound|        scalar|
+|empty                        |   in|   16|     ap_none|                                                      empty|        scalar|
+|sub                          |   in|   32|     ap_none|                                                        sub|        scalar|
+|last_blk_width_load          |   in|    4|     ap_none|                                        last_blk_width_load|        scalar|
+|cols_bound_per_npc_load      |   in|   32|     ap_none|                                    cols_bound_per_npc_load|        scalar|
+|localbuffer_out              |  out|    8|      ap_vld|                                            localbuffer_out|       pointer|
+|localbuffer_out_ap_vld       |  out|    1|      ap_vld|                                            localbuffer_out|       pointer|
+|filled_out                   |  out|    4|      ap_vld|                                                 filled_out|       pointer|
+|filled_out_ap_vld            |  out|    1|      ap_vld|                                                 filled_out|       pointer|
++-----------------------------+-----+-----+------------+-----------------------------------------------------------+--------------+
+

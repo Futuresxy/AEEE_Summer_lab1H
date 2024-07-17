@@ -1,0 +1,609 @@
+
+
+================================================================
+== Vitis HLS Report for 'AxiStream2Axi'
+================================================================
+* Date:           Mon Jul 15 19:04:58 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        sobel_resize_xf
+* Solution:       sol2 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+-----+------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
+    |   min   |   max   |    min   |    max    | min |  max |   Type  |
+    +---------+---------+----------+-----------+-----+------+---------+
+    |       12|     4107|  0.120 us|  41.070 us|   12|  4107|       no|
+    +---------+---------+----------+-----------+-----+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------+---------------------------------------+---------+---------+-----------+-----------+-----+------+---------+
+        |                                                 |                                       |  Latency (cycles) |   Latency (absolute)  |  Interval  | Pipeline|
+        |                     Instance                    |                 Module                |   min   |   max   |    min    |    max    | min |  max |   Type  |
+        +-------------------------------------------------+---------------------------------------+---------+---------+-----------+-----------+-----+------+---------+
+        |grp_AxiStream2Axi_Pipeline_MMIterOutLoop2_fu_67  |AxiStream2Axi_Pipeline_MMIterOutLoop2  |        4|     4099|  40.000 ns|  40.990 us|    4|  4099|       no|
+        +-------------------------------------------------+---------------------------------------+---------+---------+-----------+-----------+-----+------+---------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 9
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.63>
+ST_1 : Operation 10 [1/1] (3.63ns)   --->   "%p_read_7 = read i13 @_ssdm_op_Read.ap_auto.i13, i13 %p_read"   --->   Operation 10 'read' 'p_read_7' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 11 [1/1] (3.63ns)   --->   "%dout_read = read i64 @_ssdm_op_Read.ap_fifo.i64P0A, i64 %dout"   --->   Operation 11 'read' 'dout_read' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 4> <FIFO>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%gmem2_addr = getelementptr i8 %gmem2, i64 %dout_read" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1379]   --->   Operation 12 'getelementptr' 'gmem2_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln1379 = zext i13 %p_read_7" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1379]   --->   Operation 13 'zext' 'zext_ln1379' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (7.30ns)   --->   "%empty = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i8, i8 %gmem2_addr, i32 %zext_ln1379" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1379]   --->   Operation 14 'writereq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 3.26>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%empty_131 = wait i32 @_ssdm_op_Wait"   --->   Operation 15 'wait' 'empty_131' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [2/2] (3.26ns)   --->   "%call_ln0 = call void @AxiStream2Axi_Pipeline_MMIterOutLoop2, i13 %p_read_7, i8 %gmem2, i64 %dout_read, i8 %ldata"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 3.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln0 = call void @AxiStream2Axi_Pipeline_MMIterOutLoop2, i13 %p_read_7, i8 %gmem2, i64 %dout_read, i8 %ldata"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 18 [5/5] (7.30ns)   --->   "%empty_132 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem2_addr" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1386]   --->   Operation 18 'writeresp' 'empty_132' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 19 [4/5] (7.30ns)   --->   "%empty_132 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem2_addr" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1386]   --->   Operation 19 'writeresp' 'empty_132' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 20 [3/5] (7.30ns)   --->   "%empty_132 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem2_addr" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1386]   --->   Operation 20 'writeresp' 'empty_132' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 21 [2/5] (7.30ns)   --->   "%empty_132 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem2_addr" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1386]   --->   Operation 21 'writeresp' 'empty_132' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %dout, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %ldata, void @empty_7, i32 0, i32 0, void @empty_19, i32 0, i32 0, void @empty_19, void @empty_19, void @empty_19, i32 0, i32 0, i32 0, i32 0, void @empty_19, void @empty_19, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem2, void @empty_25, i32 0, i32 0, void @empty_19, i32 0, i32 4096, void @empty_2, void @empty_27, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19, i32 4294967295, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 25 [1/5] (7.30ns)   --->   "%empty_132 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem2_addr" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1386]   --->   Operation 25 'writeresp' 'empty_132' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 26 [1/1] (0.00ns)   --->   "%ret_ln1386 = ret" [/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1386]   --->   Operation 26 'ret' 'ret_ln1386' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ ldata]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ gmem2]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=4; pingpong=0; private_global=0; IO mode=m_axi:ce=0
+Port [ dout]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ p_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+p_read_7          (read         ) [ 0011100000]
+dout_read         (read         ) [ 0011100000]
+gmem2_addr        (getelementptr) [ 0001111111]
+zext_ln1379       (zext         ) [ 0000000000]
+empty             (writereq     ) [ 0000000000]
+empty_131         (wait         ) [ 0000000000]
+call_ln0          (call         ) [ 0000000000]
+specinterface_ln0 (specinterface) [ 0000000000]
+specinterface_ln0 (specinterface) [ 0000000000]
+specinterface_ln0 (specinterface) [ 0000000000]
+empty_132         (writeresp    ) [ 0000000000]
+ret_ln1386        (ret          ) [ 0000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="ldata">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ldata"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="gmem2">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="gmem2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="dout">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dout"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="p_read">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i13"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_fifo.i64P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_WriteReq.m_axi.p1i8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Wait"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="AxiStream2Axi_Pipeline_MMIterOutLoop2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_WriteResp.m_axi.p1i8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ScalarProp_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_19"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_25"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_27"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1004" name="p_read_7_read_fu_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="13" slack="0"/>
+<pin id="50" dir="0" index="1" bw="13" slack="0"/>
+<pin id="51" dir="1" index="2" bw="13" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="p_read_7/1 "/>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="dout_read_read_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="64" slack="0"/>
+<pin id="56" dir="0" index="1" bw="64" slack="0"/>
+<pin id="57" dir="1" index="2" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="dout_read/1 "/>
+</bind>
+</comp>
+
+<comp id="60" class="1004" name="grp_writeresp_fu_60">
+<pin_list>
+<pin id="61" dir="0" index="0" bw="1" slack="0"/>
+<pin id="62" dir="0" index="1" bw="8" slack="0"/>
+<pin id="63" dir="0" index="2" bw="13" slack="0"/>
+<pin id="64" dir="1" index="3" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="writereq(1155) writeresp(1158) " fcode="writeresp"/>
+<opset="empty/2 empty_132/5 "/>
+</bind>
+</comp>
+
+<comp id="67" class="1004" name="grp_AxiStream2Axi_Pipeline_MMIterOutLoop2_fu_67">
+<pin_list>
+<pin id="68" dir="0" index="0" bw="0" slack="0"/>
+<pin id="69" dir="0" index="1" bw="13" slack="2"/>
+<pin id="70" dir="0" index="2" bw="8" slack="0"/>
+<pin id="71" dir="0" index="3" bw="64" slack="2"/>
+<pin id="72" dir="0" index="4" bw="8" slack="0"/>
+<pin id="73" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/3 "/>
+</bind>
+</comp>
+
+<comp id="77" class="1004" name="gmem2_addr_fu_77">
+<pin_list>
+<pin id="78" dir="0" index="0" bw="8" slack="0"/>
+<pin id="79" dir="0" index="1" bw="64" slack="1"/>
+<pin id="80" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="gmem2_addr/2 "/>
+</bind>
+</comp>
+
+<comp id="83" class="1004" name="zext_ln1379_fu_83">
+<pin_list>
+<pin id="84" dir="0" index="0" bw="13" slack="1"/>
+<pin id="85" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="zext_ln1379/2 "/>
+</bind>
+</comp>
+
+<comp id="87" class="1005" name="p_read_7_reg_87">
+<pin_list>
+<pin id="88" dir="0" index="0" bw="13" slack="1"/>
+<pin id="89" dir="1" index="1" bw="13" slack="1"/>
+</pin_list>
+<bind>
+<opset="p_read_7 "/>
+</bind>
+</comp>
+
+<comp id="93" class="1005" name="dout_read_reg_93">
+<pin_list>
+<pin id="94" dir="0" index="0" bw="64" slack="1"/>
+<pin id="95" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="dout_read "/>
+</bind>
+</comp>
+
+<comp id="99" class="1005" name="gmem2_addr_reg_99">
+<pin_list>
+<pin id="100" dir="0" index="0" bw="8" slack="3"/>
+<pin id="101" dir="1" index="1" bw="8" slack="3"/>
+</pin_list>
+<bind>
+<opset="gmem2_addr "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="52"><net_src comp="8" pin="0"/><net_sink comp="48" pin=0"/></net>
+
+<net id="53"><net_src comp="6" pin="0"/><net_sink comp="48" pin=1"/></net>
+
+<net id="58"><net_src comp="10" pin="0"/><net_sink comp="54" pin=0"/></net>
+
+<net id="59"><net_src comp="4" pin="0"/><net_sink comp="54" pin=1"/></net>
+
+<net id="65"><net_src comp="12" pin="0"/><net_sink comp="60" pin=0"/></net>
+
+<net id="66"><net_src comp="18" pin="0"/><net_sink comp="60" pin=0"/></net>
+
+<net id="74"><net_src comp="16" pin="0"/><net_sink comp="67" pin=0"/></net>
+
+<net id="75"><net_src comp="2" pin="0"/><net_sink comp="67" pin=2"/></net>
+
+<net id="76"><net_src comp="0" pin="0"/><net_sink comp="67" pin=4"/></net>
+
+<net id="81"><net_src comp="2" pin="0"/><net_sink comp="77" pin=0"/></net>
+
+<net id="82"><net_src comp="77" pin="2"/><net_sink comp="60" pin=1"/></net>
+
+<net id="86"><net_src comp="83" pin="1"/><net_sink comp="60" pin=2"/></net>
+
+<net id="90"><net_src comp="48" pin="2"/><net_sink comp="87" pin=0"/></net>
+
+<net id="91"><net_src comp="87" pin="1"/><net_sink comp="83" pin=0"/></net>
+
+<net id="92"><net_src comp="87" pin="1"/><net_sink comp="67" pin=1"/></net>
+
+<net id="96"><net_src comp="54" pin="2"/><net_sink comp="93" pin=0"/></net>
+
+<net id="97"><net_src comp="93" pin="1"/><net_sink comp="77" pin=1"/></net>
+
+<net id="98"><net_src comp="93" pin="1"/><net_sink comp="67" pin=3"/></net>
+
+<net id="102"><net_src comp="77" pin="2"/><net_sink comp="99" pin=0"/></net>
+
+<net id="103"><net_src comp="99" pin="1"/><net_sink comp="60" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: gmem2 | {2 3 4 5 6 7 8 9 }
+ - Input state : 
+	Port: AxiStream2Axi : ldata | {3 4 }
+	Port: AxiStream2Axi : dout | {1 }
+	Port: AxiStream2Axi : p_read | {1 }
+  - Chain level:
+	State 1
+	State 2
+		empty : 1
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------------------------------------|---------|---------|
+| Operation|                 Functional Unit                 |    FF   |   LUT   |
+|----------|-------------------------------------------------|---------|---------|
+|   call   | grp_AxiStream2Axi_Pipeline_MMIterOutLoop2_fu_67 |    30   |    28   |
+|----------|-------------------------------------------------|---------|---------|
+|   read   |               p_read_7_read_fu_48               |    0    |    0    |
+|          |               dout_read_read_fu_54              |    0    |    0    |
+|----------|-------------------------------------------------|---------|---------|
+| writeresp|               grp_writeresp_fu_60               |    0    |    0    |
+|----------|-------------------------------------------------|---------|---------|
+|   zext   |                zext_ln1379_fu_83                |    0    |    0    |
+|----------|-------------------------------------------------|---------|---------|
+|   Total  |                                                 |    30   |    28   |
+|----------|-------------------------------------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-----------------+--------+
+|                 |   FF   |
++-----------------+--------+
+| dout_read_reg_93|   64   |
+|gmem2_addr_reg_99|    8   |
+| p_read_7_reg_87 |   13   |
++-----------------+--------+
+|      Total      |   85   |
++-----------------+--------+
+
+* Multiplexer (MUX) list: 
+|---------------------|------|------|------|--------||---------||---------|
+|         Comp        |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|---------------------|------|------|------|--------||---------||---------|
+| grp_writeresp_fu_60 |  p0  |   2  |   1  |    2   |
+| grp_writeresp_fu_60 |  p1  |   2  |   8  |   16   ||    9    |
+|---------------------|------|------|------|--------||---------||---------|
+|        Total        |      |      |      |   18   ||  3.176  ||    9    |
+|---------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    -   |   30   |   28   |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    3   |    -   |    9   |
+|  Register |    -   |   85   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    3   |   115  |   37   |
++-----------+--------+--------+--------+

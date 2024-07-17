@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Jul 15 19:05:44 2024
+# Process ID: 18158
+# Current directory: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/sobel_resize_accel/xsim_script.tcl}
+# Log file: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/sim/verilog/xsim.log
+# Journal file: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/sim/verilog/xsim.jou
+# Running On: sxy-Lenovo-Legion-Y7000-2020, OS: Linux, CPU Frequency: 4292.447 MHz, CPU Physical cores: 4, Host memory: 16615 MB
+#-----------------------------------------------------------
+source xsim.dir/sobel_resize_accel/xsim_script.tcl
+# xsim {sobel_resize_accel} -autoloadwcfg -tclbatch {sobel_resize_accel.tcl}
+Time resolution is 1 ps
+source sobel_resize_accel.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "201855000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 201915 ns : File "/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/sim/verilog/sobel_resize_accel.autotb.v" Line 753
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Jul 15 19:05:49 2024...

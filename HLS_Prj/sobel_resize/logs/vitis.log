@@ -1,0 +1,16 @@
+22:54:35 INFO  : updated workspace path: 
+22:54:36 INFO  : updated workspace path: 
+22:54:36 INFO  : bash, -c, source /home/sxy/new-vol/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /home/sxy/new-vol/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py -st  /home/sxy/new-vol/Vitis/2023.2/data/embeddedsw && deactivate
+22:54:37 INFO  : Successfully created repository data at /tmp/rigel_lopper_sxy7396159434765740436
+22:54:37 INFO  : bash, -c, source /home/sxy/new-vol/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /home/sxy/new-vol/Vitis/2023.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_sxy13437846704197569745 -r /tmp/rigel_lopper_sxy7396159434765740436/.repo.yaml && deactivate
+22:54:37 INFO  : Embedded Template List generated successfully
+22:54:37 INFO  : bash, -c, source /home/sxy/new-vol/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /home/sxy/new-vol/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py -st  /home/sxy/new-vol/Vitis/2023.2/data/embeddedsw && deactivate
+22:54:38 INFO  : Successfully created repository data at /tmp/rigel_lopper_sxy14058795528060413562
+22:54:38 INFO  : bash, -c, source /home/sxy/new-vol/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /home/sxy/new-vol/Vitis/2023.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_sxy14128531093112033873 -r /tmp/rigel_lopper_sxy14058795528060413562/.repo.yaml && deactivate
+22:54:38 INFO  : Embedded Template List generated successfully
+22:54:38 INFO  : bash, -c, source /home/sxy/new-vol/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /home/sxy/new-vol/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py -st  /home/sxy/new-vol/Vitis/2023.2/data/embeddedsw && deactivate
+22:54:39 INFO  : Successfully created repository data at /tmp/rigel_lopper_sxy6378838446289507686
+22:54:39 INFO  : bash, -c, source /home/sxy/new-vol/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /home/sxy/new-vol/Vitis/2023.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_sxy9079228239222704862 -r /tmp/rigel_lopper_sxy6378838446289507686/.repo.yaml && deactivate
+22:54:39 INFO  : Embedded Template List generated successfully
+22:54:44 INFO  : Terminating Vitis C++ Server
+22:54:44 INFO  : Vitis C++ Server terminated

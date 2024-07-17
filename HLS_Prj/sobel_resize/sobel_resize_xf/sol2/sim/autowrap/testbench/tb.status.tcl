@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/./sim/autowrap/testbench/xf_sobel_resize_accel.cpp_pre.cpp.tb.cpp

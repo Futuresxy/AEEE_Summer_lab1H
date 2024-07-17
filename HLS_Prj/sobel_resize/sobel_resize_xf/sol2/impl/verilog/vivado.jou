@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Jul 15 19:06:16 2024
+# Process ID: 18368
+# Current directory: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/impl/verilog
+# Command line: vivado -mode batch -source run_vivadosyn.tcl
+# Log file: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/impl/verilog/vivado.log
+# Journal file: /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/impl/verilog/vivado.jou
+# Running On: sxy-Lenovo-Legion-Y7000-2020, OS: Linux, CPU Frequency: 4259.194 MHz, CPU Physical cores: 4, Host memory: 16615 MB
+#-----------------------------------------------------------
+source run_vivadosyn.tcl

@@ -1,0 +1,172 @@
+
+
+================================================================
+== Vitis HLS Report for 'AxiStream2MatStream_2_s'
+================================================================
+* Date:           Mon Jul 15 19:04:59 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        sobel_resize_xf
+* Solution:       sol2 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.200 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max   | min |  max  |   Type  |
+    +---------+---------+-----------+----------+-----+-------+---------+
+    |        9|    16392|  90.000 ns|  0.164 ms|    9|  16392|       no|
+    +---------+---------+-----------+----------+-----+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------------+------------------------------------------------+---------+---------+-----------+----------+-----+-------+---------+
+        |                                                          |                                                |  Latency (cycles) |  Latency (absolute)  |   Interval  | Pipeline|
+        |                         Instance                         |                     Module                     |   min   |   max   |    min    |    max   | min |  max  |   Type  |
+        +----------------------------------------------------------+------------------------------------------------+---------+---------+-----------+----------+-----+-------+---------+
+        |grp_AxiStream2MatStream_2_Pipeline_MMIterInLoopRow_fu_58  |AxiStream2MatStream_2_Pipeline_MMIterInLoopRow  |        6|    16389|  60.000 ns|  0.164 ms|    6|  16389|       no|
+        +----------------------------------------------------------+------------------------------------------------+---------+---------+-----------+----------+-----+-------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     54|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    3|     639|   1190|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     70|    -|
+|Register         |        -|    -|     146|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    3|     785|   1314|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    1|      ~0|      2|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------------+------------------------------------------------+---------+----+-----+------+-----+
+    |                         Instance                         |                     Module                     | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +----------------------------------------------------------+------------------------------------------------+---------+----+-----+------+-----+
+    |grp_AxiStream2MatStream_2_Pipeline_MMIterInLoopRow_fu_58  |AxiStream2MatStream_2_Pipeline_MMIterInLoopRow  |        0|   0|  474|  1140|    0|
+    |mul_32s_32s_32_2_1_U36                                    |mul_32s_32s_32_2_1                              |        0|   3|  165|    50|    0|
+    +----------------------------------------------------------+------------------------------------------------+---------+----+-----+------+-----+
+    |Total                                                     |                                                |        0|   3|  639|  1190|    0|
+    +----------------------------------------------------------+------------------------------------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |sub_fu_85_p2     |         +|   0|  0|  39|          32|           2|
+    |sub3_fu_91_p2    |         -|   0|  0|  13|           4|           5|
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|  54|          37|           8|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                 |  25|          5|    1|          5|
+    |ap_done                   |   9|          2|    1|          2|
+    |cols_bound_per_npc_blk_n  |   9|          2|    1|          2|
+    |in_mat_data_write         |   9|          2|    1|          2|
+    |ldata_read                |   9|          2|    1|          2|
+    |rows_blk_n                |   9|          2|    1|          2|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     |  70|         15|    6|         15|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+    |                                  Name                                 | FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                              |   4|   0|    4|          0|
+    |ap_done_reg                                                            |   1|   0|    1|          0|
+    |bound_reg_122                                                          |  32|   0|   32|          0|
+    |cols_bound_per_npc_read_reg_98                                         |  32|   0|   32|          0|
+    |empty_reg_117                                                          |   3|   0|    3|          0|
+    |grp_AxiStream2MatStream_2_Pipeline_MMIterInLoopRow_fu_58_ap_start_reg  |   1|   0|    1|          0|
+    |last_blk_width_read_reg_110                                            |   4|   0|    4|          0|
+    |rows_read_reg_105                                                      |  32|   0|   32|          0|
+    |sub3_reg_132                                                           |   5|   0|    5|          0|
+    |sub_reg_127                                                            |  32|   0|   32|          0|
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                  | 146|   0|  146|          0|
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------------+-----+-----+------------+------------------------+--------------+
+|             RTL Ports             | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++-----------------------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                             |   in|    1|  ap_ctrl_hs|  AxiStream2MatStream<2>|  return value|
+|ap_rst                             |   in|    1|  ap_ctrl_hs|  AxiStream2MatStream<2>|  return value|
+|ap_start                           |   in|    1|  ap_ctrl_hs|  AxiStream2MatStream<2>|  return value|
+|ap_done                            |  out|    1|  ap_ctrl_hs|  AxiStream2MatStream<2>|  return value|
+|ap_continue                        |   in|    1|  ap_ctrl_hs|  AxiStream2MatStream<2>|  return value|
+|ap_idle                            |  out|    1|  ap_ctrl_hs|  AxiStream2MatStream<2>|  return value|
+|ap_ready                           |  out|    1|  ap_ctrl_hs|  AxiStream2MatStream<2>|  return value|
+|ldata_dout                         |   in|    8|     ap_fifo|                   ldata|       pointer|
+|ldata_num_data_valid               |   in|    3|     ap_fifo|                   ldata|       pointer|
+|ldata_fifo_cap                     |   in|    3|     ap_fifo|                   ldata|       pointer|
+|ldata_empty_n                      |   in|    1|     ap_fifo|                   ldata|       pointer|
+|ldata_read                         |  out|    1|     ap_fifo|                   ldata|       pointer|
+|in_mat_data_din                    |  out|    8|     ap_fifo|             in_mat_data|       pointer|
+|in_mat_data_num_data_valid         |   in|    3|     ap_fifo|             in_mat_data|       pointer|
+|in_mat_data_fifo_cap               |   in|    3|     ap_fifo|             in_mat_data|       pointer|
+|in_mat_data_full_n                 |   in|    1|     ap_fifo|             in_mat_data|       pointer|
+|in_mat_data_write                  |  out|    1|     ap_fifo|             in_mat_data|       pointer|
+|rows_dout                          |   in|   32|     ap_fifo|                    rows|       pointer|
+|rows_num_data_valid                |   in|    3|     ap_fifo|                    rows|       pointer|
+|rows_fifo_cap                      |   in|    3|     ap_fifo|                    rows|       pointer|
+|rows_empty_n                       |   in|    1|     ap_fifo|                    rows|       pointer|
+|rows_read                          |  out|    1|     ap_fifo|                    rows|       pointer|
+|cols_bound_per_npc_dout            |   in|   32|     ap_fifo|      cols_bound_per_npc|       pointer|
+|cols_bound_per_npc_num_data_valid  |   in|    3|     ap_fifo|      cols_bound_per_npc|       pointer|
+|cols_bound_per_npc_fifo_cap        |   in|    3|     ap_fifo|      cols_bound_per_npc|       pointer|
+|cols_bound_per_npc_empty_n         |   in|    1|     ap_fifo|      cols_bound_per_npc|       pointer|
+|cols_bound_per_npc_read            |  out|    1|     ap_fifo|      cols_bound_per_npc|       pointer|
+|last_blk_width                     |   in|    4|     ap_none|          last_blk_width|       pointer|
++-----------------------------------+-----+-----+------------+------------------------+--------------+
+

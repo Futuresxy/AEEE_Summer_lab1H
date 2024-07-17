@@ -1,0 +1,8 @@
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel.cpp:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/xf_sobel_resize_accel_config.h:17:
+In file included from /home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/config/xf_config_params.h:23:
+In file included from /home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:23:
+/home/sxy/Desktop/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:759:47: warning: 'factor' in '#pragma HLS array_reshape' is ignored [-Wextra-tokens]
+#pragma HLS ARRAY_RESHAPE variable=val factor=RESHAPE_FACTOR dim=1
+                                              ^
+1 warning generated.

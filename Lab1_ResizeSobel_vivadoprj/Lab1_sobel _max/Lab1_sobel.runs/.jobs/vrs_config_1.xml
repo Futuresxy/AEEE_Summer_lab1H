@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="sobel_auto_pc_0_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_auto_pc_1_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_auto_us_0_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_auto_us_1_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_auto_us_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_auto_us_2_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_auto_us_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_auto_us_3_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_auto_us_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_auto_us_4_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_auto_us_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="sobel_auto_us_3_synth_1"/>
+	</Run>
+	<Run Id="sobel_axi_dma_0_0_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_axi_dma_1_0_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_axi_dma_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_processing_system7_0_1_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_processing_system7_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_rst_ps7_0_50M_2_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_rst_ps7_0_50M_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_sobel_0_0_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_sobel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_sobel_accel_0_4_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_sobel_accel_0_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_xbar_2_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_xbar_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sobel_xbar_3_synth_1" LaunchDir="/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel/Lab1_sobel.runs/sobel_xbar_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.ignorePathLengthChecks" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

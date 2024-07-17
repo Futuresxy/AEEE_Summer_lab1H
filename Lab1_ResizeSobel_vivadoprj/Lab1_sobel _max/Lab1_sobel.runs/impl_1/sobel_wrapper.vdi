@@ -1,0 +1,999 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Jul 14 17:10:19 2024
+# Process ID: 17994
+# Current directory: /home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1
+# Command line: vivado -log sobel_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sobel_wrapper.tcl -notrace
+# Log file: /home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1/sobel_wrapper.vdi
+# Journal file: /home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1/vivado.jou
+# Running On: sxy-Lenovo-Legion-Y7000-2020, OS: Linux, CPU Frequency: 4280.323 MHz, CPU Physical cores: 4, Host memory: 16615 MB
+#-----------------------------------------------------------
+source sobel_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sxy/Desktop/HLS_Workspace/hls_ip/hand_sobel'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/vision_lib/kernel/sobel_xf/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/sxy/new-vol/Vivado/2023.2/data/ip'.
+Command: link_design -top sobel_wrapper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_processing_system7_0_1/sobel_processing_system7_0_1.dcp' for cell 'sobel_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_rst_ps7_0_50M_2/sobel_rst_ps7_0_50M_2.dcp' for cell 'sobel_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_sobel_resize_accel_0_0/sobel_sobel_resize_accel_0_0.dcp' for cell 'sobel_i/sobel_resize_accel_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_xbar_3/sobel_xbar_3.dcp' for cell 'sobel_i/axi_mem_intercon/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_pc_1/sobel_auto_pc_1.dcp' for cell 'sobel_i/axi_mem_intercon/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0.dcp' for cell 'sobel_i/axi_mem_intercon/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1.dcp' for cell 'sobel_i/axi_mem_intercon/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2.dcp' for cell 'sobel_i/axi_mem_intercon/s02_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_pc_0/sobel_auto_pc_0.dcp' for cell 'sobel_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1713.340 ; gain = 0.000 ; free physical = 5021 ; free virtual = 13209
+INFO: [Netlist 29-17] Analyzing 690 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_processing_system7_0_1/sobel_processing_system7_0_1.xdc] for cell 'sobel_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_processing_system7_0_1/sobel_processing_system7_0_1.xdc] for cell 'sobel_i/processing_system7_0/inst'
+Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_rst_ps7_0_50M_2/sobel_rst_ps7_0_50M_2_board.xdc] for cell 'sobel_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_rst_ps7_0_50M_2/sobel_rst_ps7_0_50M_2_board.xdc] for cell 'sobel_i/rst_ps7_0_50M/U0'
+Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_rst_ps7_0_50M_2/sobel_rst_ps7_0_50M_2.xdc] for cell 'sobel_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_rst_ps7_0_50M_2/sobel_rst_ps7_0_50M_2.xdc] for cell 'sobel_i/rst_ps7_0_50M/U0'
+Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc] for cell 'sobel_i/axi_mem_intercon/s00_couplers/auto_us/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc:54]
+Finished Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_0/sobel_auto_us_0_clocks.xdc] for cell 'sobel_i/axi_mem_intercon/s00_couplers/auto_us/inst'
+Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc] for cell 'sobel_i/axi_mem_intercon/s01_couplers/auto_us/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc:54]
+Finished Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_1/sobel_auto_us_1_clocks.xdc] for cell 'sobel_i/axi_mem_intercon/s01_couplers/auto_us/inst'
+Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc] for cell 'sobel_i/axi_mem_intercon/s02_couplers/auto_us/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc:54]
+Finished Parsing XDC File [/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.gen/sources_1/bd/sobel/ip/sobel_auto_us_2/sobel_auto_us_2_clocks.xdc] for cell 'sobel_i/axi_mem_intercon/s02_couplers/auto_us/inst'
+INFO: [Project 1-1714] 3 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 45 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2107.910 ; gain = 0.000 ; free physical = 4899 ; free virtual = 13087
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+23 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2107.910 ; gain = 779.602 ; free physical = 4899 ; free virtual = 13087
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.97 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2107.910 ; gain = 0.000 ; free physical = 4863 ; free virtual = 13050
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1427ddee6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2529.320 ; gain = 421.410 ; free physical = 4441 ; free virtual = 12629
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1427ddee6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2837.125 ; gain = 0.000 ; free physical = 4138 ; free virtual = 12326
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1427ddee6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2837.125 ; gain = 0.000 ; free physical = 4138 ; free virtual = 12326
+Phase 1 Initialization | Checksum: 1427ddee6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2837.125 ; gain = 0.000 ; free physical = 4138 ; free virtual = 12326
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1427ddee6
+
+Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2837.125 ; gain = 0.000 ; free physical = 4137 ; free virtual = 12326
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1427ddee6
+
+Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2837.125 ; gain = 0.000 ; free physical = 4133 ; free virtual = 12321
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1427ddee6
+
+Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2837.125 ; gain = 0.000 ; free physical = 4133 ; free virtual = 12321
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 15 inverters resulting in an inversion of 164 pins
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 3 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1e3a8c6ff
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2837.125 ; gain = 0.000 ; free physical = 4133 ; free virtual = 12321
+Retarget | Checksum: 1e3a8c6ff
+INFO: [Opt 31-389] Phase Retarget created 24 cells and removed 73 cells
+INFO: [Opt 31-1021] In phase Retarget, 27 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 6 inverter(s) to 16 load pin(s).
+Phase 4 Constant propagation | Checksum: 23ff1b261
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.77 . Memory (MB): peak = 2837.125 ; gain = 0.000 ; free physical = 4133 ; free virtual = 12321
+Constant propagation | Checksum: 23ff1b261
+INFO: [Opt 31-389] Phase Constant propagation created 409 cells and removed 1051 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 27 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 21e753326
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2837.125 ; gain = 0.000 ; free physical = 4132 ; free virtual = 12321
+Sweep | Checksum: 21e753326
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 511 cells
+INFO: [Opt 31-1021] In phase Sweep, 96 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 21e753326
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2869.141 ; gain = 32.016 ; free physical = 4132 ; free virtual = 12321
+BUFG optimization | Checksum: 21e753326
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/fifo_burst/U_fifo_srl/mem_reg[14][0]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][0]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][10]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][11]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][12]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][13]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][14]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][15]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][16]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][17]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][18]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][19]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][1]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][20]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][21]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][22]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][23]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][24]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][25]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][26]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][27]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][28]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][29]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][2]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][30]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][31]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][32]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][33]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][34]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][35]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][36]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][37]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][38]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][39]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][3]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][40]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][41]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][42]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][43]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][44]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][45]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][46]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][47]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][48]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][49]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][4]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][50]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][51]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][52]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][53]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][54]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][55]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][56]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][57]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][58]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][59]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][5]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][60]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][61]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][62]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][63]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][6]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][7]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][8]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out1_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][9]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][0]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][10]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][11]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][12]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][13]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][14]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][15]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][16]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][17]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][18]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][19]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][1]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][20]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][21]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][22]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][23]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][24]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][25]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][26]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][27]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][28]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][29]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][2]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][30]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][31]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][32]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][33]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][34]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][35]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][36]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][37]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][38]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][39]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][3]_srl6 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from sobel_i/sobel_resize_accel_0/inst/img_out2_c_U/U_sobel_resize_accel_fifo_w64_d6_S_ShiftReg/SRL_SIG_reg[5][40]_srl6 due to none static srl address bits
+INFO: [Common 17-14] Message 'Opt 31-1131' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 21e753326
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2869.141 ; gain = 32.016 ; free physical = 4132 ; free virtual = 12321
+Shift Register Optimization | Checksum: 21e753326
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1775f0a98
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2869.141 ; gain = 32.016 ; free physical = 4132 ; free virtual = 12321
+Post Processing Netlist | Checksum: 1775f0a98
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 33 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 18bad9601
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2869.141 ; gain = 32.016 ; free physical = 4132 ; free virtual = 12321
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2869.141 ; gain = 0.000 ; free physical = 4132 ; free virtual = 12321
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 18bad9601
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2869.141 ; gain = 32.016 ; free physical = 4132 ; free virtual = 12321
+Phase 9 Finalization | Checksum: 18bad9601
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2869.141 ; gain = 32.016 ; free physical = 4132 ; free virtual = 12321
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              24  |              73  |                                             27  |
+|  Constant propagation         |             409  |            1051  |                                             27  |
+|  Sweep                        |               0  |             511  |                                             96  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             33  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 18bad9601
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2869.141 ; gain = 32.016 ; free physical = 4132 ; free virtual = 12321
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2869.141 ; gain = 0.000 ; free physical = 4132 ; free virtual = 12321
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 9 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 1 newly gated: 1 Total Ports: 18
+Ending PowerOpt Patch Enables Task | Checksum: 24489f5b6
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3965 ; free virtual = 12155
+Ending Power Optimization Task | Checksum: 24489f5b6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3157.031 ; gain = 287.891 ; free physical = 3965 ; free virtual = 12155
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 24489f5b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3965 ; free virtual = 12155
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3965 ; free virtual = 12155
+Ending Netlist Obfuscation Task | Checksum: 1edab5db4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3965 ; free virtual = 12155
+INFO: [Common 17-83] Releasing license: Implementation
+52 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 3157.031 ; gain = 1049.121 ; free physical = 3965 ; free virtual = 12155
+INFO: [runtcl-4] Executing : report_drc -file sobel_wrapper_drc_opted.rpt -pb sobel_wrapper_drc_opted.pb -rpx sobel_wrapper_drc_opted.rpx
+Command: report_drc -file sobel_wrapper_drc_opted.rpt -pb sobel_wrapper_drc_opted.pb -rpx sobel_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1/sobel_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3953 ; free virtual = 12145
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3953 ; free virtual = 12145
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3951 ; free virtual = 12145
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3950 ; free virtual = 12144
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3950 ; free virtual = 12144
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3949 ; free virtual = 12144
+Write Physdb Complete: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3949 ; free virtual = 12144
+INFO: [Common 17-1381] The checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1/sobel_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3932 ; free virtual = 12129
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1717abf8d
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3932 ; free virtual = 12129
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3932 ; free virtual = 12129
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ceae2c09
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3931 ; free virtual = 12127
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 18ed8c4fb
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3931 ; free virtual = 12127
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 18ed8c4fb
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3931 ; free virtual = 12127
+Phase 1 Placer Initialization | Checksum: 18ed8c4fb
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3931 ; free virtual = 12128
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1a13e46fd
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3934 ; free virtual = 12131
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1596ef287
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3942 ; free virtual = 12139
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1596ef287
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3942 ; free virtual = 12139
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1d2d0ec9a
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:08 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3935 ; free virtual = 12132
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 443 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 189 nets or LUTs. Breaked 0 LUT, combined 189 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3935 ; free virtual = 12132
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            189  |                   189  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            189  |                   189  |           0  |           4  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1ad9dab20
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:10 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3934 ; free virtual = 12131
+Phase 2.4 Global Placement Core | Checksum: 1680a7328
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:10 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3934 ; free virtual = 12131
+Phase 2 Global Placement | Checksum: 1680a7328
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:10 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3934 ; free virtual = 12131
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 206c566ce
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:10 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3934 ; free virtual = 12131
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1fde0c3bd
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:11 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3934 ; free virtual = 12131
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 257c8f1ed
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:11 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3934 ; free virtual = 12131
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1fbbd5bb6
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:12 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3934 ; free virtual = 12131
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 24f57ae4a
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:14 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3933 ; free virtual = 12130
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1adf5bf9c
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:14 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3932 ; free virtual = 12129
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 15366b25e
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:14 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3932 ; free virtual = 12129
+Phase 3 Detail Placement | Checksum: 15366b25e
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:15 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3932 ; free virtual = 12129
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 14eae6190
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=5.999 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 16f151a6e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.46 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+INFO: [Place 46-33] Processed net sobel_i/sobel_resize_accel_0/inst/gmem3_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 16f151a6e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.75 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+Phase 4.1.1.1 BUFG Insertion | Checksum: 14eae6190
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:17 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=5.999. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 125cc1d92
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:17 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:17 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+Phase 4.1 Post Commit Optimization | Checksum: 125cc1d92
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:17 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 125cc1d92
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:18 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                4x4|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 125cc1d92
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:18 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+Phase 4.3 Placer Reporting | Checksum: 125cc1d92
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:18 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:18 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: c502b976
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:18 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+Ending Placer Task | Checksum: 921b182b
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:18 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+88 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:18 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3928 ; free virtual = 12125
+INFO: [runtcl-4] Executing : report_io -file sobel_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3926 ; free virtual = 12123
+INFO: [runtcl-4] Executing : report_utilization -file sobel_wrapper_utilization_placed.rpt -pb sobel_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file sobel_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3933 ; free virtual = 12130
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3926 ; free virtual = 12129
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.58 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3899 ; free virtual = 12119
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3899 ; free virtual = 12119
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3899 ; free virtual = 12118
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3897 ; free virtual = 12119
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3896 ; free virtual = 12118
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.63 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3896 ; free virtual = 12118
+INFO: [Common 17-1381] The checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1/sobel_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:01 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3915 ; free virtual = 12120
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+97 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3910 ; free virtual = 12121
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.57 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3892 ; free virtual = 12120
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3892 ; free virtual = 12120
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3892 ; free virtual = 12120
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3891 ; free virtual = 12120
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3889 ; free virtual = 12119
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.64 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3889 ; free virtual = 12120
+INFO: [Common 17-1381] The checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1/sobel_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 399ab67f ConstDB: 0 ShapeSum: 588061ac RouteDB: 0
+Post Restoration Checksum: NetGraph: 97f2a0a8 | NumContArr: 2e4267f7 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 24b86fdd9
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3809 ; free virtual = 12022
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 24b86fdd9
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3809 ; free virtual = 12022
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 24b86fdd9
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3809 ; free virtual = 12022
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 2ed115ee3
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3788 ; free virtual = 12001
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.396  | TNS=0.000  | WHS=-0.192 | THS=-203.743|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 15154
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 15154
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 2f73f03e1
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 2f73f03e1
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 2a58904eb
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:20 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+Phase 3 Initial Routing | Checksum: 2a58904eb
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:20 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 736
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.116  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 268958f0e
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:22 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.116  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2afddb3a2
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:22 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.116  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 2086389b5
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:22 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+Phase 4 Rip-up And Reroute | Checksum: 2086389b5
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:22 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 2086389b5
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:22 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2086389b5
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:22 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+Phase 5 Delay and Skew Optimization | Checksum: 2086389b5
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:22 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 2bf92116d
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.130  | TNS=0.000  | WHS=0.024  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2b46f2e35
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+Phase 6 Post Hold Fix | Checksum: 2b46f2e35
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.46029 %
+  Global Horizontal Routing Utilization  = 3.11063 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 2b46f2e35
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 2b46f2e35
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11995
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 2a684c3b3
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:24 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11994
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.130  | TNS=0.000  | WHS=0.024  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 2a684c3b3
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:24 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11994
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 11 Post-Route Event Processing
+Phase 11 Post-Route Event Processing | Checksum: 1fda41ad5
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:24 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11994
+Ending Routing Task | Checksum: 1fda41ad5
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:24 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11994
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+113 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:25 . Memory (MB): peak = 3157.031 ; gain = 0.000 ; free physical = 3781 ; free virtual = 11994
+INFO: [runtcl-4] Executing : report_drc -file sobel_wrapper_drc_routed.rpt -pb sobel_wrapper_drc_routed.pb -rpx sobel_wrapper_drc_routed.rpx
+Command: report_drc -file sobel_wrapper_drc_routed.rpt -pb sobel_wrapper_drc_routed.pb -rpx sobel_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1/sobel_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file sobel_wrapper_methodology_drc_routed.rpt -pb sobel_wrapper_methodology_drc_routed.pb -rpx sobel_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file sobel_wrapper_methodology_drc_routed.rpt -pb sobel_wrapper_methodology_drc_routed.pb -rpx sobel_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1/sobel_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file sobel_wrapper_power_routed.rpt -pb sobel_wrapper_power_summary_routed.pb -rpx sobel_wrapper_power_routed.rpx
+Command: report_power -file sobel_wrapper_power_routed.rpt -pb sobel_wrapper_power_summary_routed.pb -rpx sobel_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+123 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file sobel_wrapper_route_status.rpt -pb sobel_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file sobel_wrapper_timing_summary_routed.rpt -pb sobel_wrapper_timing_summary_routed.pb -rpx sobel_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file sobel_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file sobel_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file sobel_wrapper_bus_skew_routed.rpt -pb sobel_wrapper_bus_skew_routed.pb -rpx sobel_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3241.352 ; gain = 0.000 ; free physical = 3705 ; free virtual = 11936
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.57 . Memory (MB): peak = 3241.352 ; gain = 0.000 ; free physical = 3696 ; free virtual = 11943
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3241.352 ; gain = 0.000 ; free physical = 3696 ; free virtual = 11943
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3241.352 ; gain = 0.000 ; free physical = 3694 ; free virtual = 11943
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3241.352 ; gain = 0.000 ; free physical = 3692 ; free virtual = 11944
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3241.352 ; gain = 0.000 ; free physical = 3691 ; free virtual = 11943
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.72 . Memory (MB): peak = 3241.352 ; gain = 0.000 ; free physical = 3691 ; free virtual = 11944
+INFO: [Common 17-1381] The checkpoint '/home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1/sobel_wrapper_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 14 17:11:47 2024...
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Jul 14 17:11:56 2024
+# Process ID: 27558
+# Current directory: /home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1
+# Command line: vivado -log sobel_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sobel_wrapper.tcl -notrace
+# Log file: /home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1/sobel_wrapper.vdi
+# Journal file: /home/sxy/Desktop/vivado_workspace/lab1_sobel/Lab1_sobel _max/Lab1_sobel.runs/impl_1/vivado.jou
+# Running On: sxy-Lenovo-Legion-Y7000-2020, OS: Linux, CPU Frequency: 4294.966 MHz, CPU Physical cores: 4, Host memory: 16615 MB
+#-----------------------------------------------------------
+source sobel_wrapper.tcl -notrace
+Command: open_checkpoint sobel_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1328.281 ; gain = 0.000 ; free physical = 5308 ; free virtual = 13545
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1649.570 ; gain = 0.000 ; free physical = 4986 ; free virtual = 13224
+INFO: [Netlist 29-17] Analyzing 684 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1748.195 ; gain = 6.000 ; free physical = 4886 ; free virtual = 13124
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2349.703 ; gain = 0.000 ; free physical = 4377 ; free virtual = 12615
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2349.703 ; gain = 0.000 ; free physical = 4375 ; free virtual = 12613
+Read PlaceDB: Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:00.5 . Memory (MB): peak = 2349.703 ; gain = 0.000 ; free physical = 4363 ; free virtual = 12601
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2349.703 ; gain = 0.000 ; free physical = 4363 ; free virtual = 12601
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2352.703 ; gain = 3.000 ; free physical = 4360 ; free virtual = 12598
+Read Physdb Files: Time (s): cpu = 00:00:00.71 ; elapsed = 00:00:00.71 . Memory (MB): peak = 2352.703 ; gain = 3.000 ; free physical = 4360 ; free virtual = 12598
+Restored from archive | CPU: 0.740000 secs | Memory: 20.520012 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2352.703 ; gain = 12.906 ; free physical = 4360 ; free virtual = 12598
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2352.703 ; gain = 0.000 ; free physical = 4359 ; free virtual = 12598
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  SRLC32E => SRL16E: 6 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2023.2 (64-bit) build 4029153
+open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2360.703 ; gain = 1032.422 ; free physical = 4359 ; free virtual = 12598
+Command: write_bitstream -force sobel_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/sxy/new-vol/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/mac_muladd_12ns_10s_22s_23_4_1_U82/sobel_resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_1_U/p_reg_reg input sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/mac_muladd_12ns_10s_22s_23_4_1_U82/sobel_resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/mac_muladd_12ns_9s_21s_22_4_1_U81/sobel_resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_0_U/p_reg_reg input sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/mac_muladd_12ns_9s_21s_22_4_1_U81/sobel_resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0/mul_32s_32s_32_2_1_U36/tmp_product__0 output sobel_i/sobel_resize_accel_0/inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0/mul_32s_32s_32_2_1_U36/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/mul_12ns_12ns_24_1_1_U79/tmp_product output sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/mul_12ns_12ns_24_1_1_U79/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_scaleCompute_17_42_20_48_16_1_s_fu_203/mul_48ns_42s_74_5_0_U75/tmp_product output sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_scaleCompute_17_42_20_48_16_1_s_fu_203/mul_48ns_42s_74_5_0_U75/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_scaleCompute_17_42_20_48_16_1_s_fu_203/mul_48ns_42s_74_5_0_U75/tmp_product__0 output sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_scaleCompute_17_42_20_48_16_1_s_fu_203/mul_48ns_42s_74_5_0_U75/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0/mul_32s_32s_32_2_1_U36/buff0_reg multiplier stage sobel_i/sobel_resize_accel_0/inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0/mul_32s_32s_32_2_1_U36/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0/mul_32s_32s_32_2_1_U36/tmp_product multiplier stage sobel_i/sobel_resize_accel_0/inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0/mul_32s_32s_32_2_1_U36/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0/mul_32s_32s_32_2_1_U36/tmp_product__0 multiplier stage sobel_i/sobel_resize_accel_0/inst/Array2xfMat_8_0_128_128_1_2_U0/grp_Axi2Mat_fu_84/AxiStream2Mat_U0/AxiStream2MatStream_2_U0/mul_32s_32s_32_2_1_U36/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/P2_reg_1462_reg multiplier stage sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/P2_reg_1462_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/mul_12ns_12ns_24_1_1_U79/tmp_product multiplier stage sobel_i/sobel_resize_accel_0/inst/resize_1_0_128_128_64_64_1_false_2_2_2_U0/grp_resizeNNBilinear_0_128_128_1_false_2_2_64_64_1_2_s_fu_84/grp_resizeNNBilinear_Pipeline_VITIS_LOOP_411_5_fu_228/mul_12ns_12ns_24_1_1_U79/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0/bound_reg_169_reg multiplier stage sobel_i/sobel_resize_accel_0/inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0/bound_reg_169_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/addrbound_U0/mul_13s_13s_13_3_1_U200/buff0_reg multiplier stage sobel_i/sobel_resize_accel_0/inst/xfMat2Array_8_0_64_64_1_2_1_1_U0/grp_Mat2Axi_fu_62/addrbound_U0/mul_13s_13s_13_3_1_U200/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0/bound_reg_169_reg multiplier stage sobel_i/sobel_resize_accel_0/inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/Mat2AxiStream_U0/MatStream2AxiStream_2_U0/bound_reg_169_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP sobel_i/sobel_resize_accel_0/inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/addrbound_U0/mul_13s_13s_13_3_1_U200/buff0_reg multiplier stage sobel_i/sobel_resize_accel_0/inst/xfMat2Array_8_0_64_64_1_2_1_U0/grp_Mat2Axi_fu_62/addrbound_U0/mul_13s_13s_13_3_1_U200/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A1)+((~A1)*(~A6)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A2)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A3)+((~A3)*(~A6)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC RTSTAT-10] No routable loads: 33 net(s) have no routable loads. The problem bus(es) and/or net(s) are sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, sobel_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i... and (the first 15 of 21 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 19 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./sobel_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 2936.074 ; gain = 575.371 ; free physical = 3886 ; free virtual = 12132
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 14 17:12:29 2024...

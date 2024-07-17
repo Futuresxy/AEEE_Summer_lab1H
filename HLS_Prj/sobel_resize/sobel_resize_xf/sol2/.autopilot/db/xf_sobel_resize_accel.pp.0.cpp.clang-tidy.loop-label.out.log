@@ -1,0 +1,800 @@
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:1449:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:1449:7: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:2423:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:2423:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:2437:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:2437:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:2451:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:2451:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:4080:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:4080:7: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18438:2: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < N; k++) {
+ ^~~
+ VITIS_LOOP_307_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18438:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18452:5: warning: Added loop label VITIS_LOOP_321_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_321_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18452:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18467:5: warning: Added loop label VITIS_LOOP_336_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_336_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18467:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18482:5: warning: Added loop label VITIS_LOOP_351_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_351_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18482:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18497:5: warning: Added loop label VITIS_LOOP_366_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_366_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18497:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18512:5: warning: Added loop label VITIS_LOOP_381_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_381_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18512:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18527:5: warning: Added loop label VITIS_LOOP_396_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_396_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18527:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18542:5: warning: Added loop label VITIS_LOOP_411_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_411_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18542:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18557:5: warning: Added loop label VITIS_LOOP_426_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_426_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18557:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18634:9: warning: Added loop label VITIS_LOOP_511_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < (rows * ((cols + NPC - 1) >> xfNPixelsPerCycle<NPC>::datashift)); ++i) {
+        ^~~
+        VITIS_LOOP_511_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18634:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18842:5: warning: Added loop label VITIS_LOOP_719_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_719_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18842:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18843:9: warning: Added loop label VITIS_LOOP_720_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < packcols; c++) {
+        ^~~
+        VITIS_LOOP_720_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18843:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18844:13: warning: Added loop label VITIS_LOOP_721_3:   [xilinx-label-all-loops]
+            for (int p = 0; p < nppc; p++) {
+            ^~~
+            VITIS_LOOP_721_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18844:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18846:17: warning: Added loop label VITIS_LOOP_723_4:   [xilinx-label-all-loops]
+                for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+                ^~~
+                VITIS_LOOP_723_4: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18846:17: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18884:5: warning: Added loop label VITIS_LOOP_761_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_761_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18884:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18885:9: warning: Added loop label VITIS_LOOP_762_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < cols; c++) {
+        ^~~
+        VITIS_LOOP_762_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18885:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18887:13: warning: Added loop label VITIS_LOOP_764_3:   [xilinx-label-all-loops]
+            for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+            ^~~
+            VITIS_LOOP_764_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18887:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18888:17: warning: Added loop label VITIS_LOOP_765_4:   [xilinx-label-all-loops]
+                for (int b = 0; b < cv_nbytes; ++b) {
+                ^~~
+                VITIS_LOOP_765_4: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18888:17: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18942:5: warning: Added loop label VITIS_LOOP_819_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < rows; i++) {
+    ^~~
+    VITIS_LOOP_819_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18942:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18943:9: warning: Added loop label VITIS_LOOP_820_2:   [xilinx-label-all-loops]
+        for (int j = 0; j<cols>> (xfNPixelsPerCycle<NPPC>::datashift); j++) {
+        ^~~
+        VITIS_LOOP_820_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18943:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18951:13: warning: Added loop label VITIS_LOOP_828_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < (1 << (xfNPixelsPerCycle<NPPC>::datashift)); k++) {
+            ^~~
+            VITIS_LOOP_828_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:18951:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:19064:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable=mul_rows_cols op=mul impl=dsp latency=2
+        ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:19136:2: warning: Added loop label VITIS_LOOP_1021_1:   [xilinx-label-all-loops]
+ for (c = 0; c < cols_addrbound; c++) {
+ ^~~
+ VITIS_LOOP_1021_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:19136:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:19544:13: warning: Added loop label VITIS_LOOP_1429_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1429_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:19544:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:19572:13: warning: Added loop label VITIS_LOOP_1457_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1457_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:19572:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:19602:13: warning: Added loop label VITIS_LOOP_1487_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1487_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:19602:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:19632:13: warning: Added loop label VITIS_LOOP_1517_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1517_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:19632:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20172:5: warning: Added loop label VITIS_LOOP_122_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_122_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20172:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20176:2: warning: Added loop label VITIS_LOOP_126_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS - 1; j++) {
+ ^~~
+ VITIS_LOOP_126_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20176:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20203:5: warning: Added loop label VITIS_LOOP_166_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_166_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20203:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20207:2: warning: Added loop label VITIS_LOOP_170_2:   [xilinx-label-all-loops]
+ for (j = COLS - 1; j > 0; j--) {
+ ^~~
+ VITIS_LOOP_170_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20207:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20234:5: warning: Added loop label VITIS_LOOP_210_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_210_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20234:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20238:2: warning: Added loop label VITIS_LOOP_214_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_214_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20238:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20265:5: warning: Added loop label VITIS_LOOP_254_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_254_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20265:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20269:2: warning: Added loop label VITIS_LOOP_258_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_258_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20269:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20315:5: warning: Added loop label VITIS_LOOP_330_1:   [xilinx-label-all-loops]
+    for (j = 0; j < COLS; j++) {
+    ^~~
+    VITIS_LOOP_330_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20315:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20378:5: warning: Added loop label VITIS_LOOP_435_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_435_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20378:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20575:44: error: Invalid Directive: for current device, RAM_1P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=BRAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20580:44: error: Invalid Directive: for current device, RAM_1P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=URAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20585:44: error: Invalid Directive: for current device, RAM_2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=BRAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20590:44: error: Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=URAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20595:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=BRAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20600:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=URAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20605:44: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=BRAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20610:44: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=URAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20666:5: warning: Added loop label VITIS_LOOP_824_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_824_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20666:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20692:5: warning: Added loop label VITIS_LOOP_867_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_867_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20692:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20748:5: warning: Added loop label VITIS_LOOP_968_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_968_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20748:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20844:5: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_39_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20844:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20863:5: warning: Added loop label VITIS_LOOP_58_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_58_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20863:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20891:5: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_86_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20891:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20924:5: warning: Added loop label VITIS_LOOP_119_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_119_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20924:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20958:5: warning: Added loop label VITIS_LOOP_153_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_153_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20958:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20986:5: warning: Added loop label VITIS_LOOP_181_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_181_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:20986:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21010:5: warning: Added loop label VITIS_LOOP_205_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_205_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21010:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21033:5: warning: Added loop label VITIS_LOOP_228_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_228_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21033:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21068:5: warning: Added loop label VITIS_LOOP_263_1:   [xilinx-label-all-loops]
+    for (uint16_t r = 0; r < K_ROWS; r++) {
+    ^~~
+    VITIS_LOOP_263_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21068:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21070:2: warning: Added loop label VITIS_LOOP_265_2:   [xilinx-label-all-loops]
+ for (uint16_t c = 0; c < K_COLS; c++) {
+ ^~~
+ VITIS_LOOP_265_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21070:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21130:5: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (ap_int<9> i = 0; i < loopIter; i++) {
+    ^~~
+    VITIS_LOOP_325_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21130:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21202:5: warning: Added loop label VITIS_LOOP_397_1:   [xilinx-label-all-loops]
+    for (i = 0; i < 6; i++, ind++) {
+    ^~~
+    VITIS_LOOP_397_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21202:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21273:5: warning: Added loop label VITIS_LOOP_468_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < imheight; i++) {
+    ^~~
+    VITIS_LOOP_468_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21273:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21278:2: warning: Added loop label VITIS_LOOP_473_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < (imwidth >> NPC); j++) {
+ ^~~
+ VITIS_LOOP_473_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21278:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21304:9: warning: Added loop label VITIS_LOOP_499_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_499_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21304:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21410:9: warning: Added loop label VITIS_LOOP_623_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_623_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21410:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21524:9: warning: Added loop label VITIS_LOOP_737_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_737_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21524:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21556:9: warning: Added loop label VITIS_LOOP_788_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_788_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21556:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21749:2: warning: Added loop label VITIS_LOOP_158_1:   [xilinx-label-all-loops]
+ for (ap_uint<5> c = 0, k = 0; c < PLANES; c++, k += STEP) {
+ ^~~
+ VITIS_LOOP_158_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21749:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21927:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=URAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21931:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=BRAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21993:13: warning: Added loop label VITIS_LOOP_409_1:   [xilinx-label-all-loops]
+            for (ap_uint<5> c = 0, k = 0; c < PLANES; c++, k += STEP) {
+            ^~~
+            VITIS_LOOP_409_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:21993:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22016:13: warning: Added loop label VITIS_LOOP_432_2:   [xilinx-label-all-loops]
+            for (ap_uint<7> i = 0, k = 0; i < PLANES; i++, k += STEP) {
+            ^~~
+            VITIS_LOOP_432_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22016:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22069:5: warning: Added loop label VITIS_LOOP_505_1:   [xilinx-label-all-loops]
+    for (int i = 0, k = 0; i < PLANES; i++, k += STEP) {
+    ^~~
+    VITIS_LOOP_505_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22069:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22138:5: warning: Added loop label VITIS_LOOP_589_1:   [xilinx-label-all-loops]
+    for (int i = 0, k = 0; i < PLANES; i++, k += STEP) {
+    ^~~
+    VITIS_LOOP_589_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22138:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22301:9: warning: Added loop label VITIS_LOOP_752_1:   [xilinx-label-all-loops]
+        for (ap_uint<4> i = 0; i < 4; i++) {
+        ^~~
+        VITIS_LOOP_752_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22301:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22402:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=URAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22407:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=BRAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22492:13: warning: Added loop label VITIS_LOOP_950_1:   [xilinx-label-all-loops]
+            for (ap_uint<6> i = 4; i < (xfNPixelsPerCycle<NPC>::nppc + 4); i++) {
+            ^~~
+            VITIS_LOOP_950_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22492:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22535:13: warning: Added loop label VITIS_LOOP_993_2:   [xilinx-label-all-loops]
+            for (ap_uint<4> i = 0; i < 4; i++) {
+            ^~~
+            VITIS_LOOP_993_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22535:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22598:5: warning: Added loop label VITIS_LOOP_1078_1:   [xilinx-label-all-loops]
+    for (int i = 0, k = 0; i < PLANES; i++, k += STEP) {
+    ^~~
+    VITIS_LOOP_1078_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22598:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22789:5: warning: Added loop label VITIS_LOOP_1288_1:   [xilinx-label-all-loops]
+    for (int i = 0, k = 0; i < PLANES; i++, k += STEP) {
+    ^~~
+    VITIS_LOOP_1288_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22789:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22910:2: warning: Added loop label VITIS_LOOP_1409_1:   [xilinx-label-all-loops]
+ for (ap_uint<9> j = 0; j < xfNPixelsPerCycle<NPC>::nppc; j++) {
+ ^~~
+ VITIS_LOOP_1409_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:22910:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23089:9: warning: Added loop label VITIS_LOOP_1588_1:   [xilinx-label-all-loops]
+        for (i = 0; i < 8; i++) {
+        ^~~
+        VITIS_LOOP_1588_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23089:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23102:9: warning: Added loop label VITIS_LOOP_1601_2:   [xilinx-label-all-loops]
+        for (i = 0; i < 3; i++) {
+        ^~~
+        VITIS_LOOP_1601_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23102:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23132:9: warning: Added loop label VITIS_LOOP_1631_3:   [xilinx-label-all-loops]
+        for (ap_uint<5> k = 0; k < 3; k++) {
+        ^~~
+        VITIS_LOOP_1631_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23132:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23220:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=URAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23225:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=buf type=RAM_S2P impl=BRAM
+                                           ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23329:9: warning: Added loop label VITIS_LOOP_1828_1:   [xilinx-label-all-loops]
+        for (i = 0; i < 6; i++) {
+        ^~~
+        VITIS_LOOP_1828_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23329:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23504:2: warning: Added loop label VITIS_LOOP_103_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < NUMBEROFINPUTWORDS; k++) {
+ ^~~
+ VITIS_LOOP_103_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23504:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23508:2: warning: Added loop label VITIS_LOOP_107_2:   [xilinx-label-all-loops]
+ for (int i = 0; i < xfNPixelsPerCycle<NPPC>::nppc; i++) {
+ ^~~
+ VITIS_LOOP_107_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23508:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23520:5: warning: Added loop label VITIS_LOOP_119_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < xfNPixelsPerCycle<NPPC>::nppc; i++) {
+    ^~~
+    VITIS_LOOP_119_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23520:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23525:2: warning: Added loop label VITIS_LOOP_124_4:   [xilinx-label-all-loops]
+ for (int k = 0; k < DataType<SRC_TYPE, NPPC>::channel; k++) {
+ ^~~
+ VITIS_LOOP_124_4: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23525:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23537:2: warning: Added loop label VITIS_LOOP_136_5:   [xilinx-label-all-loops]
+ for (int l = 0; l < xfNPixelsPerCycle<NPPC>::nppc * NUMBEROFINPUTWORDS; l++) {
+ ^~~
+ VITIS_LOOP_136_5: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23537:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23555:5: warning: Added loop label VITIS_LOOP_154_6:   [xilinx-label-all-loops]
+    for (int i = 0; i < xfNPixelsPerCycle<NPPC>::nppc; i++) {
+    ^~~
+    VITIS_LOOP_154_6: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23555:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23577:2: warning: Added loop label VITIS_LOOP_176_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < xfNPixelsPerCycle<NPPC>::nppc; i++) {
+ ^~~
+ VITIS_LOOP_176_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23577:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23655:5: warning: Added loop label VITIS_LOOP_254_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < xfNPixelsPerCycle<NPPC>::nppc; i++) {
+    ^~~
+    VITIS_LOOP_254_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23655:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23740:52: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=line_buffer type=RAM_T2P impl=URAM
+                                                   ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23744:52: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=line_buffer type=RAM_T2P impl=BRAM
+                                                   ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23755:5: warning: Added loop label VITIS_LOOP_354_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 2; i++)
+    ^~~
+    VITIS_LOOP_354_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23755:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23760:2: warning: Added loop label VITIS_LOOP_359_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < (imgInput_cols_align_npc >> (xfNPixelsPerCycle<NPPC>::datashift)); j++) {
+ ^~~
+ VITIS_LOOP_359_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23760:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23766:13: warning: Added loop label VITIS_LOOP_365_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < BUFFER_DUP_FACTOR; k++) {
+            ^~~
+            VITIS_LOOP_365_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23766:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23805:5: warning: Added loop label VITIS_LOOP_404_4:   [xilinx-label-all-loops]
+    for (int i = 0; i < loop_row_count; i++) {
+    ^~~
+    VITIS_LOOP_404_4: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23805:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23812:9: warning: Added loop label VITIS_LOOP_411_5:   [xilinx-label-all-loops]
+        for (int j = 0; j < (loop_col_count >> (xfNPixelsPerCycle<NPPC>::datashift)); j++) {
+        ^~~
+        VITIS_LOOP_411_5: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23812:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23846:17: warning: Added loop label VITIS_LOOP_445_6:   [xilinx-label-all-loops]
+                for (int k = 0; k < BUFFER_DUP_FACTOR; k++) {
+                ^~~
+                VITIS_LOOP_445_6: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23846:17: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23859:21: warning: Added loop label VITIS_LOOP_458_7:   [xilinx-label-all-loops]
+                    for (int k = 0; k < BUFFER_DUP_FACTOR; k++) {
+                    ^~~
+                    VITIS_LOOP_458_7: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23859:21: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23867:17: warning: Added loop label VITIS_LOOP_466_8:   [xilinx-label-all-loops]
+                for (int k = 0; k < BUFFER_DUP_FACTOR; k++) {
+                ^~~
+                VITIS_LOOP_466_8: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23867:17: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23880:21: warning: Added loop label VITIS_LOOP_479_9:   [xilinx-label-all-loops]
+                    for (int k = 0; k < BUFFER_DUP_FACTOR; k++) {
+                    ^~~
+                    VITIS_LOOP_479_9: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23880:21: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23888:17: warning: Added loop label VITIS_LOOP_487_10:   [xilinx-label-all-loops]
+                for (int k = 0; k < BUFFER_DUP_FACTOR; k++) {
+                ^~~
+                VITIS_LOOP_487_10: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23888:17: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23901:21: warning: Added loop label VITIS_LOOP_500_11:   [xilinx-label-all-loops]
+                    for (int k = 0; k < BUFFER_DUP_FACTOR; k++) {
+                    ^~~
+                    VITIS_LOOP_500_11: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23901:21: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23914:25: warning: Added loop label VITIS_LOOP_513_12:   [xilinx-label-all-loops]
+                        for (int k = 0; k < BUFFER_WORDS; k++) {
+                        ^~~
+                        VITIS_LOOP_513_12: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:23914:25: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:26814:13: warning: Added loop label VITIS_LOOP_2882_1:   [xilinx-label-all-loops]
+            for (tmp = 0; tmp < 4; tmp++) {
+            ^~~
+            VITIS_LOOP_2882_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:26814:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:26828:13: warning: Added loop label VITIS_LOOP_2896_2:   [xilinx-label-all-loops]
+            for (tmp = 0; tmp < 4; tmp++) {
+            ^~~
+            VITIS_LOOP_2896_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:26828:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:26842:13: warning: Added loop label VITIS_LOOP_2910_3:   [xilinx-label-all-loops]
+            for (tmp = 0; tmp < 4; tmp++) {
+            ^~~
+            VITIS_LOOP_2910_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:26842:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:26856:13: warning: Added loop label VITIS_LOOP_2924_4:   [xilinx-label-all-loops]
+            for (tmp = 0; tmp < 4; tmp++) {
+            ^~~
+            VITIS_LOOP_2924_4: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:26856:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27264:5: warning: Added loop label VITIS_LOOP_3347_1:   [xilinx-label-all-loops]
+    for (i = 15; i >= 0; i--) {
+    ^~~
+    VITIS_LOOP_3347_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27264:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27356:5: warning: Added loop label VITIS_LOOP_78_1:   [xilinx-label-all-loops]
+    for (int pb_in = 0; pb_in < NUM_INPB + 1; pb_in++) {
+    ^~~
+    VITIS_LOOP_78_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27356:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27386:5: warning: Added loop label VITIS_LOOP_108_2:   [xilinx-label-all-loops]
+    for (int ta_idx = 0; ta_idx < NUM_PB; ta_idx++) {
+    ^~~
+    VITIS_LOOP_108_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27386:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27390:2: warning: Added loop label VITIS_LOOP_112_3:   [xilinx-label-all-loops]
+ for (int pb_in = 0; pb_in < NUM_INPB; pb_in++) {
+ ^~~
+ VITIS_LOOP_112_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27390:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27503:5: warning: Added loop label VITIS_LOOP_225_4:   [xilinx-label-all-loops]
+    for (int ta_idx = 0; ta_idx < NUM_PB; ta_idx++) {
+    ^~~
+    VITIS_LOOP_225_4: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27503:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27507:2: warning: Added loop label VITIS_LOOP_229_5:   [xilinx-label-all-loops]
+ for (int pb_in = 0; pb_in < NUM_INPB; pb_in++) {
+ ^~~
+ VITIS_LOOP_229_5: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27507:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27540:9: warning: Added loop label VITIS_LOOP_262_1:   [xilinx-label-all-loops]
+        for (ap_uint<10> idx = 0; idx < (SIZE / 2); idx++) {
+        ^~~
+        VITIS_LOOP_262_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27540:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27549:9: warning: Added loop label VITIS_LOOP_271_2:   [xilinx-label-all-loops]
+        for (ap_uint<10> idx = 0; idx < (SIZE / 4); idx++) {
+        ^~~
+        VITIS_LOOP_271_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27549:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27558:9: warning: Added loop label VITIS_LOOP_280_3:   [xilinx-label-all-loops]
+        for (ap_uint<10> idx = 0; idx < (SIZE / 8); idx++) {
+        ^~~
+        VITIS_LOOP_280_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27558:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27567:9: warning: Added loop label VITIS_LOOP_289_4:   [xilinx-label-all-loops]
+        for (ap_uint<10> idx = 0; idx < (SIZE / 16); idx++) {
+        ^~~
+        VITIS_LOOP_289_4: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27567:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27597:5: warning: Added loop label VITIS_LOOP_319_1:   [xilinx-label-all-loops]
+    for (int pixelproc = 0; pixelproc < NPC; pixelproc++) {
+    ^~~
+    VITIS_LOOP_319_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27597:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27628:5: warning: Added loop label VITIS_LOOP_362_1:   [xilinx-label-all-loops]
+    for (int pixel = 0, bit1 = 0; pixel < NUM_PB; pixel++, bit1 += (PLANES * 8)) {
+    ^~~
+    VITIS_LOOP_362_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27628:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27632:2: warning: Added loop label VITIS_LOOP_366_2:   [xilinx-label-all-loops]
+ for (int channel = 0, bit2 = 0; channel < PLANES; channel++, bit2 += 8) {
+ ^~~
+ VITIS_LOOP_366_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27632:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27644:5: warning: Added loop label VITIS_LOOP_378_3:   [xilinx-label-all-loops]
+    for (int procblock_index = 0; procblock_index < NUM_PB + 1; procblock_index++) {
+    ^~~
+    VITIS_LOOP_378_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27644:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27648:2: warning: Added loop label VITIS_LOOP_382_4:   [xilinx-label-all-loops]
+ for (int plane_index = 0, bit = 0; plane_index < PLANES; plane_index++, bit += 8) {
+ ^~~
+ VITIS_LOOP_382_4: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27648:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27654:13: warning: Added loop label VITIS_LOOP_388_5:   [xilinx-label-all-loops]
+            for (int in_index = 0; in_index < NUM_INPB; in_index++) {
+            ^~~
+            VITIS_LOOP_388_5: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27654:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27706:5: warning: Added loop label VITIS_LOOP_440_1:   [xilinx-label-all-loops]
+    for (int plane_id = 0; plane_id < PLANES; plane_id++) {
+    ^~~
+    VITIS_LOOP_440_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27706:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27711:2: warning: Added loop label VITIS_LOOP_445_2:   [xilinx-label-all-loops]
+ for (ap_uint<8> accum_idx = 0, index_pixel = 0; accum_idx < 2 * NPC; accum_idx++, index_pixel++) {
+ ^~~
+ VITIS_LOOP_445_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27711:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27719:13: warning: Added loop label VITIS_LOOP_453_3:   [xilinx-label-all-loops]
+            for (ap_uint<16> out_idx = 0; out_idx < (NUM_PB + 1); out_idx++) {
+            ^~~
+            VITIS_LOOP_453_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27719:13: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27773:5: warning: Added loop label VITIS_LOOP_507_4:   [xilinx-label-all-loops]
+    for (int plane_id = 0; plane_id < PLANES; plane_id++) {
+    ^~~
+    VITIS_LOOP_507_4: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27773:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27777:2: warning: Added loop label VITIS_LOOP_511_5:   [xilinx-label-all-loops]
+ for (ap_uint<8> index_pixel = 0; index_pixel < NPC; index_pixel++) {
+ ^~~
+ VITIS_LOOP_511_5: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27777:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27866:2: warning: Added loop label VITIS_LOOP_600_1:   [xilinx-label-all-loops]
+ for (ap_uint<8> idx = 1; idx <= NUM_PB; idx++) {
+ ^~~
+ VITIS_LOOP_600_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27866:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27903:53: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=ouput_buffer type=RAM_T2P impl=URAM
+                                                    ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27907:53: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=ouput_buffer type=RAM_T2P impl=BRAM
+                                                    ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27924:2: warning: Added loop label VITIS_LOOP_658_2:   [xilinx-label-all-loops]
+ for (int dim2 = 0; dim2 < NPC * 2; dim2++) {
+ ^~~
+ VITIS_LOOP_658_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27924:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27929:2: warning: Added loop label VITIS_LOOP_663_3:   [xilinx-label-all-loops]
+ for (int dim1 = 0; dim1 < PLANES; dim1++) {
+ ^~~
+ VITIS_LOOP_663_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27929:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27938:5: warning: Added loop label VITIS_LOOP_672_4:   [xilinx-label-all-loops]
+    for (ap_uint<16> dim3 = 0; dim3 < DEPTH_OUTBUFFER; dim3++) {
+    ^~~
+    VITIS_LOOP_672_4: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27938:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27942:2: warning: Added loop label VITIS_LOOP_676_5:   [xilinx-label-all-loops]
+ for (int dim2 = 0; dim2 < NUM_PB; dim2++) {
+ ^~~
+ VITIS_LOOP_676_5: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27942:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27946:2: warning: Added loop label VITIS_LOOP_680_6:   [xilinx-label-all-loops]
+ for (int dim1 = 0; dim1 < PLANES; dim1++) {
+ ^~~
+ VITIS_LOOP_680_6: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27946:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27979:2: warning: Added loop label VITIS_LOOP_713_7:   [xilinx-label-all-loops]
+ for (int idx = 0; idx < NUM_PB; idx++) {
+ ^~~
+ VITIS_LOOP_713_7: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:27979:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28077:17: warning: Added loop label VITIS_LOOP_811_8:   [xilinx-label-all-loops]
+                for (int pixel = 0, bit1 = 0; pixel < NPC; pixel++, bit1 += (PLANES * 8)) {
+                ^~~
+                VITIS_LOOP_811_8: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28077:17: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28081:2: warning: Added loop label VITIS_LOOP_815_9:   [xilinx-label-all-loops]
+ for (int channel = 0, bit2 = 0; channel < PLANES; channel++, bit2 += 8) {
+ ^~~
+ VITIS_LOOP_815_9: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28081:2: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28213:5: warning: Added loop label VITIS_LOOP_105_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < 2 * (1 << xfNPixelsPerCycle<NPC>::datashift); ii++) {
+    ^~~
+    VITIS_LOOP_105_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28213:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28240:9: warning: Added loop label VITIS_LOOP_132_2:   [xilinx-label-all-loops]
+        for (ap_uint<5> c = 0, k = 0; c < 3; c++, k += 8) {
+        ^~~
+        VITIS_LOOP_132_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28240:9: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28295:48: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=Hoffset type=RAM_T2P impl=URAM
+                                               ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28296:48: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=Voffset type=RAM_T2P impl=URAM
+                                               ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28297:48: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=Hweight type=RAM_T2P impl=URAM
+                                               ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28298:49: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=lbuf_in0 type=RAM_T2P impl=URAM
+                                                ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28299:49: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=lbuf_in1 type=RAM_T2P impl=URAM
+                                                ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28300:49: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=lbuf_in2 type=RAM_T2P impl=URAM
+                                                ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28304:48: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=Hoffset type=RAM_T2P impl=BRAM
+                                               ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28305:48: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=Voffset type=RAM_T2P impl=BRAM
+                                               ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28306:48: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=Hweight type=RAM_T2P impl=BRAM
+                                               ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28307:49: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=lbuf_in0 type=RAM_T2P impl=BRAM
+                                                ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28308:49: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=lbuf_in1 type=RAM_T2P impl=BRAM
+                                                ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28309:49: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=lbuf_in2 type=RAM_T2P impl=BRAM
+                                                ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28356:43: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=D0 type=RAM_T2P impl=URAM
+                                          ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28357:43: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=D1 type=RAM_T2P impl=URAM
+                                          ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28361:43: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=D0 type=RAM_T2P impl=BRAM
+                                          ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28362:43: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=D1 type=RAM_T2P impl=BRAM
+                                          ^
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28437:5: warning: Added loop label VITIS_LOOP_329_1:   [xilinx-label-all-loops]
+    for (x = 0; x < imgInput_ncpr; x++) {
+    ^~~
+    VITIS_LOOP_329_1: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28437:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28447:5: warning: Added loop label VITIS_LOOP_339_2:   [xilinx-label-all-loops]
+    for (x = 0; x < imgInput_ncpr; x++) {
+    ^~~
+    VITIS_LOOP_339_2: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28447:5: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28519:21: warning: Added loop label VITIS_LOOP_411_3:   [xilinx-label-all-loops]
+                    for (k = 0; k < 2; k++) {
+                    ^~~
+                    VITIS_LOOP_411_3: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28519:21: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28533:21: warning: Added loop label VITIS_LOOP_425_4:   [xilinx-label-all-loops]
+                    for (k = 0; k < 2; k++) {
+                    ^~~
+                    VITIS_LOOP_425_4: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28533:21: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28547:21: warning: Added loop label VITIS_LOOP_439_5:   [xilinx-label-all-loops]
+                    for (k = 0; k < 2; k++) {
+                    ^~~
+                    VITIS_LOOP_439_5: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28547:21: note: FIX-IT applied suggested code changes
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28561:17: warning: Added loop label VITIS_LOOP_453_6:   [xilinx-label-all-loops]
+                for (k = 0; k < 2; k++) {
+                ^~~
+                VITIS_LOOP_453_6: 
+/home/sxy/Desktop/FPGA_Camp24-main/Lab1_sobel/prj/sobel_resize/sobel_resize_xf/sol2/.autopilot/db/xf_sobel_resize_accel.pp.0.cpp:28561:17: note: FIX-IT applied suggested code changes

@@ -1,0 +1,112 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 42,676       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  |  2,889       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  1,785       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |  1,780       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |  1,612       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |  1,550       | user array partition pragmas are applied                                               |
+|               | (2) simplification          |  1,419       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |  1,419       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |  1,419       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |  1,439       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |  1,339       | loop and instruction simplification                                                    |
+|               | (2) parallelization         |  1,318       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  1,318       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |  1,318       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |  1,315       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |  1,344       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++--------------------------------------+-------------------------------+-----------------+----------------+----------------+----------------+----------------+
+| Function                             | Location                      | Compile/Link    | Unroll/Inline  | Array/Struct   | Performance    | HW Transforms  |
++--------------------------------------+-------------------------------+-----------------+----------------+----------------+----------------+----------------+
+| + sobel_resize_accel                 | xf_sobel_resize_accel.cpp:23  | 42,676          | 1,612          | 1,439          | 1,318          | 1,344          |
+|  + Mat                               | xf_structs.hpp:670            |   148 (4 calls) |                |                |                |                |
+|   + init                             | xf_structs.hpp:605            |   112 (4 calls) |                |                |                |                |
+|      alloc_data<2, nullptr>          | xf_structs.hpp:493            |     4 (4 calls) |                |                |                |                |
+|  + Array2xfMat<8, 0, 128, 128, ...   | xf_utility.hpp:834            | 1,674           |  125           |  108           |  107           |  121           |
+|   + Array2xfMat                      | xf_structs.hpp:1232           | 1,672           |                |                |                |                |
+|    + Axi2Mat                         | xf_structs.hpp:1135           | 1,665           |                |                |                |                |
+|     + Axi2AxiStream                  | xf_structs.hpp:1006           | 1,167           |                |                |                |                |
+|        addrbound                     | xf_structs.hpp:942            |   800 (2 calls) |                |                |                |                |
+|     + AxiStream2Mat                  | xf_structs.hpp:1107           |   472           |                |                |                |                |
+|        cols_npc_aligned              | xf_structs.hpp:930            |     3           |                |                |                |                |
+|        last_blk_pxl_width            | xf_structs.hpp:932            |    11           |                |                |                |                |
+|        AxiStream2MatStream<2>        | xf_structs.hpp:1031           |   448           |                |                |                |                |
+|   + Axi2Mat                          | xf_structs.hpp:1135           |                 |  121           |  104           |  103           |  117           |
+|      Axi2AxiStream                   | xf_structs.hpp:1006           |                 |   34           |   35           |   35           |   38           |
+|    + AxiStream2Mat                   | xf_structs.hpp:1107           |                 |   72           |   64           |   63           |   71           |
+|       cols_npc_aligned               | xf_structs.hpp:930            |                 |    1           |                |                |                |
+|       last_blk_pxl_width             | xf_structs.hpp:932            |                 |    3           |    3           |    3           |    3           |
+|       AxiStream2MatStream<2>         | xf_structs.hpp:1031           |                 |   58           |   58           |   57           |   63           |
+|  + resize<1, 0, 128, 128, 64, 6...   | xf_resize.hpp:39              | 11,420          |  586           |  471           |  460           |  448           |
+|   + resizeNNBilinear<0, 128, 128...  | xf_resize_nn_bilinear.hpp:285 | 11,395          |  570           |  455           |  444           |  431           |
+|      xfUDivResize                    | xf_resize_nn_bilinear.hpp:162 |     6 (2 calls) |    6 (2 calls) |    6 (2 calls) |    6 (2 calls) |    8 (2 calls) |
+|      scaleMult<1, 48, 16, 42, 20>... | xf_resize_nn_bilinear.hpp:171 |   402           |                |                |                |                |
+|      read<2, nullptr>                | xf_structs.hpp:541            |    20 (2 calls) |                |                |                |                |
+|      scaleCompute<17, 42, 20, 48,... | xf_resize_nn_bilinear.hpp:190 | 2,822 (2 calls) |   28 (2 calls) |   28 (2 calls) |   28 (2 calls) |   28 (2 calls) |
+|      computeInterpolation<1, 42, ... | xf_resize_nn_bilinear.hpp:213 | 2,579           |                |                |                |                |
+|    + computeOutputPixel<0, 1, 1, ... | xf_resize_nn_bilinear.hpp:72  | 3,791           |                |                |                |                |
+|       interpolatePixel<0, 1, 1>      | xf_resize_nn_bilinear.hpp:30  | 2,401           |                |                |                |                |
+|      write<2, nullptr>               | xf_structs.hpp:552            |     8           |                |                |                |                |
+|  + Sobel<0, 3, 0, 0, 64, 64, 1,...   | xf_sobel.hpp:1873             | 23,508          |  496           |  510           |  413           |  403           |
+|   + xFSobelFilter3x3<0, 0, 64, 6...  | xf_sobel.hpp:306              | 23,499          |  490           |  504           |  407           |  396           |
+|      read<2, nullptr>                | xf_structs.hpp:541            |    10           |                |                |                |                |
+|    + ProcessSobel3x3<0, 0, 64, 64... | xf_sobel.hpp:194              | 10,529          |                |                |                |                |
+|       read<2, nullptr>               | xf_structs.hpp:541            |    10           |                |                |                |                |
+|     + xFSobel3x3<1, 1, 0, 0>         | xf_sobel.hpp:134              | 7,252           |                |                |                |                |
+|        xFGradientX3x3<0, 0>          | xf_sobel.hpp:44               |   325           |                |                |                |                |
+|        xFGradientY3x3<0, 0>          | xf_sobel.hpp:92               |   325           |                |                |                |                |
+|       xfPackPixels<1, 1, 0>          | xf_utility.hpp:318            | 2,130 (6 calls) |                |                |                |                |
+|       write<2, nullptr>              | xf_structs.hpp:552            |    16 (2 calls) |                |                |                |                |
+|      xFGradientX3x3<0, 0>            | xf_sobel.hpp:44               |   650 (2 calls) |   60           |   60           |   54           |   51           |
+|      xFGradientY3x3<0, 0>            | xf_sobel.hpp:92               |   650 (2 calls) |   60           |   60           |   54           |   51           |
+|      xfPackPixels<1, 1, 0>           | xf_utility.hpp:318            |   710 (2 calls) |                |                |                |                |
+|      write<2, nullptr>               | xf_structs.hpp:552            |    16 (2 calls) |                |                |                |                |
+|    + xFSobel3x3<1, 1, 0, 0>          | xf_sobel.hpp:134              |                 |  178           |  173           |  129           |  120           |
+|       xFGradientX3x3<0, 0>           | xf_sobel.hpp:44               |                 |   60           |   60           |   54           |   51           |
+|       xFGradientY3x3<0, 0>           | xf_sobel.hpp:92               |                 |   60           |   60           |   54           |   51           |
+|  + xfMat2Array<8, 0, 64, 64, 1,...   | xf_utility.hpp:824            | 5,850 (2 calls) |  312 (2 calls) |  284 (2 calls) |  272 (2 calls) |  288 (2 calls) |
+|   + xfMat2Array                      | xf_structs.hpp:1554           | 5,846 (2 calls) |                |                |                |                |
+|    + Mat2Axi                         | xf_structs.hpp:1405           | 5,832 (2 calls) |                |                |                |                |
+|       addrbound                      | xf_structs.hpp:942            | 2,400 (6 calls) |                |                |                |                |
+|     + Mat2AxiStream                  | xf_structs.hpp:1345           | 2,698 (2 calls) |                |                |                |                |
+|        cols_npc_aligned              | xf_structs.hpp:930            |     6 (2 calls) |                |                |                |                |
+|        last_blk_pxl_width            | xf_structs.hpp:932            |    22 (2 calls) |                |                |                |                |
+|      + MatStream2AxiStream<2>        | xf_structs.hpp:1281           | 2,650 (2 calls) |                |                |                |                |
+|         cols_npc_aligned             | xf_structs.hpp:930            |     6 (2 calls) |                |                |                |                |
+|       AxiStream2Axi                  | xf_structs.hpp:1373           |   484 (4 calls) |                |                |                |                |
+|   + Mat2Axi                          | xf_structs.hpp:1405           |                 |  304 (2 calls) |  276 (2 calls) |  264 (2 calls) |  280 (2 calls) |
+|      addrbound                       | xf_structs.hpp:942            |                 |   32 (2 calls) |   32 (2 calls) |   32 (2 calls) |   32 (2 calls) |
+|    + Mat2AxiStream                   | xf_structs.hpp:1345           |                 |  192 (2 calls) |  184 (2 calls) |  172 (2 calls) |  180 (2 calls) |
+|       cols_npc_aligned               | xf_structs.hpp:930            |                 |    2 (2 calls) |                |                |                |
+|       last_blk_pxl_width             | xf_structs.hpp:932            |                 |    6 (2 calls) |    6 (2 calls) |    6 (2 calls) |    6 (2 calls) |
+|       MatStream2AxiStream<2>         | xf_structs.hpp:1281           |                 |  164 (2 calls) |  172 (2 calls) |  160 (2 calls) |  164 (2 calls) |
+|      AxiStream2Axi                   | xf_structs.hpp:1373           |                 |   28 (2 calls) |   32 (2 calls) |   32 (2 calls) |   44 (2 calls) |
+|    ~Mat                              | xf_structs.hpp:865            |     4 (4 calls) |                |                |                |                |
++--------------------------------------+-------------------------------+-----------------+----------------+----------------+----------------+----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

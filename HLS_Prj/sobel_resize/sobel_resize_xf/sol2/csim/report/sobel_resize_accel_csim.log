@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../xf_sobel_resize_tb.cpp in debug mode
+   Compiling ../../../../xf_sobel_resize_accel.cpp in debug mode
+   Generating csim.exe
+Original Data Array2xfMat .... !!!
+Resize .... !!!
+Sobel .... !!!
+xfMat2Array .... !!!
+Average error (X gradient): 4.84937
+Average error (Y gradient): 4.72949
+Test PASSED!
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 16384
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

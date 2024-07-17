@@ -1,0 +1,446 @@
+{
+    "1": {
+        "name": "Sobel<0, 3, 0, 0, 64, 64, 1, false, 2, 2, 2>",
+        "file": "xf_sobel.hpp",
+        "fileloc": "1873",
+        "instructions": "11",
+        "total_instructions": "339",
+        "calls": "25",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "AxiStream2MatStream<2>",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "1052",
+        "instructions": "15",
+        "total_instructions": "131",
+        "calls": "23",
+        "basicblocks": "1"
+    },
+    "3": {
+        "name": "xfUDivResize",
+        "file": "xf_resize_nn_bilinear.hpp",
+        "fileloc": "162",
+        "instructions": "5",
+        "total_instructions": "5",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "xFGradientY3x3<0, 0>",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/imgproc\/xf_sobel.hpp",
+        "fileloc": "107",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "last_blk_pxl_width.1",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "933",
+        "instructions": "2",
+        "total_instructions": "2",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "6": {
+        "name": "xfMat2Array<8, 0, 64, 64, 1, 2, 1>.1",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_utility.hpp",
+        "fileloc": "826",
+        "instructions": "9",
+        "total_instructions": "196",
+        "calls": "11",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "AxiStream2Axi",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "1379",
+        "instructions": "12",
+        "total_instructions": "32",
+        "calls": "33",
+        "basicblocks": "1"
+    },
+    "8": {
+        "name": "Axi2AxiStream_Pipeline_VITIS_LOOP_1021_1",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "1155",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "entry_proc11",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "0",
+        "instructions": "9",
+        "total_instructions": "9",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "10": {
+        "name": "addrbound",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "1421",
+        "instructions": "8",
+        "total_instructions": "8",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "11": {
+        "name": "Mat2Axi",
+        "file": "xf_structs.hpp",
+        "fileloc": "1405",
+        "instructions": "21",
+        "total_instructions": "187",
+        "calls": "15 10 35 20 7",
+        "basicblocks": "1"
+    },
+    "12": {
+        "name": "resizeNNBilinear_Pipeline_VITIS_LOOP_411_5",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/imgproc\/xf_resize_nn_bilinear.hpp",
+        "fileloc": "385",
+        "instructions": "203",
+        "total_instructions": "214",
+        "calls": "28",
+        "basicblocks": "22",
+        "loads": {
+            "L": "15"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "AxiStream2Mat",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "1115",
+        "instructions": "16",
+        "total_instructions": "158",
+        "calls": "9 5 2",
+        "basicblocks": "1"
+    },
+    "14": {
+        "name": "resizeNNBilinear<0, 128, 128, 1, false, 2, 2, 64, 64, 1, 2>",
+        "file": "xf_resize_nn_bilinear.hpp",
+        "fileloc": "285",
+        "instructions": "123",
+        "total_instructions": "400",
+        "calls": "18 3 3 28 12",
+        "basicblocks": "4",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "entry_proc12",
+        "file": "xf_structs.hpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "16": {
+        "name": "Block_entry14_proc",
+        "file": "\/home\/sxy\/Desktop\/FPGA_Camp24-main\/Lab1_sobel\/prj\/sobel_resize\/xf_sobel_resize_accel.cpp",
+        "fileloc": "60",
+        "instructions": "7",
+        "total_instructions": "7",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "17": {
+        "name": "xFSobel3x3<1, 1, 0, 0>",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/imgproc\/xf_sobel.hpp",
+        "fileloc": "159",
+        "instructions": "13",
+        "total_instructions": "75",
+        "calls": "26 4",
+        "basicblocks": "1"
+    },
+    "18": {
+        "name": "resizeNNBilinear_Pipeline_VITIS_LOOP_354_1_VITIS_LOOP_359_2",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/imgproc\/xf_resize_nn_bilinear.hpp",
+        "fileloc": "354",
+        "instructions": "42",
+        "total_instructions": "42",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "xfMat2Array<8, 0, 64, 64, 1, 2, 1>",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_utility.hpp",
+        "fileloc": "826",
+        "instructions": "9",
+        "total_instructions": "196",
+        "calls": "11",
+        "basicblocks": "1"
+    },
+    "20": {
+        "name": "Mat2AxiStream",
+        "file": "xf_structs.hpp",
+        "fileloc": "1345",
+        "instructions": "16",
+        "total_instructions": "120",
+        "calls": "38 32 36",
+        "basicblocks": "1"
+    },
+    "21": {
+        "name": "xFSobelFilter3x3_Pipeline_Col_Loop",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/imgproc\/xf_sobel.hpp",
+        "fileloc": "328",
+        "instructions": "102",
+        "total_instructions": "177",
+        "calls": "17",
+        "basicblocks": "17",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "22": {
+        "name": "MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "1289",
+        "instructions": "71",
+        "total_instructions": "71",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "23": {
+        "name": "AxiStream2MatStream<2>_Pipeline_MMIterInLoopRow",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "1048",
+        "instructions": "116",
+        "total_instructions": "116",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "Block_entry1_proc",
+        "file": "\/home\/sxy\/Desktop\/FPGA_Camp24-main\/Lab1_sobel\/prj\/sobel_resize\/xf_sobel_resize_accel.cpp",
+        "fileloc": "46",
+        "instructions": "9",
+        "total_instructions": "9",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "25": {
+        "name": "xFSobelFilter3x3<0, 0, 64, 64, 1, 0, 0, 1, 2, 2, 2, 1, 1, 64, false>",
+        "file": "xf_sobel.hpp",
+        "fileloc": "306",
+        "instructions": "65",
+        "total_instructions": "328",
+        "calls": "30 21 26 4",
+        "basicblocks": "4",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "xFGradientX3x3<0, 0>",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/imgproc\/xf_sobel.hpp",
+        "fileloc": "59",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "27": {
+        "name": "Axi2Mat",
+        "file": "xf_structs.hpp",
+        "fileloc": "1135",
+        "instructions": "18",
+        "total_instructions": "218",
+        "calls": "29 13",
+        "basicblocks": "1"
+    },
+    "28": {
+        "name": "scaleCompute_17_42_20_48_16_1_s",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/imgproc\/xf_resize_nn_bilinear.hpp",
+        "fileloc": "190",
+        "instructions": "11",
+        "total_instructions": "11",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "29": {
+        "name": "Axi2AxiStream",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "1155",
+        "instructions": "21",
+        "total_instructions": "42",
+        "calls": "8",
+        "basicblocks": "1"
+    },
+    "30": {
+        "name": "xFSobelFilter3x3_Pipeline_Clear_Row_Loop",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/imgproc\/xf_sobel.hpp",
+        "fileloc": "315",
+        "instructions": "24",
+        "total_instructions": "24",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "31": {
+        "name": "Array2xfMat<8, 0, 128, 128, 1, 2>",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_utility.hpp",
+        "fileloc": "836",
+        "instructions": "11",
+        "total_instructions": "229",
+        "calls": "27",
+        "basicblocks": "1"
+    },
+    "32": {
+        "name": "last_blk_pxl_width",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "933",
+        "instructions": "2",
+        "total_instructions": "2",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "33": {
+        "name": "AxiStream2Axi_Pipeline_MMIterOutLoop2",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "1376",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "sobel_resize_accel",
+        "file": "xf_sobel_resize_accel.cpp",
+        "fileloc": "23",
+        "instructions": "81",
+        "total_instructions": "1478",
+        "calls": "34 24 31 37 16 1 19 6",
+        "basicblocks": "1"
+    },
+    "34": {
+        "name": "entry_proc13",
+        "file": "xf_sobel_resize_accel.cpp",
+        "fileloc": "0",
+        "instructions": "7",
+        "total_instructions": "7",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "35": {
+        "name": "Mat2Axi_Block_entry24_proc",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "1421",
+        "instructions": "2",
+        "total_instructions": "2",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "36": {
+        "name": "MatStream2AxiStream<2>",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/common\/xf_structs.hpp",
+        "fileloc": "1287",
+        "instructions": "24",
+        "total_instructions": "95",
+        "calls": "22",
+        "basicblocks": "3",
+        "loads": {
+            "L": "2"
+        }
+    },
+    "37": {
+        "name": "resize<1, 0, 128, 128, 64, 64, 1, false, 2, 2, 2>",
+        "file": "\/home\/sxy\/Desktop\/Vitis_Libraries\/vision\/L1\/include\/imgproc\/xf_resize.hpp",
+        "fileloc": "72",
+        "instructions": "14",
+        "total_instructions": "414",
+        "calls": "14",
+        "basicblocks": "1"
+    },
+    "38": {
+        "name": "entry_proc",
+        "file": "xf_structs.hpp",
+        "fileloc": "0",
+        "instructions": "7",
+        "total_instructions": "7",
+        "calls": "",
+        "basicblocks": "1"
+    }
+}
